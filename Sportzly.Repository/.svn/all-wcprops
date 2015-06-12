@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository
+END
+ActivityRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/ActivityRepository.cs
+END
+EntityExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/EntityExtensions.cs
+END
+GroupRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/GroupRepository.cs
+END
+UserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/UserRepository.cs
+END
+StyleCop.Cache
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/StyleCop.Cache
+END
+EntityMapper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/EntityMapper.cs
+END
+TeamRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/TeamRepository.cs
+END
+71 Sportzly.Repository.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/71%20Sportzly.Repository.csproj
+END
+CommonRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Repository/CommonRepository.cs
+END
+CalendarRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Repository/CalendarRepository.cs
+END

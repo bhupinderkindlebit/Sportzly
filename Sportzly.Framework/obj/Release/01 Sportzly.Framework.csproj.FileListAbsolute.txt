@@ -1,0 +1,14 @@
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Sportzly.Framework.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\protobuf-net.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.Unity.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Release\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Release\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Release\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Release\Sportzly.Framework.pdb

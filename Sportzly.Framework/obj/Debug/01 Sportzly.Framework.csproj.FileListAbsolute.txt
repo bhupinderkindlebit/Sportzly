@@ -1,0 +1,96 @@
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\protobuf-net.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\obj\Debug\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+F:\Sportzy\Sportz19-November-2014\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Sportzly.Framework.pdb
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\protobuf-net.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\obj\Debug\01 Sportzly.Framework.csprojResolveAssemblyReference.cache
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.dll
+F:\SportzlyLatest\SportzlyLatest\Sportzly.Framework\obj\Debug\Sportzly.Framework.pdb

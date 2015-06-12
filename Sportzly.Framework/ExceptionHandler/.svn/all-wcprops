@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExceptionHandler
+END
+UserInterfaceExceptionHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExceptionHandler/UserInterfaceExceptionHandler.cs
+END
+EnumExceptionPolicy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExceptionHandler/EnumExceptionPolicy.cs
+END
+BusinessLogicExceptionHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExceptionHandler/BusinessLogicExceptionHandler.cs
+END
+DataAccessExceptionHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExceptionHandler/DataAccessExceptionHandler.cs
+END

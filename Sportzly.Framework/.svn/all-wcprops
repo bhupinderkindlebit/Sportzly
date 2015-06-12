@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework
+END
+QueryConfig.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/QueryConfig.cs
+END
+EncryptDecryptQueryString.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/EncryptDecryptQueryString.cs
+END
+ExifReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExifReader.cs
+END
+01 Sportzly.Framework.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/01%20Sportzly.Framework.csproj
+END
+AppSettingsEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/AppSettingsEntity.cs
+END
+StyleCop.Cache
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/StyleCop.Cache
+END
+EnumEntity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/EnumEntity.cs
+END
+MailUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/MailUtils.cs
+END
+Utility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/Utility.cs
+END
+BLL_Thumb.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/BLL_Thumb.cs
+END
+ExifTags.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Framework/ExifTags.cs
+END

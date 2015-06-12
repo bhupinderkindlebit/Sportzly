@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity
+END
+KeyValueQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/KeyValueQuery.cs
+END
+SearchQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/SearchQuery.cs
+END
+PollQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/PollQuery.cs
+END
+TeamQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/TeamQuery.cs
+END
+UserEmailQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/UserEmailQuery.cs
+END
+FriendQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/FriendQuery.cs
+END
+CalendarQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/CalendarQuery.cs
+END
+AlbumPhotoQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/AlbumPhotoQuery.cs
+END
+BaseQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/BaseQuery.cs
+END
+ActivityQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/ActivityQuery.cs
+END
+ResultQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/ResultQuery.cs
+END
+UserQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/UserQuery.cs
+END
+EventQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/EventQuery.cs
+END
+UploadQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.BusinessEntities/QueryEntity/UploadQuery.cs
+END

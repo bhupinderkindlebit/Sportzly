@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers
+END
+CommonController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/CommonController.cs
+END
+CalendarController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/CalendarController.cs
+END
+ActivityController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/ActivityController.cs
+END
+GenericController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/GenericController.cs
+END
+UserController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/UserController.cs
+END
+IGenericController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.ServiceClient/Controllers/IGenericController.cs
+END

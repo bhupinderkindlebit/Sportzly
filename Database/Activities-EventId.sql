@@ -1,0 +1,1 @@
+Alter table Activities add EventId bigint null

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>01/07/2015 12:54:59</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Business.dll">
+      <publishTime>01/14/2015 15:52:32</publishTime>
+    </File>
+    <File Include="bin/Sportzly.BusinessEntities.dll">
+      <publishTime>01/09/2015 16:25:09</publishTime>
+    </File>
+    <File Include="bin/Sportzly.DataAccess.dll">
+      <publishTime>01/09/2015 16:27:31</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Framework.dll">
+      <publishTime>01/09/2015 16:25:07</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Repository.dll">
+      <publishTime>01/14/2015 15:52:32</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Service.HostApp.dll">
+      <publishTime>01/14/2015 15:52:34</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Service.Implementation.dll">
+      <publishTime>01/14/2015 15:52:33</publishTime>
+    </File>
+    <File Include="bin/Sportzly.Service.Interfaces.dll">
+      <publishTime>01/09/2015 16:27:31</publishTime>
+    </File>
+    <File Include="EmailTemplates/EventDeleteNotification.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/EventResponse.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/EventUpdateNotification.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/FinalUpdate.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/ForgotPassword.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/FriendShipInvitation.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/InviteAdminCopy.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/NewSignup.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/NewSignupViral.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/NoticeUpdate.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/PasswordChanged.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostComment.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostEventNotification.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostFriendNotification.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostFriendNotificationMessage.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostPollNotification.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostTeamNotification.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostTeamNotificationMessage.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/PostUpdatePollNotification.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/Signup.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/SignupAdminCopy.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/TeamAdminCopy.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/TeamInvitationMessage.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/TeamInvitationMessageHTML.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/TeamMembershipRequest.html">
+      <publishTime>01/07/2015 12:50:10</publishTime>
+    </File>
+    <File Include="EmailTemplates/TeamMemberShipResponse.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="EmailTemplates/UserInvitationMessageHTML.html">
+      <publishTime>01/07/2015 12:50:09</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/07/2015 12:50:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/16/2015 16:51:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

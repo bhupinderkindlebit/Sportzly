@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <configSections>
+    <section name="loggingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="true" />
+    <section name="exceptionHandling" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.ExceptionHandlingSettings, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="true" />
+  </configSections>
+
+  <loggingConfiguration name="" tracingEnabled="true" defaultCategory="General">
+    <listeners>
+      <add name="Event Log Trace Listener" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedEventLogTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.FormattedEventLogTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" source="Sportzly Logging" formatter="Text Formatter" />
+    </listeners>
+    <formatters>
+      <add type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" template="Timestamp: {timestamp}{newline}&#xA;Message: {message}{newline}&#xA;Category: {category}{newline}&#xA;Priority: {priority}{newline}&#xA;EventId: {eventid}{newline}&#xA;Severity: {severity}{newline}&#xA;Title:{title}{newline}&#xA;Machine: {localMachine}{newline}&#xA;App Domain: {localAppDomain}{newline}&#xA;ProcessId: {localProcessId}{newline}&#xA;Process Name: {localProcessName}{newline}&#xA;Thread Name: {threadName}{newline}&#xA;Win32 ThreadId:{win32ThreadId}{newline}&#xA;Extended Properties: {dictionary({key} - {value}{newline})}" name="Text Formatter" />
+    </formatters>
+    <categorySources>
+      <add switchValue="All" name="General">
+        <listeners>
+          <add name="Event Log Trace Listener" />
+        </listeners>
+      </add>
+    </categorySources>
+    <specialSources>
+      <allEvents switchValue="All" name="All Events">
+        <listeners>
+          <add name="Event Log Trace Listener" />
+        </listeners>
+      </allEvents>
+      <notProcessed switchValue="All" name="Unprocessed Category">
+        <listeners>
+          <add name="Event Log Trace Listener" />
+        </listeners>
+      </notProcessed>
+      <errors switchValue="All" name="Logging Errors &amp; Warnings">
+        <listeners>
+          <add name="Event Log Trace Listener" />
+        </listeners>
+      </errors>
+    </specialSources>
+  </loggingConfiguration>
+  <exceptionHandling>
+    <exceptionPolicies>
+      <add name="DataAccessPolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="ThrowNewException">
+            <exceptionHandlers>
+              <add name="DataAccessLoggingHandler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" logCategory="General" eventId="1000" severity="Error" title="Sportzly Data Access Logging Handler" formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling" priority="1" />
+              <add name="Wrap Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WrapHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" exceptionMessage="An application error has occured in Data Layer and has been logged. Please contact HELPME with Referece Number : {handlingInstanceID}" wrapExceptionType="Sportzly.Framework.Exceptions.DataAccessException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="DataAccessCustomPolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="NotifyRethrow">
+            <exceptionHandlers>
+              <add name="Replace Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ReplaceHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" replaceExceptionType="Sportzly.Framework.Exceptions.DataAccessCustomException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="PassThroughPolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="NotifyRethrow">
+            <exceptionHandlers>
+              <add name="Replace Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ReplaceHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" replaceExceptionType="Sportzly.Framework.Exceptions.PassThroughException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="BusinessLogicPolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="ThrowNewException">
+            <exceptionHandlers>
+              <add name="BusinessLogicLoggingHandler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" logCategory="General" eventId="1001" severity="Error" title="Sportzly Business Logic Logging Handler" formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling" priority="0" />
+              <add name="Wrap Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WrapHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" exceptionMessage="An application error has occured in Business Layer and has been logged. Please contact HELPME with Referece Number : {handlingInstanceID}" wrapExceptionType="Sportzly.Framework.Exceptions.BusinessLogicException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="BusinessLogicCustomPolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="NotifyRethrow">
+            <exceptionHandlers>
+              <add name="Replace Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ReplaceHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" replaceExceptionType="Sportzly.Framework.Exceptions.BusinessLogicCustomException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="UserInterfacePolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="ThrowNewException">
+            <exceptionHandlers>
+              <add name="UserInterfaceReplaceHandler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" logCategory="General" eventId="100" severity="Error" title="Enterprise Library Exception Handling" formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling" priority="0" />
+              <add name="Wrap Handler" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WrapHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" exceptionMessage="An application error has occured at front end and has been logged. Please contact HELPME with Referece Number : {handlingInstanceID}" wrapExceptionType="Sportzly.Framework.Exceptions.UserException, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="WCFServicePolicy">
+        <exceptionTypes>
+          <add name="All Exceptions" type="System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" postHandlingAction="ThrowNewException">
+            <exceptionHandlers>
+              <add type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.FaultContractExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" exceptionMessage="Service error has occured. Please contact HELPME with Referece Number : {handlingInstanceID}" faultContractType="Sportzly.Framework.Exceptions.SportzlyServiceFault, Sportzly.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Fault Contract Exception Handler">
+                <mappings>
+                  <add source="{Guid}" name="FaultID" />
+                  <add source="{Message}" name="FaultMessage" />
+                </mappings>
+              </add>
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+    </exceptionPolicies>
+  </exceptionHandling>
+  <connectionStrings>
+    <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=db205.my-hosting-panel.com;Initial Catalog=stance_sportzly;Persist Security Info=True;User ID=stance_sportzly;Password=nitin@1786;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />-->
+      <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\SQL2008R2;initial catalog=Stance_Sportzly;Trusted_Connection=true;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+    <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=sql2k804.discountasp.net;initial catalog=SQL2008R2_873670_alisyedblog;integrated security=False; user id=SQL2008R2_873670_alisyedblog_user;pwd=a123456;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+    <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=ANTISH\SQLEXPRESS;initial catalog=Stance_Sportzly;User ID=sa;Password=jitender;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+  <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5006.myWindowsHosting.com;initial catalog=DB_9AC611_sportzly;integrated security=False; user id=DB_9AC611_sportzly_admin;pwd=jimjim123;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+
+    
+    <add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=192.168.1.253\MSSQL2014;initial catalog=Sportzly_26_11_2014;uid=sa;pwd=data@123;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5012.myWindowsHosting.com;initial catalog=DB_9AC611_sportzlytest;uid=DB_9AC611_sportzlytest_admin;pwd=test@123;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+    
+    
+  </connectionStrings>
+  <system.web>
+    <customErrors mode="Off"></customErrors>
+    <compilation debug="true" targetFramework="4.0" />
+  </system.web>
+
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true">
+      <add name="UrlRoutingModule" type="System.Web.Routing.UrlRoutingModule, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </modules>
+    <directoryBrowse enabled="true" />
+  </system.webServer>
+
+  <system.serviceModel>
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" minFreeMemoryPercentageToActivateService="0" multipleSiteBindingsEnabled="true" />
+    <standardEndpoints>
+      <webHttpEndpoint>
+        <!-- 
+            Configure the WCF REST service base address via the global.asax.cs file and the default endpoint 
+            via the attributes on the <standardEndpoint> element below
+        -->
+        <standardEndpoint name="" helpEnabled="true" automaticFormatSelectionEnabled="true" maxReceivedMessageSize="2147483647" maxBufferPoolSize="65536" />
+      </webHttpEndpoint>
+    </standardEndpoints>
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="ServiceBehavior">
+          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+        </behavior>
+      </endpointBehaviors>
+      <serviceBehaviors>
+        <behavior name="ServiceBehavior">
+          <serviceDebug includeExceptionDetailInFaults="false" />
+          <serviceMetadata httpGetEnabled="true" />
+          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+          <serviceThrottling maxConcurrentCalls="100" maxConcurrentSessions="100" maxConcurrentInstances="200" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="longTimeoutBinding" receiveTimeout="01:10:00" sendTimeout="01:10:00" />
+      </basicHttpBinding>
+
+    </bindings>
+  </system.serviceModel>
+
+  <!--<system.diagnostics>
+
+    <sources>
+      <source name="System.ServiceModel"
+      switchValue="All"
+      propagateActivity="true" >
+        <listeners>
+          <add name="xml"/>
+        </listeners>
+      </source>
+    </sources>
+    <sharedListeners>
+      <add name="xml"
+      type="System.Diagnostics.XmlWriterTraceListener"
+      initializeData="C:\Traces.svclog" />
+    </sharedListeners>
+  </system.diagnostics>-->
+
+  <appSettings>
+    <!--<add key="smtpUrl" value="smtp.sendgrid.net" />  
+    <add key="smtpPort" value="587" />
+	  <add key="smtpTimeout" value="400000" />
+    <add key="smtpUser" value="qadeemkhan1" />
+    <add key="smtpPwd" value="abdul1" />
+    <add key="activationUrl" value="http://sportzly.com" />-->
+
+    <add key="smtpUrl" value="smtp.sportzly.com" />
+    <add key="smtpPort" value="25" />
+    <add key="smtpTimeout" value="400000" />
+    <add key="smtpUser" value="noreply@sportzly.com" />
+    <add key="smtpPwd" value="admin123" />
+    <add key="activationUrl" value="http://www.sportzly.info" />
+  </appSettings>
+</configuration>

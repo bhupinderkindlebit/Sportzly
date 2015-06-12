@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates
+END
+PasswordChanged.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PasswordChanged.html
+END
+NewSignupViral.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/NewSignupViral.html
+END
+UserInvitationMessageHTML.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/UserInvitationMessageHTML.html
+END
+NewSignup.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/NewSignup.html
+END
+TeamMemberShipResponse.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/TeamMemberShipResponse.html
+END
+PostPollNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostPollNotification.html
+END
+ForgotPassword.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/ForgotPassword.html
+END
+PostFriendNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostFriendNotification.html
+END
+NoticeUpdate.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/NoticeUpdate.html
+END
+TeamInvitationMessageHTML.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/TeamInvitationMessageHTML.html
+END
+PostUpdatePollNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostUpdatePollNotification.html
+END
+PostFriendNotificationMessage.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostFriendNotificationMessage.html
+END
+TeamAdminCopy.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/TeamAdminCopy.html
+END
+EventUpdateNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/EventUpdateNotification.html
+END
+FinalUpdate.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/FinalUpdate.html
+END
+PostEventNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostEventNotification.html
+END
+FriendShipInvitation.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/FriendShipInvitation.html
+END
+EventResponse.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/EventResponse.html
+END
+TeamInvitationMessage.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/TeamInvitationMessage.html
+END
+InviteAdminCopy.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/InviteAdminCopy.html
+END
+PostTeamNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostTeamNotification.html
+END
+Signup.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/Signup.html
+END
+PostComment.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostComment.html
+END
+PostTeamNotificationMessage.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/PostTeamNotificationMessage.html
+END
+SignupAdminCopy.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/SignupAdminCopy.html
+END
+EventDeleteNotification.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/EventDeleteNotification.html
+END
+TeamMembershipRequest.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.HostApp/EmailTemplates/TeamMembershipRequest.html
+END

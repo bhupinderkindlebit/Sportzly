@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="border: 1px solid black; font: arial;">
+        <tbody>
+            <tr>
+                <td valign="top" align="left" style="background-color: white; border: solid 2px #1E940F;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr style="padding: 10px; width: 97%; font-family: Arial; background: none repeat scroll 0 0 #fff; border-bottom: 6px solid #FED208; float: left;">
+                                <td width="25%" valign="top" align="left">
+                                    <img alt="" src="@@URL@@/Images/logo.png">
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" bgcolor="#FFFFFF" style="padding: 15px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                        <tbody>
+                             <tr>
+                                <td colspan="2" align="center"> <a href="@@LINK@@"><img src="http://www.sportzly.com/images/joinemail.png" /></a>                                 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Hey Everyone, 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                      <img height="70" src="@@PIC@@" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">I am <b><u>@@NAME@@</u></b> and Welcome to <b><u>@@TEAMNAME@@</u></b>, We will be managing all our team notifications, updates, cancellations, calendar, schedules and results on <a href="http://www.sportzly.com">WWW.SPORTZLY.COM</a> Since I have been doing this for a while I have learned that communication can be one of the more difficult things to manage and therefore I use this site to run the team. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <b>This site is 100% free</b> and it will keep all of us connected and make our life simpler. One thing we all could use is a little more time and this site saves us a lot of time by having everything at one place and be more organized. Sign up for this site, its free and will take you 45 seconds. Specifically put your cell phone number with area code and carrier name.This will allow you to get text messages so you will be updated in the event of rain or last minute changes.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Also you can sync the calendar to your personal calendar so you can have all your calendars (personal, professional, sports) at 1 place. You are not sticking paperwork on your refrigerator or constantly reminding yourself. This site will also send you automatic reminders once you sync your calendar. Please don't forget to register.
+                                </td>
+                            </tr>                       
+
+                            <tr>
+                                <td colspan="2" align="center"> <a href="@@LINK@@"><img src="http://www.sportzly.com/images/joinemail.png" /></a>                                 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="21" colspan="2" align="left" valign="top">
+                                    <hr>
+                                    <br />
+                                    <span>Thanks,
+                                        <br />
+                                        Sportzly Team                                
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="1" bgcolor="#f6f6f5" style="background-color: #1E940F; text-align: center; font-family: Arial,Helvetica,sans-serif; padding: 5px 0; font-size: 12px; color: #fff; font-weight: bold;"> You are receiving Invitation emails. Click <a style="color: #fff;" href="@@URL@@/Unsubscribe.aspx?m=@@DATA@@">here</a> to unsubscribe. </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="center" style="text-align:center; font-family: Arial,Helvetica,sans-serif; padding: 5px 0; font-size: 12px; color: #000; font-weight:bold;border-top:solid 1px black;border-bottom:solid 1px black;">Sportzly is best Viewed in <img src="http://www.sportzly.com/images/chrome.png" style="vertical-align:middle" alt="Chrome"/> <img src="http://www.sportzly.com/images/safari.png" style="vertical-align:middle" alt="Safari"/> <img src="http://www.sportzly.com/images/firefox.png"  style="vertical-align:middle" alt="Firefox"/> <img src="http://www.sportzly.com/images/IE9.png" style="vertical-align:middle" alt="IE9"/> and <img src="http://www.sportzly.com/images/IE10.png" style="vertical-align:middle" alt="IE10"/>. Sportzly doesn't support <img src="http://www.sportzly.com/images/IE8.png" style="vertical-align:middle" alt="IE8"/>.</td>
+            </tr>
+            <tr>
+                <td valign="middle" align="center" style="background-color: #1E940F; font-family: Arial,Helvetica,sans-serif; padding: 5px 0; font-size: 10px; color: #fff">Copyright © 2013-2014 Sportzly</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

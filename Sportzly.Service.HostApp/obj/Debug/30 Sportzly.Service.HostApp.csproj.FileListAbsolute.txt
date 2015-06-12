@@ -1,0 +1,198 @@
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\AutoMapper.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+\\it-pc\All Backups\Dotnet backup\Hardeep\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\AutoMapper.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+D:\hardeep\Projects\Sportzly\Sportz19-November-2014\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\AutoMapper.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\AutoMapper.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+D:\hardeep\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\AutoMapper.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+E:\Dot Net\Sportzly\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll.config
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\AutoMapper.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll.config
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.HostApp.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\AutoMapper.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.BusinessEntities.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Framework.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Implementation.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Service.Interfaces.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Business.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.DataAccess.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\bin\Sportzly.Repository.pdb
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\30 Sportzly.Service.HostApp.csprojResolveAssemblyReference.cache
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.dll
+E:\Project\Sportzly\4feb\SportzlyLatest\Sportzly.Service.HostApp\obj\Debug\Sportzly.Service.HostApp.pdb

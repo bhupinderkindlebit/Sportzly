@@ -1,0 +1,16 @@
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.dll.config
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\bin\Release\EntityFramework.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\bin\Release\EntityFramework.xml
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\obj\Release\Sportzly.DataAccess.dll
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\obj\Release\Sportzly.DataAccess.pdb
+D:\hardeep\Projects\Sportzly\SportzlyLatest\Sportzly.DataAccess\obj\Release\72 Sportzly.DataAccess.csprojResolveAssemblyReference.cache
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.dll.config
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\bin\Release\Sportzly.DataAccess.pdb
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\bin\Release\EntityFramework.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\bin\Release\EntityFramework.xml
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\obj\Release\72 Sportzly.DataAccess.csprojResolveAssemblyReference.cache
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\obj\Release\Sportzly.DataAccess.dll
+E:\Project\Sportzly\2Feb\SportzlyLatest\Sportzly.DataAccess\obj\Release\Sportzly.DataAccess.pdb

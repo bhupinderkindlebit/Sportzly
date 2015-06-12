@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+
+  </configSections>
+  
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+  </entityFramework>
+<!--<connectionStrings>
+  --><!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=sql2k804.discountasp.net;initial catalog=SQL2008R2_873670_alisyedblog;integrated security=False; user id=SQL2008R2_873670_alisyedblog_user;pwd=a123456;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />--><!--
+  --><!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\SQL2008R2;initial catalog=Stance_Sportzly;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />--><!--
+  <add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SHANAYA\SQLEXPRESS;initial catalog=Stance_Sportzly;User ID=sa;Password=shanaya;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  --><!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5006.myWindowsHosting.com;initial catalog=DB_9AC611_sportzly;integrated security=False; user id=DB_9AC611_sportzly_admin;pwd=jimjim123;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />--><!--
+</connectionStrings>-->
+  <connectionStrings>
+    
+    
+    <add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=192.168.1.253\MSSQL2014;initial catalog=Sportzly_26_11_2014;uid=sa;pwd=data@123;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <!--<add name="SportzlyDataContext" connectionString="metadata=res://*/Sportzly.Model.csdl|res://*/Sportzly.Model.ssdl|res://*/Sportzly.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5012.myWindowsHosting.com;initial catalog=DB_9AC611_sportzlytest;uid=DB_9AC611_sportzlytest_admin;pwd=test@123;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />-->
+ 
+  
+  </connectionStrings>
+
+</configuration>

@@ -1,0 +1,2352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Stance_SportzlyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Activities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="PhotoId" Type="bigint" />
+    <Property Name="VideoId" Type="bigint" />
+    <Property Name="ParentActivityId" Type="bigint" />
+    <Property Name="AlbumPhotoId" Type="bigint" />
+    <Property Name="DocumentId" Type="bigint" />
+    <Property Name="EventId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ActivityCheers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActivityId" Type="bigint" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="ClickDate" Type="datetime" Nullable="false" />
+    <Property Name="IsCheered" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="ActivityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="ActivityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityTeam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="ActivityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StreetAddress" Type="nvarchar(max)" />
+    <Property Name="LocalityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlbumPhotos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlbumId" Type="bigint" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="PicasaPhotoId" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrlPath" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="CheerCount" Type="int" />
+    <Property Name="JeerCount" Type="int" />
+    <Property Name="IsCoverPage" Type="bit" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Albums">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="AlbumName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="PicasaAlbumId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Awards">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AwardDetails" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="userId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Calendar">
+    <Key>
+      <PropertyRef Name="calendarId" />
+    </Key>
+    <Property Name="calendarId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="Location" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="IsAllDayEvent" Type="tinyint" Nullable="false" />
+    <Property Name="Color" Type="tinyint" Nullable="false" />
+    <Property Name="IsRecurring" Type="tinyint" Nullable="false" />
+    <Property Name="IsEditable" Type="tinyint" Nullable="false" />
+    <Property Name="CalendarType" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="Season" Type="varchar" MaxLength="8000" />
+    <Property Name="AddressLine" Type="varchar" MaxLength="8000" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="Country" Type="varchar" MaxLength="200" />
+    <Property Name="State" Type="varchar" MaxLength="200" />
+    <Property Name="userId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="parentId" Type="bigint" />
+    <Property Name="opponentTeamId" Type="bigint" />
+    <Property Name="HomeGame" Type="varchar" MaxLength="20" />
+    <Property Name="OppName" Type="varchar" MaxLength="200" />
+    <Property Name="IsTeam" Type="bit" />
+    <Property Name="TimeZone" Type="varchar" MaxLength="50" />
+    <Property Name="IsDelete" Type="bit" />
+  </EntityType>
+  <EntityType Name="CalendarAttendees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="calendarId" Type="bigint" Nullable="false" />
+    <Property Name="attendeesEmail" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="response" Type="varchar" MaxLength="10" />
+    <Property Name="lastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Carrier">
+    <Key>
+      <PropertyRef Name="Carrier_id_pk" />
+    </Key>
+    <Property Name="Carrier_id_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Carrier_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Carrier_Value" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DocumentTitle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OwnerID" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="TeamId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogID" />
+    </Key>
+    <Property Name="ErrorLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ErrorTime" Type="datetime" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="128" />
+    <Property Name="ErrorNumber" Type="int" Nullable="false" />
+    <Property Name="ErrorSeverity" Type="int" />
+    <Property Name="ErrorState" Type="int" />
+    <Property Name="ErrorProcedure" Type="nvarchar" MaxLength="126" />
+    <Property Name="ErrorLine" Type="int" />
+    <Property Name="ErrorMessage" Type="nvarchar" MaxLength="4000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="GroupId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" />
+    <Property Name="EndTime" Type="time" Precision="7" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="TypeId" Type="int" Nullable="false" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" Type="varchar(max)" />
+    <Property Name="State" Type="varchar(max)" />
+    <Property Name="Country" Type="varchar(max)" />
+    <Property Name="Zip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EventStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="ResponseDate" Type="datetime" Nullable="false" />
+    <Property Name="IsAccepted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventTeam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Feed">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeedSource" Type="varchar" MaxLength="50" />
+    <Property Name="FeedUrl" Type="varchar" MaxLength="200" />
+    <Property Name="FeedSport" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="FeedContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeedId" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="500" />
+    <Property Name="Link" Type="varchar" MaxLength="500" />
+    <Property Name="Description" Type="varchar" MaxLength="5000" />
+    <Property Name="PublishedDate" Type="datetime" />
+    <Property Name="Image" Type="varchar" MaxLength="200" />
+    <Property Name="Video" Type="varchar" MaxLength="200" />
+    <Property Name="DateCreated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocTitleId" Type="bigint" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="UrlPath" Type="varchar" MaxLength="1000" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="FileName" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Followers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FollowerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="FollowingId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="FriendId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" />
+  </EntityType>
+  <EntityType Name="Genders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupAccessTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="AccessType" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupAttributes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Attribute" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GroupId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupMembers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="MemberId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="JoinDate" Type="datetime" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="IsBlocked" Type="bit" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="AccessId" Type="int" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="1000" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Website" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="LastPostOn" Type="datetime" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varbinary" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="GroupSports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="GroupId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="SportId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Invitations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="inviteType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="inviteId" Type="bigint" Nullable="false" />
+    <Property Name="inviteToken" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InviteEmailaddress">
+    <Key>
+      <PropertyRef Name="InviteId" />
+    </Key>
+    <Property Name="InviteId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InviteType" Type="varchar" MaxLength="1" />
+    <Property Name="InviteEmail" Type="varchar" MaxLength="50" />
+    <Property Name="InviteRegistered" Type="bit" />
+    <Property Name="InviteBy" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="InviteDate" Type="datetime" />
+    <Property Name="TeamId" Type="bigint" />
+    <Property Name="IsUnsubscribe" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locality">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="Province" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="PostalCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MaritalStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MetricKeys">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Key" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Metrics">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MetricKeyId" Type="bigint" Nullable="false" />
+    <Property Name="MetricValueId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MetricValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoPath" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PollOptions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PollId" Type="bigint" />
+    <Property Name="OptionPoll" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Polls">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PollQuestion" Type="varchar" MaxLength="500" />
+    <Property Name="PollExpiry" Type="datetime" />
+    <Property Name="TeamId" Type="bigint" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="EndPoll" Type="bit" />
+    <Property Name="ResultSent" Type="bit" />
+  </EntityType>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="ResultId" />
+    </Key>
+    <Property Name="ResultId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GameId" Type="bigint" Nullable="false" />
+    <Property Name="Result" Type="varchar" MaxLength="500" />
+    <Property Name="ResultUrl" Type="varchar" MaxLength="200" />
+    <Property Name="ResultFile" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Schools">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SchoolTypeId" Type="int" Nullable="false" />
+    <Property Name="AddressId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolType" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SportTags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tag" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TagSign" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamAdmin">
+    <Key>
+      <PropertyRef Name="TeamOwnerId" />
+    </Key>
+    <Property Name="TeamOwnerId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamFollowers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamGames">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="GameDate" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="GameSchedule" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TeamHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="LeagueId" Type="bigint" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Played" Type="int" Nullable="false" />
+    <Property Name="Win" Type="int" Nullable="false" />
+    <Property Name="Loss" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamInventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Brand" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TeamLeagues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TeamLeagueTeams">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeagueId" Type="bigint" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="JoinDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMemberRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMembers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="RoleId" Type="bigint" />
+    <Property Name="JoinDate" Type="datetime" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="IsBlocked" Type="bit" />
+  </EntityType>
+  <EntityType Name="TeamNoticBoardMember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoticeBoardId" Type="bigint" Nullable="false" />
+    <Property Name="MemberId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamNoticeBoard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="ParentId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Teams">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamName" Type="varchar" MaxLength="500" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="SportId" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="Photo" Type="varchar" MaxLength="500" />
+    <Property Name="Season" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Awards" Type="int" />
+    <Property Name="PracticeGround" Type="varchar" MaxLength="500" />
+    <Property Name="AutoJoin" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsRecruitmentOpen" Type="bit" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="ScorecardUrl" Type="varchar" MaxLength="5000" />
+    <Property Name="IsPrivate" Type="bit" />
+  </EntityType>
+  <EntityType Name="TeamScheduleDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScheduleId" Type="bigint" Nullable="false" />
+    <Property Name="PlayedDate" Type="datetime" Nullable="false" />
+    <Property Name="OpponentId" Type="bigint" Nullable="false" />
+    <Property Name="Venue" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Result" Type="int" />
+    <Property Name="Score" Type="varchar" MaxLength="50" />
+    <Property Name="ScoreCard" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TeamSchedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeamId" Type="bigint" Nullable="false" />
+    <Property Name="Season" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserFavoriteSport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SportId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserMetrics">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="MetricId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="150" />
+    <Property Name="LastName" Type="varchar" MaxLength="150" />
+    <Property Name="Username" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+    <Property Name="TempPassword" Type="varchar(max)" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="GenderId" Type="int" />
+    <Property Name="AddressId" Type="bigint" />
+    <Property Name="MaritalStatusId" Type="int" />
+    <Property Name="PhotoId" Type="bigint" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Summary" Type="nvarchar(max)" />
+    <Property Name="Level" Type="int" />
+    <Property Name="LevelOther" Type="varchar" MaxLength="50" />
+    <Property Name="Role" Type="int" />
+    <Property Name="RoleOther" Type="varchar" MaxLength="50" />
+    <Property Name="Collage" Type="varchar" MaxLength="200" />
+    <Property Name="HighSchool" Type="varchar" MaxLength="200" />
+    <Property Name="MiddleSchool" Type="varchar" MaxLength="200" />
+    <Property Name="IsLocked" Type="bit" />
+    <Property Name="IsVerified" Type="bit" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="LastModifyDate" Type="datetime" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="LoggedInThrow" Type="varchar" MaxLength="100" />
+    <Property Name="AutoToken" Type="varchar" MaxLength="100" />
+    <Property Name="Carrier" Type="int" />
+    <Property Name="FacebookId" Type="varchar" MaxLength="50" />
+    <Property Name="TwitterId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserSchools">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="SchoolId" Type="int" Nullable="false" />
+    <Property Name="DateStart" Type="datetime" Nullable="false" />
+    <Property Name="DateEnd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserSocialLinks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SocialId" Type="nvarchar" MaxLength="150" />
+    <Property Name="SocialEmailPermission" Type="bit" Nullable="false" />
+    <Property Name="SocialAuthToken" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSportTags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="10" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SportTagId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OwnerId" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="YoutubeId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UrlPath" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CheerCount" Type="int" />
+    <Property Name="JeerCount" Type="int" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Votes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OptionId" Type="bigint" />
+    <Property Name="UserId" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="PolIId" Type="bigint" />
+  </EntityType>
+  <Association Name="FK_Activities_Activities">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="0..1" />
+    <End Role="Activities1" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities1">
+        <PropertyRef Name="ParentActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_AlbumPhotos">
+    <End Role="AlbumPhotos" Type="Self.AlbumPhotos" Multiplicity="0..1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlbumPhotos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="AlbumPhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Albums">
+    <End Role="Albums" Type="Self.Albums" Multiplicity="0..1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Albums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_DocumentTitle">
+    <End Role="DocumentTitle" Type="Self.DocumentTitle" Multiplicity="0..1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentTitle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="DocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Videos">
+    <End Role="Videos" Type="Self.Videos" Multiplicity="0..1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Videos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="VideoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityGroup_Activities">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="1" />
+    <End Role="ActivityGroup" Type="Self.ActivityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityGroup">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityPersonal_Activities">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="1" />
+    <End Role="ActivityPersonal" Type="Self.ActivityPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityPersonal">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityPersonal_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ActivityPersonal" Type="Self.ActivityPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityPersonal">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityTeam_Activities">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="1" />
+    <End Role="ActivityTeam" Type="Self.ActivityTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityTeam">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityTeam_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="ActivityTeam" Type="Self.ActivityTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_Locality">
+    <End Role="Locality" Type="Self.Locality" Multiplicity="1" />
+    <End Role="Address" Type="Self.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locality">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="LocalityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Awards_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Awards" Type="Self.Awards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Awards">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calendar_Calendar">
+    <End Role="Calendar" Type="Self.Calendar" Multiplicity="0..1" />
+    <End Role="Calendar1" Type="Self.Calendar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="Calendar1">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calendar_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Calendar" Type="Self.Calendar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Calendar">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CalendarAttendees_Calendar">
+    <End Role="Calendar" Type="Self.Calendar" Multiplicity="1" />
+    <End Role="CalendarAttendees" Type="Self.CalendarAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="CalendarAttendees">
+        <PropertyRef Name="calendarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentTitle_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="DocumentTitle" Type="Self.DocumentTitle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentTitle">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Files_DocumentTitle">
+    <End Role="DocumentTitle" Type="Self.DocumentTitle" Multiplicity="0..1" />
+    <End Role="Files" Type="Self.Files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentTitle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="DocTitleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Files_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Files" Type="Self.Files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Friends_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="FriendId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InviteEmailaddress_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="InviteEmailaddress" Type="Self.InviteEmailaddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InviteEmailaddress">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InviteEmailaddress_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="InviteEmailaddress" Type="Self.InviteEmailaddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InviteEmailaddress">
+        <PropertyRef Name="InviteBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Metrics_MetricKeys">
+    <End Role="MetricKeys" Type="Self.MetricKeys" Multiplicity="1" />
+    <End Role="Metrics" Type="Self.Metrics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetricKeys">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Metrics">
+        <PropertyRef Name="MetricKeyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Metrics_MetricValues">
+    <End Role="MetricValues" Type="Self.MetricValues" Multiplicity="1" />
+    <End Role="Metrics" Type="Self.Metrics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetricValues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Metrics">
+        <PropertyRef Name="MetricValueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PollOptions_Polls">
+    <End Role="Polls" Type="Self.Polls" Multiplicity="0..1" />
+    <End Role="PollOptions" Type="Self.PollOptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Polls">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PollOptions">
+        <PropertyRef Name="PollId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Polls_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="Polls" Type="Self.Polls" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Polls">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Polls_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Polls" Type="Self.Polls" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Polls">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Result_Calendar">
+    <End Role="Calendar" Type="Self.Calendar" Multiplicity="1" />
+    <End Role="Result" Type="Self.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="GameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schools_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Schools" Type="Self.Schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Schools">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schools_SchoolTypes">
+    <End Role="SchoolTypes" Type="Self.SchoolTypes" Multiplicity="1" />
+    <End Role="Schools" Type="Self.Schools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Schools">
+        <PropertyRef Name="SchoolTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivities_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityGroup_tbGroups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="ActivityGroup" Type="Self.ActivityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityGroup">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityLikes_tbActivities">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="1" />
+    <End Role="ActivityCheers" Type="Self.ActivityCheers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCheers">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityLikes_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ActivityCheers" Type="Self.ActivityCheers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCheers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbAlbumContents_tbAlbums">
+    <End Role="Albums" Type="Self.Albums" Multiplicity="0..1" />
+    <End Role="AlbumPhotos" Type="Self.AlbumPhotos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Albums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlbumPhotos">
+        <PropertyRef Name="AlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbAlbumContents_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="AlbumPhotos" Type="Self.AlbumPhotos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlbumPhotos">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventGroup_tbEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventGroup" Type="Self.EventGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventGroup">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventGroup_tbGroups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="EventGroup" Type="Self.EventGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventGroup">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventPersonal_tbEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventPersonal" Type="Self.EventPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersonal">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventPersonal_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="EventPersonal" Type="Self.EventPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersonal">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEvents_tbEvents">
+    <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEvents_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventStatus_tbEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventStatus" Type="Self.EventStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventStatus">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventTeam_tbEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventTeam" Type="Self.EventTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventTeam">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventTeam_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="EventTeam" Type="Self.EventTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFollowers_follower">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Followers" Type="Self.Followers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Followers">
+        <PropertyRef Name="FollowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFollowers_following">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Followers" Type="Self.Followers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Followers">
+        <PropertyRef Name="FollowingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFriends_User">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Friends" Type="Self.Friends" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupAttributes_tbGroups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="GroupAttributes" Type="Self.GroupAttributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupAttributes">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_author">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_tbGroupAccessTypes">
+    <End Role="GroupAccessTypes" Type="Self.GroupAccessTypes" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupAccessTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="AccessId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_tbGroupCategories">
+    <End Role="GroupCategories" Type="Self.GroupCategories" Multiplicity="0..1" />
+    <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupSports_tbGroups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="GroupSports" Type="Self.GroupSports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupSports">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupSports_tbTeamSports">
+    <End Role="Sports" Type="Self.Sports" Multiplicity="1" />
+    <End Role="GroupSports" Type="Self.GroupSports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupSports">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamFollowers_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamFollowers" Type="Self.TeamFollowers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamFollowers">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamFollowers_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="TeamFollowers" Type="Self.TeamFollowers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamFollowers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamInventory_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamInventory" Type="Self.TeamInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamInventory">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamLeagueTeams_tbTeamLeagues">
+    <End Role="TeamLeagues" Type="Self.TeamLeagues" Multiplicity="1" />
+    <End Role="TeamLeagueTeams" Type="Self.TeamLeagueTeams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamLeagues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamLeagueTeams">
+        <PropertyRef Name="LeagueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamLeagueTeams_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamLeagueTeams" Type="Self.TeamLeagueTeams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamLeagueTeams">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbTeamMemberRoles">
+    <End Role="TeamMemberRoles" Type="Self.TeamMemberRoles" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Self.TeamMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMemberRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Self.TeamMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Self.TeamMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember">
+    <End Role="TeamNoticeBoard" Type="Self.TeamNoticeBoard" Multiplicity="1" />
+    <End Role="TeamNoticBoardMember" Type="Self.TeamNoticBoardMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamNoticeBoard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticBoardMember">
+        <PropertyRef Name="NoticeBoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticBoardMember_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="TeamNoticBoardMember" Type="Self.TeamNoticBoardMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticBoardMember">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticeBoard_tbTeams1">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="TeamNoticeBoard" Type="Self.TeamNoticeBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticeBoard">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticeBoard_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="TeamNoticeBoard" Type="Self.TeamNoticeBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticeBoard">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbTeamCategories">
+    <End Role="TeamCategories" Type="Self.TeamCategories" Multiplicity="0..1" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbTeamSports">
+    <End Role="Sports" Type="Self.Sports" Multiplicity="0..1" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamsGames_tbTeams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamGames" Type="Self.TeamGames" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamGames">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserFavoriteSport_tbTeamSports">
+    <End Role="Sports" Type="Self.Sports" Multiplicity="1" />
+    <End Role="UserFavoriteSport" Type="Self.UserFavoriteSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserFavoriteSport">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserFavoriteSport_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserFavoriteSport" Type="Self.UserFavoriteSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserFavoriteSport">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserGroups_tbGroups">
+    <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+    <End Role="GroupMembers" Type="Self.GroupMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupMembers">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserGroups_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="GroupMembers" Type="Self.GroupMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupMembers">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUsers_tbUsers">
+    <End Role="MaritalStatus" Type="Self.MaritalStatus" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaritalStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="MaritalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserSportTag_tbSportTags">
+    <End Role="SportTags" Type="Self.SportTags" Multiplicity="1" />
+    <End Role="UserSportTags" Type="Self.UserSportTags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SportTags">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSportTags">
+        <PropertyRef Name="SportTagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserSportTag_tbUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserSportTags" Type="Self.UserSportTags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSportTags">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamAdmin_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamAdmin" Type="Self.TeamAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamAdmin">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamAdmin_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="TeamAdmin" Type="Self.TeamAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamAdmin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamHistory_TeamLeagues">
+    <End Role="TeamLeagues" Type="Self.TeamLeagues" Multiplicity="0..1" />
+    <End Role="TeamHistory" Type="Self.TeamHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamLeagues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamHistory">
+        <PropertyRef Name="LeagueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamHistory_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamHistory" Type="Self.TeamHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamHistory">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamScheduleDetails_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamScheduleDetails" Type="Self.TeamScheduleDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamScheduleDetails">
+        <PropertyRef Name="OpponentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamScheduleDetails_TeamSchedules">
+    <End Role="TeamSchedules" Type="Self.TeamSchedules" Multiplicity="1" />
+    <End Role="TeamScheduleDetails" Type="Self.TeamScheduleDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamSchedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamScheduleDetails">
+        <PropertyRef Name="ScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamSchedules_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="TeamSchedules" Type="Self.TeamSchedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamSchedules">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMetrics_Metrics">
+    <End Role="Metrics" Type="Self.Metrics" Multiplicity="1" />
+    <End Role="UserMetrics" Type="Self.UserMetrics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Metrics">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMetrics">
+        <PropertyRef Name="MetricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMetrics_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserMetrics" Type="Self.UserMetrics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMetrics">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Carrier">
+    <End Role="Carrier" Type="Self.Carrier" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carrier">
+        <PropertyRef Name="Carrier_id_pk" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="Carrier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Genders">
+    <End Role="Genders" Type="Self.Genders" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Photos">
+    <End Role="Photos" Type="Self.Photos" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Users1" Type="Self.Users" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSchools_Schools">
+    <End Role="Schools" Type="Self.Schools" Multiplicity="1" />
+    <End Role="UserSchools" Type="Self.UserSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schools">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSchools">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSchools_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserSchools" Type="Self.UserSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSchools">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSocialLinks_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserSocialLinks" Type="Self.UserSocialLinks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSocialLinks">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_PollOptions">
+    <End Role="PollOptions" Type="Self.PollOptions" Multiplicity="0..1" />
+    <End Role="Votes" Type="Self.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PollOptions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Polls">
+    <End Role="Polls" Type="Self.Polls" Multiplicity="0..1" />
+    <End Role="Votes" Type="Self.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Polls">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="PolIId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Votes" Type="Self.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Stance_SportzlyModelStoreContainer">
+    <EntitySet Name="Activities" EntityType="Self.Activities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivityCheers" EntityType="Self.ActivityCheers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivityGroup" EntityType="Self.ActivityGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivityPersonal" EntityType="Self.ActivityPersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivityTeam" EntityType="Self.ActivityTeam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlbumPhotos" EntityType="Self.AlbumPhotos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Albums" EntityType="Self.Albums" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Awards" EntityType="Self.Awards" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Calendar" EntityType="Self.Calendar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CalendarAttendees" EntityType="Self.CalendarAttendees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carrier" EntityType="Self.Carrier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocumentTitle" EntityType="Self.DocumentTitle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ErrorLog" EntityType="Self.ErrorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventGroup" EntityType="Self.EventGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventPersonal" EntityType="Self.EventPersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventStatus" EntityType="Self.EventStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventTeam" EntityType="Self.EventTeam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Feed" EntityType="Self.Feed" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeedContent" EntityType="Self.FeedContent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Files" EntityType="Self.Files" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Followers" EntityType="Self.Followers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Friends" EntityType="Self.Friends" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genders" EntityType="Self.Genders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupAccessTypes" EntityType="Self.GroupAccessTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupAttributes" EntityType="Self.GroupAttributes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupCategories" EntityType="Self.GroupCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupMembers" EntityType="Self.GroupMembers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupSports" EntityType="Self.GroupSports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invitations" EntityType="Self.Invitations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InviteEmailaddress" EntityType="Self.InviteEmailaddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Locality" EntityType="Self.Locality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaritalStatus" EntityType="Self.MaritalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MetricKeys" EntityType="Self.MetricKeys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Metrics" EntityType="Self.Metrics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MetricValues" EntityType="Self.MetricValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Photos" EntityType="Self.Photos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PollOptions" EntityType="Self.PollOptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Polls" EntityType="Self.Polls" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Result" EntityType="Self.Result" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Schools" EntityType="Self.Schools" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SchoolTypes" EntityType="Self.SchoolTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sports" EntityType="Self.Sports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SportTags" EntityType="Self.SportTags" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamAdmin" EntityType="Self.TeamAdmin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamCategories" EntityType="Self.TeamCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamFollowers" EntityType="Self.TeamFollowers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamGames" EntityType="Self.TeamGames" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamHistory" EntityType="Self.TeamHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamInventory" EntityType="Self.TeamInventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamLeagues" EntityType="Self.TeamLeagues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamLeagueTeams" EntityType="Self.TeamLeagueTeams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamMemberRoles" EntityType="Self.TeamMemberRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamMembers" EntityType="Self.TeamMembers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamNoticBoardMember" EntityType="Self.TeamNoticBoardMember" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamNoticeBoard" EntityType="Self.TeamNoticeBoard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teams" EntityType="Self.Teams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamScheduleDetails" EntityType="Self.TeamScheduleDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamSchedules" EntityType="Self.TeamSchedules" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserFavoriteSport" EntityType="Self.UserFavoriteSport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserMetrics" EntityType="Self.UserMetrics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserSchools" EntityType="Self.UserSchools" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserSocialLinks" EntityType="Self.UserSocialLinks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserSportTags" EntityType="Self.UserSportTags" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Videos" EntityType="Self.Videos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Votes" EntityType="Self.Votes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Activities_Activities" Association="Self.FK_Activities_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="Activities1" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_AlbumPhotos" Association="Self.FK_Activities_AlbumPhotos">
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Albums" Association="Self.FK_Activities_Albums">
+      <End Role="Albums" EntitySet="Albums" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_DocumentTitle" Association="Self.FK_Activities_DocumentTitle">
+      <End Role="DocumentTitle" EntitySet="DocumentTitle" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Videos" Association="Self.FK_Activities_Videos">
+      <End Role="Videos" EntitySet="Videos" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityGroup_Activities" Association="Self.FK_ActivityGroup_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityGroup" EntitySet="ActivityGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityPersonal_Activities" Association="Self.FK_ActivityPersonal_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityPersonal" EntitySet="ActivityPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityPersonal_Users" Association="Self.FK_ActivityPersonal_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ActivityPersonal" EntitySet="ActivityPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityTeam_Activities" Association="Self.FK_ActivityTeam_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityTeam" EntitySet="ActivityTeam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityTeam_Teams" Association="Self.FK_ActivityTeam_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="ActivityTeam" EntitySet="ActivityTeam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_Locality" Association="Self.FK_Address_Locality">
+      <End Role="Locality" EntitySet="Locality" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Awards_Users" Association="Self.FK_Awards_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Awards" EntitySet="Awards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calendar_Calendar" Association="Self.FK_Calendar_Calendar">
+      <End Role="Calendar" EntitySet="Calendar" />
+      <End Role="Calendar1" EntitySet="Calendar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calendar_Users" Association="Self.FK_Calendar_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Calendar" EntitySet="Calendar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CalendarAttendees_Calendar" Association="Self.FK_CalendarAttendees_Calendar">
+      <End Role="Calendar" EntitySet="Calendar" />
+      <End Role="CalendarAttendees" EntitySet="CalendarAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentTitle_Users" Association="Self.FK_DocumentTitle_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="DocumentTitle" EntitySet="DocumentTitle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Files_DocumentTitle" Association="Self.FK_Files_DocumentTitle">
+      <End Role="DocumentTitle" EntitySet="DocumentTitle" />
+      <End Role="Files" EntitySet="Files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Files_Users" Association="Self.FK_Files_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Files" EntitySet="Files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Friends_Users" Association="Self.FK_Friends_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InviteEmailaddress_Teams" Association="Self.FK_InviteEmailaddress_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="InviteEmailaddress" EntitySet="InviteEmailaddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InviteEmailaddress_Users" Association="Self.FK_InviteEmailaddress_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="InviteEmailaddress" EntitySet="InviteEmailaddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Metrics_MetricKeys" Association="Self.FK_Metrics_MetricKeys">
+      <End Role="MetricKeys" EntitySet="MetricKeys" />
+      <End Role="Metrics" EntitySet="Metrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Metrics_MetricValues" Association="Self.FK_Metrics_MetricValues">
+      <End Role="MetricValues" EntitySet="MetricValues" />
+      <End Role="Metrics" EntitySet="Metrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PollOptions_Polls" Association="Self.FK_PollOptions_Polls">
+      <End Role="Polls" EntitySet="Polls" />
+      <End Role="PollOptions" EntitySet="PollOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Polls_Teams" Association="Self.FK_Polls_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Polls" EntitySet="Polls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Polls_Users" Association="Self.FK_Polls_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Polls" EntitySet="Polls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Result_Calendar" Association="Self.FK_Result_Calendar">
+      <End Role="Calendar" EntitySet="Calendar" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schools_Address" Association="Self.FK_Schools_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Schools" EntitySet="Schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schools_SchoolTypes" Association="Self.FK_Schools_SchoolTypes">
+      <End Role="SchoolTypes" EntitySet="SchoolTypes" />
+      <End Role="Schools" EntitySet="Schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivities_tbUsers" Association="Self.FK_tbActivities_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityGroup_tbGroups" Association="Self.FK_tbActivityGroup_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="ActivityGroup" EntitySet="ActivityGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityLikes_tbActivities" Association="Self.FK_tbActivityLikes_tbActivities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityCheers" EntitySet="ActivityCheers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityLikes_tbUsers" Association="Self.FK_tbActivityLikes_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ActivityCheers" EntitySet="ActivityCheers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbAlbumContents_tbAlbums" Association="Self.FK_tbAlbumContents_tbAlbums">
+      <End Role="Albums" EntitySet="Albums" />
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbAlbumContents_tbUsers" Association="Self.FK_tbAlbumContents_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventGroup_tbEvents" Association="Self.FK_tbEventGroup_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventGroup" EntitySet="EventGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventGroup_tbGroups" Association="Self.FK_tbEventGroup_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="EventGroup" EntitySet="EventGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventPersonal_tbEvents" Association="Self.FK_tbEventPersonal_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventPersonal" EntitySet="EventPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventPersonal_tbUsers" Association="Self.FK_tbEventPersonal_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="EventPersonal" EntitySet="EventPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEvents_tbEvents" Association="Self.FK_tbEvents_tbEvents">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEvents_tbUsers" Association="Self.FK_tbEvents_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventStatus_tbEvents" Association="Self.FK_tbEventStatus_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventStatus" EntitySet="EventStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventTeam_tbEvents" Association="Self.FK_tbEventTeam_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventTeam" EntitySet="EventTeam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventTeam_tbTeams" Association="Self.FK_tbEventTeam_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="EventTeam" EntitySet="EventTeam" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFollowers_follower" Association="Self.FK_tbFollowers_follower">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Followers" EntitySet="Followers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFollowers_following" Association="Self.FK_tbFollowers_following">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Followers" EntitySet="Followers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFriends_User" Association="Self.FK_tbFriends_User">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupAttributes_tbGroups" Association="Self.FK_tbGroupAttributes_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupAttributes" EntitySet="GroupAttributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_author" Association="Self.FK_tbGroups_author">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_tbGroupAccessTypes" Association="Self.FK_tbGroups_tbGroupAccessTypes">
+      <End Role="GroupAccessTypes" EntitySet="GroupAccessTypes" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_tbGroupCategories" Association="Self.FK_tbGroups_tbGroupCategories">
+      <End Role="GroupCategories" EntitySet="GroupCategories" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupSports_tbGroups" Association="Self.FK_tbGroupSports_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupSports" EntitySet="GroupSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupSports_tbTeamSports" Association="Self.FK_tbGroupSports_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="GroupSports" EntitySet="GroupSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamFollowers_tbTeams" Association="Self.FK_tbTeamFollowers_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamFollowers" EntitySet="TeamFollowers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamFollowers_tbUsers" Association="Self.FK_tbTeamFollowers_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamFollowers" EntitySet="TeamFollowers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamInventory_tbTeams" Association="Self.FK_tbTeamInventory_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamInventory" EntitySet="TeamInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamLeagueTeams_tbTeamLeagues" Association="Self.FK_tbTeamLeagueTeams_tbTeamLeagues">
+      <End Role="TeamLeagues" EntitySet="TeamLeagues" />
+      <End Role="TeamLeagueTeams" EntitySet="TeamLeagueTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamLeagueTeams_tbTeams" Association="Self.FK_tbTeamLeagueTeams_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamLeagueTeams" EntitySet="TeamLeagueTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbTeamMemberRoles" Association="Self.FK_tbTeamMembers_tbTeamMemberRoles">
+      <End Role="TeamMemberRoles" EntitySet="TeamMemberRoles" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbTeams" Association="Self.FK_tbTeamMembers_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbUsers" Association="Self.FK_tbTeamMembers_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember" Association="Self.FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember">
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoard" />
+      <End Role="TeamNoticBoardMember" EntitySet="TeamNoticBoardMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticBoardMember_tbUsers" Association="Self.FK_tbTeamNoticBoardMember_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamNoticBoardMember" EntitySet="TeamNoticBoardMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticeBoard_tbTeams1" Association="Self.FK_tbTeamNoticeBoard_tbTeams1">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticeBoard_tbUsers" Association="Self.FK_tbTeamNoticeBoard_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbTeamCategories" Association="Self.FK_tbTeams_tbTeamCategories">
+      <End Role="TeamCategories" EntitySet="TeamCategories" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbTeamSports" Association="Self.FK_tbTeams_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbUsers" Association="Self.FK_tbTeams_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamsGames_tbTeams" Association="Self.FK_tbTeamsGames_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamGames" EntitySet="TeamGames" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserFavoriteSport_tbTeamSports" Association="Self.FK_tbUserFavoriteSport_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="UserFavoriteSport" EntitySet="UserFavoriteSport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserFavoriteSport_tbUsers" Association="Self.FK_tbUserFavoriteSport_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserFavoriteSport" EntitySet="UserFavoriteSport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserGroups_tbGroups" Association="Self.FK_tbUserGroups_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupMembers" EntitySet="GroupMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserGroups_tbUsers" Association="Self.FK_tbUserGroups_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GroupMembers" EntitySet="GroupMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUsers_tbUsers" Association="Self.FK_tbUsers_tbUsers">
+      <End Role="MaritalStatus" EntitySet="MaritalStatus" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserSportTag_tbSportTags" Association="Self.FK_tbUserSportTag_tbSportTags">
+      <End Role="SportTags" EntitySet="SportTags" />
+      <End Role="UserSportTags" EntitySet="UserSportTags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserSportTag_tbUsers" Association="Self.FK_tbUserSportTag_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSportTags" EntitySet="UserSportTags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamAdmin_Teams" Association="Self.FK_TeamAdmin_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamAdmin" EntitySet="TeamAdmin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamAdmin_Users" Association="Self.FK_TeamAdmin_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamAdmin" EntitySet="TeamAdmin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamHistory_TeamLeagues" Association="Self.FK_TeamHistory_TeamLeagues">
+      <End Role="TeamLeagues" EntitySet="TeamLeagues" />
+      <End Role="TeamHistory" EntitySet="TeamHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamHistory_Teams" Association="Self.FK_TeamHistory_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamHistory" EntitySet="TeamHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamScheduleDetails_Teams" Association="Self.FK_TeamScheduleDetails_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamScheduleDetails" EntitySet="TeamScheduleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamScheduleDetails_TeamSchedules" Association="Self.FK_TeamScheduleDetails_TeamSchedules">
+      <End Role="TeamSchedules" EntitySet="TeamSchedules" />
+      <End Role="TeamScheduleDetails" EntitySet="TeamScheduleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamSchedules_Teams" Association="Self.FK_TeamSchedules_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamSchedules" EntitySet="TeamSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMetrics_Metrics" Association="Self.FK_UserMetrics_Metrics">
+      <End Role="Metrics" EntitySet="Metrics" />
+      <End Role="UserMetrics" EntitySet="UserMetrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMetrics_Users" Association="Self.FK_UserMetrics_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserMetrics" EntitySet="UserMetrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Address" Association="Self.FK_Users_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Carrier" Association="Self.FK_Users_Carrier">
+      <End Role="Carrier" EntitySet="Carrier" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Genders" Association="Self.FK_Users_Genders">
+      <End Role="Genders" EntitySet="Genders" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Photos" Association="Self.FK_Users_Photos">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Users" Association="Self.FK_Users_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Users1" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSchools_Schools" Association="Self.FK_UserSchools_Schools">
+      <End Role="Schools" EntitySet="Schools" />
+      <End Role="UserSchools" EntitySet="UserSchools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSchools_Users" Association="Self.FK_UserSchools_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSchools" EntitySet="UserSchools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSocialLinks_Users" Association="Self.FK_UserSocialLinks_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSocialLinks" EntitySet="UserSocialLinks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_PollOptions" Association="Self.FK_Votes_PollOptions">
+      <End Role="PollOptions" EntitySet="PollOptions" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Polls" Association="Self.FK_Votes_Polls">
+      <End Role="Polls" EntitySet="Polls" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Users" Association="Self.FK_Votes_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

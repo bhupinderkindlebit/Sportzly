@@ -1,0 +1,2562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sportzly.Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SportzlyDataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Activities" EntityType="Sportzly.Model.Activity" />
+    <EntitySet Name="ActivityCheers" EntityType="Sportzly.Model.ActivityCheer" />
+    <EntitySet Name="ActivityGroups" EntityType="Sportzly.Model.ActivityGroup" />
+    <EntitySet Name="ActivityPersonals" EntityType="Sportzly.Model.ActivityPersonal" />
+    <EntitySet Name="ActivityTeams" EntityType="Sportzly.Model.ActivityTeam" />
+    <EntitySet Name="Addresses" EntityType="Sportzly.Model.Address" />
+    <EntitySet Name="AlbumPhotos" EntityType="Sportzly.Model.AlbumPhoto" />
+    <EntitySet Name="Albums" EntityType="Sportzly.Model.Album" />
+    <EntitySet Name="ErrorLogs" EntityType="Sportzly.Model.ErrorLog" />
+    <EntitySet Name="EventGroups" EntityType="Sportzly.Model.EventGroup" />
+    <EntitySet Name="EventPersonals" EntityType="Sportzly.Model.EventPersonal" />
+    <EntitySet Name="Events" EntityType="Sportzly.Model.Event" />
+    <EntitySet Name="EventStatus" EntityType="Sportzly.Model.EventStatu" />
+    <EntitySet Name="EventTeams" EntityType="Sportzly.Model.EventTeam" />
+    <EntitySet Name="EventTypes" EntityType="Sportzly.Model.EventType" />
+    <EntitySet Name="Followers" EntityType="Sportzly.Model.Follower" />
+    <EntitySet Name="Friends" EntityType="Sportzly.Model.Friend" />
+    <EntitySet Name="Genders" EntityType="Sportzly.Model.Gender" />
+    <EntitySet Name="GroupAccessTypes" EntityType="Sportzly.Model.GroupAccessType" />
+    <EntitySet Name="GroupAttributes" EntityType="Sportzly.Model.GroupAttribute" />
+    <EntitySet Name="GroupCategories" EntityType="Sportzly.Model.GroupCategory" />
+    <EntitySet Name="GroupMembers" EntityType="Sportzly.Model.GroupMember" />
+    <EntitySet Name="Groups" EntityType="Sportzly.Model.Group" />
+    <EntitySet Name="GroupSports" EntityType="Sportzly.Model.GroupSport" />
+    <EntitySet Name="Localities" EntityType="Sportzly.Model.Locality" />
+    <EntitySet Name="MaritalStatus" EntityType="Sportzly.Model.MaritalStatu" />
+    <EntitySet Name="MetricKeys" EntityType="Sportzly.Model.MetricKey" />
+    <EntitySet Name="Metrics" EntityType="Sportzly.Model.Metric" />
+    <EntitySet Name="MetricValues" EntityType="Sportzly.Model.MetricValue" />
+    <EntitySet Name="Photos" EntityType="Sportzly.Model.Photo" />
+    <EntitySet Name="Schools" EntityType="Sportzly.Model.School" />
+    <EntitySet Name="SchoolTypes" EntityType="Sportzly.Model.SchoolType" />
+    <EntitySet Name="Sports" EntityType="Sportzly.Model.Sport" />
+    <EntitySet Name="SportTags" EntityType="Sportzly.Model.SportTag" />
+    <EntitySet Name="TeamCategories" EntityType="Sportzly.Model.TeamCategory" />
+    <EntitySet Name="TeamFollowers" EntityType="Sportzly.Model.TeamFollower" />
+    <EntitySet Name="TeamGames" EntityType="Sportzly.Model.TeamGame" />
+    <EntitySet Name="TeamHistories" EntityType="Sportzly.Model.TeamHistory" />
+    <EntitySet Name="TeamInventories" EntityType="Sportzly.Model.TeamInventory" />
+    <EntitySet Name="TeamLeagues" EntityType="Sportzly.Model.TeamLeague" />
+    <EntitySet Name="TeamLeagueTeams" EntityType="Sportzly.Model.TeamLeagueTeam" />
+    <EntitySet Name="TeamMemberRoles" EntityType="Sportzly.Model.TeamMemberRole" />
+    <EntitySet Name="TeamMembers" EntityType="Sportzly.Model.TeamMember" />
+    <EntitySet Name="TeamNoticBoardMembers" EntityType="Sportzly.Model.TeamNoticBoardMember" />
+    <EntitySet Name="TeamNoticeBoards" EntityType="Sportzly.Model.TeamNoticeBoard" />
+    <EntitySet Name="Teams" EntityType="Sportzly.Model.Team" />
+    <EntitySet Name="TeamScheduleDetails" EntityType="Sportzly.Model.TeamScheduleDetail" />
+    <EntitySet Name="TeamSchedules" EntityType="Sportzly.Model.TeamSchedule" />
+    <EntitySet Name="UserFavoriteSports" EntityType="Sportzly.Model.UserFavoriteSport" />
+    <EntitySet Name="UserMetrics" EntityType="Sportzly.Model.UserMetric" />
+    <EntitySet Name="Users" EntityType="Sportzly.Model.User" />
+    <EntitySet Name="UserSchools" EntityType="Sportzly.Model.UserSchool" />
+    <EntitySet Name="UserSocialLinks" EntityType="Sportzly.Model.UserSocialLink" />
+    <EntitySet Name="UserSportTags" EntityType="Sportzly.Model.UserSportTag" />
+    <AssociationSet Name="FK_Activities_Activities" Association="Sportzly.Model.FK_Activities_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="Activities1" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_AlbumPhotos" Association="Sportzly.Model.FK_Activities_AlbumPhotos">
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityGroup_Activities" Association="Sportzly.Model.FK_ActivityGroup_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityGroup" EntitySet="ActivityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityPersonal_Activities" Association="Sportzly.Model.FK_ActivityPersonal_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityPersonal" EntitySet="ActivityPersonals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityTeam_Activities" Association="Sportzly.Model.FK_ActivityTeam_Activities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityTeam" EntitySet="ActivityTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivities_tbUsers" Association="Sportzly.Model.FK_tbActivities_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityLikes_tbActivities" Association="Sportzly.Model.FK_tbActivityLikes_tbActivities">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivityCheers" EntitySet="ActivityCheers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityLikes_tbUsers" Association="Sportzly.Model.FK_tbActivityLikes_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ActivityCheers" EntitySet="ActivityCheers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbActivityGroup_tbGroups" Association="Sportzly.Model.FK_tbActivityGroup_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="ActivityGroup" EntitySet="ActivityGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityPersonal_Users" Association="Sportzly.Model.FK_ActivityPersonal_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ActivityPersonal" EntitySet="ActivityPersonals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ActivityTeam_Teams" Association="Sportzly.Model.FK_ActivityTeam_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="ActivityTeam" EntitySet="ActivityTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_Locality" Association="Sportzly.Model.FK_Address_Locality">
+      <End Role="Locality" EntitySet="Localities" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schools_Address" Association="Sportzly.Model.FK_Schools_Address">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Schools" EntitySet="Schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Address" Association="Sportzly.Model.FK_Users_Address">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbAlbumContents_tbAlbums" Association="Sportzly.Model.FK_tbAlbumContents_tbAlbums">
+      <End Role="Albums" EntitySet="Albums" />
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbAlbumContents_tbUsers" Association="Sportzly.Model.FK_tbAlbumContents_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AlbumPhotos" EntitySet="AlbumPhotos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventGroup_tbEvents" Association="Sportzly.Model.FK_tbEventGroup_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventGroup" EntitySet="EventGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventGroup_tbGroups" Association="Sportzly.Model.FK_tbEventGroup_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="EventGroup" EntitySet="EventGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventPersonal_tbEvents" Association="Sportzly.Model.FK_tbEventPersonal_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventPersonal" EntitySet="EventPersonals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventPersonal_tbUsers" Association="Sportzly.Model.FK_tbEventPersonal_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="EventPersonal" EntitySet="EventPersonals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEvents_tbEvents" Association="Sportzly.Model.FK_tbEvents_tbEvents">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEvents_tbUsers" Association="Sportzly.Model.FK_tbEvents_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventStatus_tbEvents" Association="Sportzly.Model.FK_tbEventStatus_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventStatus" EntitySet="EventStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventTeam_tbEvents" Association="Sportzly.Model.FK_tbEventTeam_tbEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventTeam" EntitySet="EventTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEventTeam_tbTeams" Association="Sportzly.Model.FK_tbEventTeam_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="EventTeam" EntitySet="EventTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFollowers_follower" Association="Sportzly.Model.FK_tbFollowers_follower">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Followers" EntitySet="Followers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFollowers_following" Association="Sportzly.Model.FK_tbFollowers_following">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Followers" EntitySet="Followers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Friends_Users" Association="Sportzly.Model.FK_Friends_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFriends_User" Association="Sportzly.Model.FK_tbFriends_User">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Friends" EntitySet="Friends" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Genders" Association="Sportzly.Model.FK_Users_Genders">
+      <End Role="Genders" EntitySet="Genders" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_tbGroupAccessTypes" Association="Sportzly.Model.FK_tbGroups_tbGroupAccessTypes">
+      <End Role="GroupAccessTypes" EntitySet="GroupAccessTypes" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupAttributes_tbGroups" Association="Sportzly.Model.FK_tbGroupAttributes_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupAttributes" EntitySet="GroupAttributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_tbGroupCategories" Association="Sportzly.Model.FK_tbGroups_tbGroupCategories">
+      <End Role="GroupCategories" EntitySet="GroupCategories" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserGroups_tbGroups" Association="Sportzly.Model.FK_tbUserGroups_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupMembers" EntitySet="GroupMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserGroups_tbUsers" Association="Sportzly.Model.FK_tbUserGroups_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GroupMembers" EntitySet="GroupMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroups_author" Association="Sportzly.Model.FK_tbGroups_author">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupSports_tbGroups" Association="Sportzly.Model.FK_tbGroupSports_tbGroups">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="GroupSports" EntitySet="GroupSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGroupSports_tbTeamSports" Association="Sportzly.Model.FK_tbGroupSports_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="GroupSports" EntitySet="GroupSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUsers_tbUsers" Association="Sportzly.Model.FK_tbUsers_tbUsers">
+      <End Role="MaritalStatus" EntitySet="MaritalStatus" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Metrics_MetricKeys" Association="Sportzly.Model.FK_Metrics_MetricKeys">
+      <End Role="MetricKeys" EntitySet="MetricKeys" />
+      <End Role="Metrics" EntitySet="Metrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Metrics_MetricValues" Association="Sportzly.Model.FK_Metrics_MetricValues">
+      <End Role="MetricValues" EntitySet="MetricValues" />
+      <End Role="Metrics" EntitySet="Metrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMetrics_Metrics" Association="Sportzly.Model.FK_UserMetrics_Metrics">
+      <End Role="Metrics" EntitySet="Metrics" />
+      <End Role="UserMetrics" EntitySet="UserMetrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Photos" Association="Sportzly.Model.FK_Users_Photos">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schools_SchoolTypes" Association="Sportzly.Model.FK_Schools_SchoolTypes">
+      <End Role="SchoolTypes" EntitySet="SchoolTypes" />
+      <End Role="Schools" EntitySet="Schools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSchools_Schools" Association="Sportzly.Model.FK_UserSchools_Schools">
+      <End Role="Schools" EntitySet="Schools" />
+      <End Role="UserSchools" EntitySet="UserSchools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbTeamSports" Association="Sportzly.Model.FK_tbTeams_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserFavoriteSport_tbTeamSports" Association="Sportzly.Model.FK_tbUserFavoriteSport_tbTeamSports">
+      <End Role="Sports" EntitySet="Sports" />
+      <End Role="UserFavoriteSport" EntitySet="UserFavoriteSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserSportTag_tbSportTags" Association="Sportzly.Model.FK_tbUserSportTag_tbSportTags">
+      <End Role="SportTags" EntitySet="SportTags" />
+      <End Role="UserSportTags" EntitySet="UserSportTags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbTeamCategories" Association="Sportzly.Model.FK_tbTeams_tbTeamCategories">
+      <End Role="TeamCategories" EntitySet="TeamCategories" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamFollowers_tbTeams" Association="Sportzly.Model.FK_tbTeamFollowers_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamFollowers" EntitySet="TeamFollowers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamFollowers_tbUsers" Association="Sportzly.Model.FK_tbTeamFollowers_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamFollowers" EntitySet="TeamFollowers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamsGames_tbTeams" Association="Sportzly.Model.FK_tbTeamsGames_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamGames" EntitySet="TeamGames" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamHistory_TeamLeagues" Association="Sportzly.Model.FK_TeamHistory_TeamLeagues">
+      <End Role="TeamLeagues" EntitySet="TeamLeagues" />
+      <End Role="TeamHistory" EntitySet="TeamHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamHistory_Teams" Association="Sportzly.Model.FK_TeamHistory_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamHistory" EntitySet="TeamHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamInventory_tbTeams" Association="Sportzly.Model.FK_tbTeamInventory_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamInventory" EntitySet="TeamInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamLeagueTeams_tbTeamLeagues" Association="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeamLeagues">
+      <End Role="TeamLeagues" EntitySet="TeamLeagues" />
+      <End Role="TeamLeagueTeams" EntitySet="TeamLeagueTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamLeagueTeams_tbTeams" Association="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamLeagueTeams" EntitySet="TeamLeagueTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbTeamMemberRoles" Association="Sportzly.Model.FK_tbTeamMembers_tbTeamMemberRoles">
+      <End Role="TeamMemberRoles" EntitySet="TeamMemberRoles" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbTeams" Association="Sportzly.Model.FK_tbTeamMembers_tbTeams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamMembers_tbUsers" Association="Sportzly.Model.FK_tbTeamMembers_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamMembers" EntitySet="TeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember" Association="Sportzly.Model.FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember">
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoards" />
+      <End Role="TeamNoticBoardMember" EntitySet="TeamNoticBoardMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticBoardMember_tbUsers" Association="Sportzly.Model.FK_tbTeamNoticBoardMember_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamNoticBoardMember" EntitySet="TeamNoticBoardMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticeBoard_tbTeams1" Association="Sportzly.Model.FK_tbTeamNoticeBoard_tbTeams1">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeamNoticeBoard_tbUsers" Association="Sportzly.Model.FK_tbTeamNoticeBoard_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TeamNoticeBoard" EntitySet="TeamNoticeBoards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTeams_tbUsers" Association="Sportzly.Model.FK_tbTeams_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamScheduleDetails_Teams" Association="Sportzly.Model.FK_TeamScheduleDetails_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamScheduleDetails" EntitySet="TeamScheduleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamSchedules_Teams" Association="Sportzly.Model.FK_TeamSchedules_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="TeamSchedules" EntitySet="TeamSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamScheduleDetails_TeamSchedules" Association="Sportzly.Model.FK_TeamScheduleDetails_TeamSchedules">
+      <End Role="TeamSchedules" EntitySet="TeamSchedules" />
+      <End Role="TeamScheduleDetails" EntitySet="TeamScheduleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserFavoriteSport_tbUsers" Association="Sportzly.Model.FK_tbUserFavoriteSport_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserFavoriteSport" EntitySet="UserFavoriteSports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMetrics_Users" Association="Sportzly.Model.FK_UserMetrics_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserMetrics" EntitySet="UserMetrics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbUserSportTag_tbUsers" Association="Sportzly.Model.FK_tbUserSportTag_tbUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSportTags" EntitySet="UserSportTags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSchools_Users" Association="Sportzly.Model.FK_UserSchools_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSchools" EntitySet="UserSchools" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSocialLinks_Users" Association="Sportzly.Model.FK_UserSocialLinks_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSocialLinks" EntitySet="UserSocialLinks" />
+    </AssociationSet>
+    <EntitySet Name="Awards" EntityType="Sportzly.Model.Award" />
+    <AssociationSet Name="FK_Awards_Users" Association="Sportzly.Model.FK_Awards_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Award" EntitySet="Awards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Albums" Association="Sportzly.Model.FK_Activities_Albums">
+      <End Role="Album" EntitySet="Albums" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <EntitySet Name="Invitations" EntityType="Sportzly.Model.Invitation" />
+    <AssociationSet Name="FK_Activities_AlbumPhotos1" Association="Sportzly.Model.FK_Activities_AlbumPhotos1">
+      <End Role="AlbumPhoto" EntitySet="AlbumPhotos" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <EntitySet Name="DocumentTitles" EntityType="Sportzly.Model.DocumentTitle" />
+    <EntitySet Name="DocFiles" EntityType="Sportzly.Model.DocFile" />
+    <AssociationSet Name="FK_DocumentTitle_Users" Association="Sportzly.Model.FK_DocumentTitle_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DocumentTitle" EntitySet="DocumentTitles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Files_DocumentTitle" Association="Sportzly.Model.FK_Files_DocumentTitle">
+      <End Role="DocumentTitle" EntitySet="DocumentTitles" />
+      <End Role="File" EntitySet="DocFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Files_Users" Association="Sportzly.Model.FK_Files_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="File" EntitySet="DocFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_DocumentTitle" Association="Sportzly.Model.FK_Activities_DocumentTitle">
+      <End Role="DocumentTitle" EntitySet="DocumentTitles" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <EntitySet Name="Videos" EntityType="Sportzly.Model.Video" />
+    <AssociationSet Name="FK_Activities_Videos" Association="Sportzly.Model.FK_Activities_Videos">
+      <End Role="Video" EntitySet="Videos" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <EntitySet Name="Carriers" EntityType="Sportzly.Model.Carrier" />
+    <AssociationSet Name="FK_Users_Carrier" Association="Sportzly.Model.FK_Users_Carrier">
+      <End Role="Carrier" EntitySet="Carriers" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Users" Association="Sportzly.Model.FK_Users_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="User1" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="InviteEmailaddresses" EntityType="Sportzly.Model.InviteEmailaddress" />
+    <AssociationSet Name="FK_InviteEmailaddress_Users" Association="Sportzly.Model.FK_InviteEmailaddress_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="InviteEmailaddress" EntitySet="InviteEmailaddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InviteEmailaddress_Teams" Association="Sportzly.Model.FK_InviteEmailaddress_Teams">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="InviteEmailaddress" EntitySet="InviteEmailaddresses" />
+    </AssociationSet>
+    <EntitySet Name="Calendars" EntityType="Sportzly.Model.Calendar" />
+    <EntitySet Name="CalendarAttendees" EntityType="Sportzly.Model.CalendarAttendee" />
+    <AssociationSet Name="FK_Calendar_Calendar" Association="Sportzly.Model.FK_Calendar_Calendar">
+      <End Role="Calendar" EntitySet="Calendars" />
+      <End Role="Calendar1" EntitySet="Calendars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calendar_Users" Association="Sportzly.Model.FK_Calendar_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Calendar" EntitySet="Calendars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CalendarAttendees_Calendar" Association="Sportzly.Model.FK_CalendarAttendees_Calendar">
+      <End Role="Calendar" EntitySet="Calendars" />
+      <End Role="CalendarAttendee" EntitySet="CalendarAttendees" />
+    </AssociationSet>
+    <EntitySet Name="Results" EntityType="Sportzly.Model.Result" />
+    <AssociationSet Name="FK_Result_Calendar" Association="Sportzly.Model.FK_Result_Calendar">
+      <End Role="Calendar" EntitySet="Calendars" />
+      <End Role="Result" EntitySet="Results" />
+    </AssociationSet>
+    <EntitySet Name="TeamAdmins" EntityType="Sportzly.Model.TeamAdmin" />
+    <AssociationSet Name="FK_TeamAdmin_Teams" Association="Sportzly.Model.FK_TeamAdmin_Teams">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="TeamAdmin" EntitySet="TeamAdmins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamAdmin_Users" Association="Sportzly.Model.FK_TeamAdmin_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="TeamAdmin" EntitySet="TeamAdmins" />
+    </AssociationSet>
+    <EntitySet Name="Feeds" EntityType="Sportzly.Model.Feed" />
+    <EntitySet Name="FeedContents" EntityType="Sportzly.Model.FeedContent" />
+    <EntitySet Name="PollOptions" EntityType="Sportzly.Model.PollOption" />
+    <EntitySet Name="Polls" EntityType="Sportzly.Model.Poll" />
+    <EntitySet Name="Votes" EntityType="Sportzly.Model.Vote" />
+    <AssociationSet Name="FK_PollOptions_Polls" Association="Sportzly.Model.FK_PollOptions_Polls">
+      <End Role="Poll" EntitySet="Polls" />
+      <End Role="PollOption" EntitySet="PollOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_PollOptions" Association="Sportzly.Model.FK_Votes_PollOptions">
+      <End Role="PollOption" EntitySet="PollOptions" />
+      <End Role="Vote" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Polls_Teams" Association="Sportzly.Model.FK_Polls_Teams">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="Poll" EntitySet="Polls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Polls_Users" Association="Sportzly.Model.FK_Polls_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Poll" EntitySet="Polls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Polls" Association="Sportzly.Model.FK_Votes_Polls">
+      <End Role="Poll" EntitySet="Polls" />
+      <End Role="Vote" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Users" Association="Sportzly.Model.FK_Votes_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Vote" EntitySet="Votes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PostDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+    <Property Name="OwnerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="PhotoId" Type="Int64" />
+    <Property Name="VideoId" Type="Int64" />
+    <Property Name="ParentActivityId" Type="Int64" />
+    <NavigationProperty Name="Activities1" Relationship="Sportzly.Model.FK_Activities_Activities" FromRole="Activities" ToRole="Activities1" />
+    <NavigationProperty Name="Activity1" Relationship="Sportzly.Model.FK_Activities_Activities" FromRole="Activities1" ToRole="Activities" />
+    <NavigationProperty Name="AlbumPhoto" Relationship="Sportzly.Model.FK_Activities_AlbumPhotos" FromRole="Activities" ToRole="AlbumPhotos" />
+    <NavigationProperty Name="ActivityGroups" Relationship="Sportzly.Model.FK_ActivityGroup_Activities" FromRole="Activities" ToRole="ActivityGroup" />
+    <NavigationProperty Name="ActivityPersonals" Relationship="Sportzly.Model.FK_ActivityPersonal_Activities" FromRole="Activities" ToRole="ActivityPersonal" />
+    <NavigationProperty Name="ActivityTeams" Relationship="Sportzly.Model.FK_ActivityTeam_Activities" FromRole="Activities" ToRole="ActivityTeam" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbActivities_tbUsers" FromRole="Activities" ToRole="Users" />
+    <NavigationProperty Name="ActivityCheers" Relationship="Sportzly.Model.FK_tbActivityLikes_tbActivities" FromRole="Activities" ToRole="ActivityCheers" />
+    <NavigationProperty Name="Album" Relationship="Sportzly.Model.FK_Activities_Albums" FromRole="Activity" ToRole="Album" />
+    <Property Type="Int64" Name="AlbumPhotoId" />
+    <NavigationProperty Name="AlbumPhoto1" Relationship="Sportzly.Model.FK_Activities_AlbumPhotos1" FromRole="Activity" ToRole="AlbumPhoto" />
+    <Property Type="Int64" Name="DocumentId" />
+    <NavigationProperty Name="DocumentTitle" Relationship="Sportzly.Model.FK_Activities_DocumentTitle" FromRole="Activity" ToRole="DocumentTitle" />
+    <NavigationProperty Name="Video" Relationship="Sportzly.Model.FK_Activities_Videos" FromRole="Activity" ToRole="Video" />
+    <Property Type="Int64" Name="EventId" />
+  </EntityType>
+  <EntityType Name="ActivityCheer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActivityId" Type="Int64" Nullable="false" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="ClickDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsCheered" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="Sportzly.Model.FK_tbActivityLikes_tbActivities" FromRole="ActivityCheers" ToRole="Activities" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbActivityLikes_tbUsers" FromRole="ActivityCheers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ActivityGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="ActivityId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="Sportzly.Model.FK_ActivityGroup_Activities" FromRole="ActivityGroup" ToRole="Activities" />
+    <NavigationProperty Name="Group" Relationship="Sportzly.Model.FK_tbActivityGroup_tbGroups" FromRole="ActivityGroup" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="ActivityPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="ActivityId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="Sportzly.Model.FK_ActivityPersonal_Activities" FromRole="ActivityPersonal" ToRole="Activities" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_ActivityPersonal_Users" FromRole="ActivityPersonal" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ActivityTeam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="ActivityId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="Sportzly.Model.FK_ActivityTeam_Activities" FromRole="ActivityTeam" ToRole="Activities" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_ActivityTeam_Teams" FromRole="ActivityTeam" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StreetAddress" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LocalityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Locality" Relationship="Sportzly.Model.FK_Address_Locality" FromRole="Address" ToRole="Locality" />
+    <NavigationProperty Name="Schools" Relationship="Sportzly.Model.FK_Schools_Address" FromRole="Address" ToRole="Schools" />
+    <NavigationProperty Name="Users" Relationship="Sportzly.Model.FK_Users_Address" FromRole="Address" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="AlbumPhoto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumId" Type="Int64" />
+    <Property Name="OwnerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="PicasaPhotoId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UrlPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PostDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CheerCount" Type="Int32" />
+    <Property Name="JeerCount" Type="Int32" />
+    <Property Name="IsCoverPage" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Activities" Relationship="Sportzly.Model.FK_Activities_AlbumPhotos" FromRole="AlbumPhotos" ToRole="Activities" />
+    <NavigationProperty Name="Album" Relationship="Sportzly.Model.FK_tbAlbumContents_tbAlbums" FromRole="AlbumPhotos" ToRole="Albums" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbAlbumContents_tbUsers" FromRole="AlbumPhotos" ToRole="Users" />
+    <NavigationProperty Name="Activities1" Relationship="Sportzly.Model.FK_Activities_AlbumPhotos1" FromRole="AlbumPhoto" ToRole="Activity" />
+    <Property Type="Int64" Name="TeamId" />
+  </EntityType>
+  <EntityType Name="Album">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OwnerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+    <Property Name="PicasaAlbumId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="AlbumPhotos" Relationship="Sportzly.Model.FK_tbAlbumContents_tbAlbums" FromRole="Albums" ToRole="AlbumPhotos" />
+    <NavigationProperty Name="Activities" Relationship="Sportzly.Model.FK_Activities_Albums" FromRole="Album" ToRole="Activity" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogID" />
+    </Key>
+    <Property Name="ErrorLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorTime" Type="DateTime" Precision="3" />
+    <Property Name="UserName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ErrorNumber" Type="Int32" Nullable="false" />
+    <Property Name="ErrorSeverity" Type="Int32" />
+    <Property Name="ErrorState" Type="Int32" />
+    <Property Name="ErrorProcedure" Type="String" MaxLength="126" Unicode="true" FixedLength="false" />
+    <Property Name="ErrorLine" Type="Int32" />
+    <Property Name="ErrorMessage" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EventGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="GroupId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Event" Relationship="Sportzly.Model.FK_tbEventGroup_tbEvents" FromRole="EventGroup" ToRole="Events" />
+    <NavigationProperty Name="Group" Relationship="Sportzly.Model.FK_tbEventGroup_tbGroups" FromRole="EventGroup" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="EventPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Event" Relationship="Sportzly.Model.FK_tbEventPersonal_tbEvents" FromRole="EventPersonal" ToRole="Events" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbEventPersonal_tbUsers" FromRole="EventPersonal" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="EventDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StartTime" Type="Time" Precision="7" />
+    <Property Name="EndTime" Type="Time" Precision="7" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="OwnerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="Address1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Address2" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Zip" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EventGroups" Relationship="Sportzly.Model.FK_tbEventGroup_tbEvents" FromRole="Events" ToRole="EventGroup" />
+    <NavigationProperty Name="EventPersonals" Relationship="Sportzly.Model.FK_tbEventPersonal_tbEvents" FromRole="Events" ToRole="EventPersonal" />
+    <NavigationProperty Name="EventType" Relationship="Sportzly.Model.FK_tbEvents_tbEvents" FromRole="Events" ToRole="EventTypes" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbEvents_tbUsers" FromRole="Events" ToRole="Users" />
+    <NavigationProperty Name="EventStatus" Relationship="Sportzly.Model.FK_tbEventStatus_tbEvents" FromRole="Events" ToRole="EventStatus" />
+    <NavigationProperty Name="EventTeams" Relationship="Sportzly.Model.FK_tbEventTeam_tbEvents" FromRole="Events" ToRole="EventTeam" />
+  </EntityType>
+  <EntityType Name="EventStatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="ResponseDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsAccepted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Event" Relationship="Sportzly.Model.FK_tbEventStatus_tbEvents" FromRole="EventStatus" ToRole="Events" />
+  </EntityType>
+  <EntityType Name="EventTeam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Event" Relationship="Sportzly.Model.FK_tbEventTeam_tbEvents" FromRole="EventTeam" ToRole="Events" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbEventTeam_tbTeams" FromRole="EventTeam" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="EventType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Events" Relationship="Sportzly.Model.FK_tbEvents_tbEvents" FromRole="EventTypes" ToRole="Events" />
+  </EntityType>
+  <EntityType Name="Follower">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FollowerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="FollowingId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbFollowers_follower" FromRole="Followers" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="Sportzly.Model.FK_tbFollowers_following" FromRole="Followers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Friend">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="FriendId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="true" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Friends_Users" FromRole="Friends" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="Sportzly.Model.FK_tbFriends_User" FromRole="Friends" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gender1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="Sportzly.Model.FK_Users_Genders" FromRole="Genders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="GroupAccessType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="AccessType" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Groups" Relationship="Sportzly.Model.FK_tbGroups_tbGroupAccessTypes" FromRole="GroupAccessTypes" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="GroupAttribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="Attribute" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="GroupId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Group" Relationship="Sportzly.Model.FK_tbGroupAttributes_tbGroups" FromRole="GroupAttributes" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="GroupCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Groups" Relationship="Sportzly.Model.FK_tbGroups_tbGroupCategories" FromRole="GroupCategories" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="GroupMember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="MemberId" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="JoinDate" Type="DateTime" Precision="3" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="IsBlocked" Type="Boolean" />
+    <NavigationProperty Name="Group" Relationship="Sportzly.Model.FK_tbUserGroups_tbGroups" FromRole="GroupMembers" ToRole="Groups" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbUserGroups_tbUsers" FromRole="GroupMembers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="OwnerId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="AccessId" Type="Int32" />
+    <Property Name="ImagePath" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastPostOn" Type="DateTime" Precision="3" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="Binary" MaxLength="50" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="ActivityGroups" Relationship="Sportzly.Model.FK_tbActivityGroup_tbGroups" FromRole="Groups" ToRole="ActivityGroup" />
+    <NavigationProperty Name="EventGroups" Relationship="Sportzly.Model.FK_tbEventGroup_tbGroups" FromRole="Groups" ToRole="EventGroup" />
+    <NavigationProperty Name="GroupAccessType" Relationship="Sportzly.Model.FK_tbGroups_tbGroupAccessTypes" FromRole="Groups" ToRole="GroupAccessTypes" />
+    <NavigationProperty Name="GroupAttributes" Relationship="Sportzly.Model.FK_tbGroupAttributes_tbGroups" FromRole="Groups" ToRole="GroupAttributes" />
+    <NavigationProperty Name="GroupCategory" Relationship="Sportzly.Model.FK_tbGroups_tbGroupCategories" FromRole="Groups" ToRole="GroupCategories" />
+    <NavigationProperty Name="GroupMembers" Relationship="Sportzly.Model.FK_tbUserGroups_tbGroups" FromRole="Groups" ToRole="GroupMembers" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbGroups_author" FromRole="Groups" ToRole="Users" />
+    <NavigationProperty Name="GroupSports" Relationship="Sportzly.Model.FK_tbGroupSports_tbGroups" FromRole="Groups" ToRole="GroupSports" />
+  </EntityType>
+  <EntityType Name="GroupSport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="GroupId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="SportId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Group" Relationship="Sportzly.Model.FK_tbGroupSports_tbGroups" FromRole="GroupSports" ToRole="Groups" />
+    <NavigationProperty Name="Sport" Relationship="Sportzly.Model.FK_tbGroupSports_tbTeamSports" FromRole="GroupSports" ToRole="Sports" />
+  </EntityType>
+  <EntityType Name="Locality">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" Nullable="true" />
+    <NavigationProperty Name="Addresses" Relationship="Sportzly.Model.FK_Address_Locality" FromRole="Locality" ToRole="Address" />
+  </EntityType>
+  <EntityType Name="MaritalStatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="Sportzly.Model.FK_tbUsers_tbUsers" FromRole="MaritalStatus" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="MetricKey">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Metrics" Relationship="Sportzly.Model.FK_Metrics_MetricKeys" FromRole="MetricKeys" ToRole="Metrics" />
+  </EntityType>
+  <EntityType Name="Metric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MetricKeyId" Type="Int64" Nullable="false" />
+    <Property Name="MetricValueId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="MetricKey" Relationship="Sportzly.Model.FK_Metrics_MetricKeys" FromRole="Metrics" ToRole="MetricKeys" />
+    <NavigationProperty Name="MetricValue" Relationship="Sportzly.Model.FK_Metrics_MetricValues" FromRole="Metrics" ToRole="MetricValues" />
+    <NavigationProperty Name="UserMetrics" Relationship="Sportzly.Model.FK_UserMetrics_Metrics" FromRole="Metrics" ToRole="UserMetrics" />
+  </EntityType>
+  <EntityType Name="MetricValue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Metrics" Relationship="Sportzly.Model.FK_Metrics_MetricValues" FromRole="MetricValues" ToRole="Metrics" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoPath" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="Sportzly.Model.FK_Users_Photos" FromRole="Photos" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SchoolTypeId" Type="Int32" Nullable="false" />
+    <Property Name="AddressId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Address" Relationship="Sportzly.Model.FK_Schools_Address" FromRole="Schools" ToRole="Address" />
+    <NavigationProperty Name="SchoolType" Relationship="Sportzly.Model.FK_Schools_SchoolTypes" FromRole="Schools" ToRole="SchoolTypes" />
+    <NavigationProperty Name="UserSchools" Relationship="Sportzly.Model.FK_UserSchools_Schools" FromRole="Schools" ToRole="UserSchools" />
+  </EntityType>
+  <EntityType Name="SchoolType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SchoolType1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Schools" Relationship="Sportzly.Model.FK_Schools_SchoolTypes" FromRole="SchoolTypes" ToRole="Schools" />
+  </EntityType>
+  <EntityType Name="Sport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="GroupSports" Relationship="Sportzly.Model.FK_tbGroupSports_tbTeamSports" FromRole="Sports" ToRole="GroupSports" />
+    <NavigationProperty Name="Teams" Relationship="Sportzly.Model.FK_tbTeams_tbTeamSports" FromRole="Sports" ToRole="Teams" />
+    <NavigationProperty Name="UserFavoriteSports" Relationship="Sportzly.Model.FK_tbUserFavoriteSport_tbTeamSports" FromRole="Sports" ToRole="UserFavoriteSport" />
+  </EntityType>
+  <EntityType Name="SportTag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tag" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TagSign" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="UserSportTags" Relationship="Sportzly.Model.FK_tbUserSportTag_tbSportTags" FromRole="SportTags" ToRole="UserSportTags" />
+  </EntityType>
+  <EntityType Name="TeamCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Teams" Relationship="Sportzly.Model.FK_tbTeams_tbTeamCategories" FromRole="TeamCategories" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="TeamFollower">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamFollowers_tbTeams" FromRole="TeamFollowers" ToRole="Teams" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbTeamFollowers_tbUsers" FromRole="TeamFollowers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="TeamGame">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="GameDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="GameSchedule" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamsGames_tbTeams" FromRole="TeamGames" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="TeamHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="LeagueId" Type="Int64" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Played" Type="Int32" Nullable="false" />
+    <Property Name="Win" Type="Int32" Nullable="false" />
+    <Property Name="Loss" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TeamLeague" Relationship="Sportzly.Model.FK_TeamHistory_TeamLeagues" FromRole="TeamHistory" ToRole="TeamLeagues" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_TeamHistory_Teams" FromRole="TeamHistory" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="TeamInventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Brand" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamInventory_tbTeams" FromRole="TeamInventory" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="TeamLeague">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TeamHistories" Relationship="Sportzly.Model.FK_TeamHistory_TeamLeagues" FromRole="TeamLeagues" ToRole="TeamHistory" />
+    <NavigationProperty Name="TeamLeagueTeams" Relationship="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeamLeagues" FromRole="TeamLeagues" ToRole="TeamLeagueTeams" />
+  </EntityType>
+  <EntityType Name="TeamLeagueTeam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeagueId" Type="Int64" Nullable="false" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="JoinDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TeamLeague" Relationship="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeamLeagues" FromRole="TeamLeagueTeams" ToRole="TeamLeagues" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeams" FromRole="TeamLeagueTeams" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="TeamMemberRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TeamMembers" Relationship="Sportzly.Model.FK_tbTeamMembers_tbTeamMemberRoles" FromRole="TeamMemberRoles" ToRole="TeamMembers" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" />
+    <Property Name="UserId" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="RoleId" Type="Int64" />
+    <Property Name="JoinDate" Type="DateTime" Precision="3" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="IsBlocked" Type="Boolean" />
+    <NavigationProperty Name="TeamMemberRole" Relationship="Sportzly.Model.FK_tbTeamMembers_tbTeamMemberRoles" FromRole="TeamMembers" ToRole="TeamMemberRoles" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamMembers_tbTeams" FromRole="TeamMembers" ToRole="Teams" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbTeamMembers_tbUsers" FromRole="TeamMembers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="TeamNoticBoardMember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoticeBoardId" Type="Int64" Nullable="false" />
+    <Property Name="MemberId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="TeamNoticeBoard" Relationship="Sportzly.Model.FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember" FromRole="TeamNoticBoardMember" ToRole="TeamNoticeBoard" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbTeamNoticBoardMember_tbUsers" FromRole="TeamNoticBoardMember" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="TeamNoticeBoard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" />
+    <Property Name="OwnerId" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="TeamNoticBoardMembers" Relationship="Sportzly.Model.FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember" FromRole="TeamNoticeBoard" ToRole="TeamNoticBoardMember" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_tbTeamNoticeBoard_tbTeams1" FromRole="TeamNoticeBoard" ToRole="Teams" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbTeamNoticeBoard_tbUsers" FromRole="TeamNoticeBoard" ToRole="Users" />
+    <Property Type="Int64" Name="ParentId" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamName" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="OwnerId" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="SportId" Type="Int32" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="Photo" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Awards" Type="Int32" />
+    <Property Name="AutoJoin" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" Nullable="false" />
+    <Property Name="IsRecruitmentOpen" Type="Boolean" />
+    <NavigationProperty Name="ActivityTeams" Relationship="Sportzly.Model.FK_ActivityTeam_Teams" FromRole="Teams" ToRole="ActivityTeam" />
+    <NavigationProperty Name="EventTeams" Relationship="Sportzly.Model.FK_tbEventTeam_tbTeams" FromRole="Teams" ToRole="EventTeam" />
+    <NavigationProperty Name="Sport" Relationship="Sportzly.Model.FK_tbTeams_tbTeamSports" FromRole="Teams" ToRole="Sports" />
+    <NavigationProperty Name="TeamCategory" Relationship="Sportzly.Model.FK_tbTeams_tbTeamCategories" FromRole="Teams" ToRole="TeamCategories" />
+    <NavigationProperty Name="TeamFollowers" Relationship="Sportzly.Model.FK_tbTeamFollowers_tbTeams" FromRole="Teams" ToRole="TeamFollowers" />
+    <NavigationProperty Name="TeamGames" Relationship="Sportzly.Model.FK_tbTeamsGames_tbTeams" FromRole="Teams" ToRole="TeamGames" />
+    <NavigationProperty Name="TeamHistories" Relationship="Sportzly.Model.FK_TeamHistory_Teams" FromRole="Teams" ToRole="TeamHistory" />
+    <NavigationProperty Name="TeamInventories" Relationship="Sportzly.Model.FK_tbTeamInventory_tbTeams" FromRole="Teams" ToRole="TeamInventory" />
+    <NavigationProperty Name="TeamLeagueTeams" Relationship="Sportzly.Model.FK_tbTeamLeagueTeams_tbTeams" FromRole="Teams" ToRole="TeamLeagueTeams" />
+    <NavigationProperty Name="TeamMembers" Relationship="Sportzly.Model.FK_tbTeamMembers_tbTeams" FromRole="Teams" ToRole="TeamMembers" />
+    <NavigationProperty Name="TeamNoticeBoards" Relationship="Sportzly.Model.FK_tbTeamNoticeBoard_tbTeams1" FromRole="Teams" ToRole="TeamNoticeBoard" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbTeams_tbUsers" FromRole="Teams" ToRole="Users" />
+    <NavigationProperty Name="TeamScheduleDetails" Relationship="Sportzly.Model.FK_TeamScheduleDetails_Teams" FromRole="Teams" ToRole="TeamScheduleDetails" />
+    <NavigationProperty Name="TeamSchedules" Relationship="Sportzly.Model.FK_TeamSchedules_Teams" FromRole="Teams" ToRole="TeamSchedules" />
+    <Property Type="String" Name="Season" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PracticeGround" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsEnabled" />
+    <Property Type="String" Name="ScorecardUrl" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="InviteEmailaddresses" Relationship="Sportzly.Model.FK_InviteEmailaddress_Teams" FromRole="Team" ToRole="InviteEmailaddress" />
+    <NavigationProperty Name="TeamAdmins" Relationship="Sportzly.Model.FK_TeamAdmin_Teams" FromRole="Team" ToRole="TeamAdmin" />
+    <NavigationProperty Name="Polls" Relationship="Sportzly.Model.FK_Polls_Teams" FromRole="Team" ToRole="Poll" />
+    <Property Name="IsPrivate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TeamScheduleDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScheduleId" Type="Int64" Nullable="false" />
+    <Property Name="PlayedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OpponentId" Type="Int64" Nullable="false" />
+    <Property Name="Venue" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Result" Type="Int32" />
+    <Property Name="Score" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ScoreCard" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_TeamScheduleDetails_Teams" FromRole="TeamScheduleDetails" ToRole="Teams" />
+    <NavigationProperty Name="TeamSchedule" Relationship="Sportzly.Model.FK_TeamScheduleDetails_TeamSchedules" FromRole="TeamScheduleDetails" ToRole="TeamSchedules" />
+  </EntityType>
+  <EntityType Name="TeamSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int64" Nullable="false" />
+    <Property Name="Season" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_TeamSchedules_Teams" FromRole="TeamSchedules" ToRole="Teams" />
+    <NavigationProperty Name="TeamScheduleDetails" Relationship="Sportzly.Model.FK_TeamScheduleDetails_TeamSchedules" FromRole="TeamSchedules" ToRole="TeamScheduleDetails" />
+  </EntityType>
+  <EntityType Name="UserFavoriteSport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SportId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Sport" Relationship="Sportzly.Model.FK_tbUserFavoriteSport_tbTeamSports" FromRole="UserFavoriteSport" ToRole="Sports" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbUserFavoriteSport_tbUsers" FromRole="UserFavoriteSport" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserMetric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="MetricId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Metric" Relationship="Sportzly.Model.FK_UserMetrics_Metrics" FromRole="UserMetrics" ToRole="Metrics" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_UserMetrics_Users" FromRole="UserMetrics" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Username" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TempPassword" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="GenderId" Type="Int32" />
+    <Property Name="AddressId" Type="Int64" />
+    <Property Name="MaritalStatusId" Type="Int32" />
+    <Property Name="PhotoId" Type="Int64" />
+    <Property Name="Phone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsLocked" Type="Boolean" />
+    <Property Name="IsVerified" Type="Boolean" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="LoggedInThrow" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AutoToken" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Activities" Relationship="Sportzly.Model.FK_tbActivities_tbUsers" FromRole="Users" ToRole="Activities" />
+    <NavigationProperty Name="ActivityCheers" Relationship="Sportzly.Model.FK_tbActivityLikes_tbUsers" FromRole="Users" ToRole="ActivityCheers" />
+    <NavigationProperty Name="ActivityPersonals" Relationship="Sportzly.Model.FK_ActivityPersonal_Users" FromRole="Users" ToRole="ActivityPersonal" />
+    <NavigationProperty Name="Address" Relationship="Sportzly.Model.FK_Users_Address" FromRole="Users" ToRole="Address" />
+    <NavigationProperty Name="AlbumPhotos" Relationship="Sportzly.Model.FK_tbAlbumContents_tbUsers" FromRole="Users" ToRole="AlbumPhotos" />
+    <NavigationProperty Name="EventPersonals" Relationship="Sportzly.Model.FK_tbEventPersonal_tbUsers" FromRole="Users" ToRole="EventPersonal" />
+    <NavigationProperty Name="Events" Relationship="Sportzly.Model.FK_tbEvents_tbUsers" FromRole="Users" ToRole="Events" />
+    <NavigationProperty Name="Followers" Relationship="Sportzly.Model.FK_tbFollowers_follower" FromRole="Users" ToRole="Followers" />
+    <NavigationProperty Name="Followers1" Relationship="Sportzly.Model.FK_tbFollowers_following" FromRole="Users" ToRole="Followers" />
+    <NavigationProperty Name="Friends" Relationship="Sportzly.Model.FK_Friends_Users" FromRole="Users" ToRole="Friends" />
+    <NavigationProperty Name="Friends1" Relationship="Sportzly.Model.FK_tbFriends_User" FromRole="Users" ToRole="Friends" />
+    <NavigationProperty Name="Gender" Relationship="Sportzly.Model.FK_Users_Genders" FromRole="Users" ToRole="Genders" />
+    <NavigationProperty Name="GroupMembers" Relationship="Sportzly.Model.FK_tbUserGroups_tbUsers" FromRole="Users" ToRole="GroupMembers" />
+    <NavigationProperty Name="Groups" Relationship="Sportzly.Model.FK_tbGroups_author" FromRole="Users" ToRole="Groups" />
+    <NavigationProperty Name="MaritalStatu" Relationship="Sportzly.Model.FK_tbUsers_tbUsers" FromRole="Users" ToRole="MaritalStatus" />
+    <NavigationProperty Name="Photo" Relationship="Sportzly.Model.FK_Users_Photos" FromRole="Users" ToRole="Photos" />
+    <NavigationProperty Name="TeamFollowers" Relationship="Sportzly.Model.FK_tbTeamFollowers_tbUsers" FromRole="Users" ToRole="TeamFollowers" />
+    <NavigationProperty Name="TeamMembers" Relationship="Sportzly.Model.FK_tbTeamMembers_tbUsers" FromRole="Users" ToRole="TeamMembers" />
+    <NavigationProperty Name="TeamNoticBoardMembers" Relationship="Sportzly.Model.FK_tbTeamNoticBoardMember_tbUsers" FromRole="Users" ToRole="TeamNoticBoardMember" />
+    <NavigationProperty Name="TeamNoticeBoards" Relationship="Sportzly.Model.FK_tbTeamNoticeBoard_tbUsers" FromRole="Users" ToRole="TeamNoticeBoard" />
+    <NavigationProperty Name="Teams1" Relationship="Sportzly.Model.FK_tbTeams_tbUsers" FromRole="Users" ToRole="Teams" />
+    <NavigationProperty Name="UserFavoriteSports" Relationship="Sportzly.Model.FK_tbUserFavoriteSport_tbUsers" FromRole="Users" ToRole="UserFavoriteSport" />
+    <NavigationProperty Name="UserMetrics" Relationship="Sportzly.Model.FK_UserMetrics_Users" FromRole="Users" ToRole="UserMetrics" />
+    <NavigationProperty Name="UserSportTags" Relationship="Sportzly.Model.FK_tbUserSportTag_tbUsers" FromRole="Users" ToRole="UserSportTags" />
+    <NavigationProperty Name="UserSchools" Relationship="Sportzly.Model.FK_UserSchools_Users" FromRole="Users" ToRole="UserSchools" />
+    <NavigationProperty Name="UserSocialLinks" Relationship="Sportzly.Model.FK_UserSocialLinks_Users" FromRole="Users" ToRole="UserSocialLinks" />
+    <NavigationProperty Name="Awards1" Relationship="Sportzly.Model.FK_Awards_Users" FromRole="User" ToRole="Award" />
+    <Property Type="Int32" Name="Level" />
+    <Property Type="String" Name="LevelOther" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Role" />
+    <Property Type="String" Name="RoleOther" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Collage" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HighSchool" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MiddleSchool" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DocumentTitles" Relationship="Sportzly.Model.FK_DocumentTitle_Users" FromRole="User" ToRole="DocumentTitle" />
+    <NavigationProperty Name="Files" Relationship="Sportzly.Model.FK_Files_Users" FromRole="User" ToRole="File" />
+    <Property Type="Int32" Name="Carrier" />
+    <NavigationProperty Name="Carrier1" Relationship="Sportzly.Model.FK_Users_Carrier" FromRole="User" ToRole="Carrier" />
+    <NavigationProperty Name="Users1" Relationship="Sportzly.Model.FK_Users_Users" FromRole="User" ToRole="User1" />
+    <NavigationProperty Name="User1" Relationship="Sportzly.Model.FK_Users_Users" FromRole="User1" ToRole="User" />
+    <NavigationProperty Name="InviteEmailaddresses" Relationship="Sportzly.Model.FK_InviteEmailaddress_Users" FromRole="User" ToRole="InviteEmailaddress" />
+    <Property Type="String" Name="FacebookId" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TwitterId" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Calendars" Relationship="Sportzly.Model.FK_Calendar_Users" FromRole="User" ToRole="Calendar" />
+    <NavigationProperty Name="TeamAdmins" Relationship="Sportzly.Model.FK_TeamAdmin_Users" FromRole="User" ToRole="TeamAdmin" />
+    <NavigationProperty Name="Polls" Relationship="Sportzly.Model.FK_Polls_Users" FromRole="User" ToRole="Poll" />
+    <NavigationProperty Name="Votes" Relationship="Sportzly.Model.FK_Votes_Users" FromRole="User" ToRole="Vote" />
+  </EntityType>
+  <EntityType Name="UserSchool">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="SchoolId" Type="Int32" Nullable="false" />
+    <Property Name="DateStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateEnd" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="School" Relationship="Sportzly.Model.FK_UserSchools_Schools" FromRole="UserSchools" ToRole="Schools" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_UserSchools_Users" FromRole="UserSchools" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserSocialLink">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SocialId" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="SocialEmailPermission" Type="Boolean" Nullable="false" />
+    <Property Name="SocialAuthToken" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_UserSocialLinks_Users" FromRole="UserSocialLinks" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserSportTag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Nullable="false" Precision="10" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SportTagId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="SportTag" Relationship="Sportzly.Model.FK_tbUserSportTag_tbSportTags" FromRole="UserSportTags" ToRole="SportTags" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_tbUserSportTag_tbUsers" FromRole="UserSportTags" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK_Activities_Activities">
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="0..1" />
+    <End Role="Activities1" Type="Sportzly.Model.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities1">
+        <PropertyRef Name="ParentActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_AlbumPhotos">
+    <End Role="AlbumPhotos" Type="Sportzly.Model.AlbumPhoto" Multiplicity="0..1" />
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlbumPhotos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityGroup_Activities">
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="1" />
+    <End Role="ActivityGroup" Type="Sportzly.Model.ActivityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityGroup">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityPersonal_Activities">
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="1" />
+    <End Role="ActivityPersonal" Type="Sportzly.Model.ActivityPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityPersonal">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityTeam_Activities">
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="1" />
+    <End Role="ActivityTeam" Type="Sportzly.Model.ActivityTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityTeam">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivities_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityLikes_tbActivities">
+    <End Role="Activities" Type="Sportzly.Model.Activity" Multiplicity="1" />
+    <End Role="ActivityCheers" Type="Sportzly.Model.ActivityCheer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCheers">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityLikes_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="ActivityCheers" Type="Sportzly.Model.ActivityCheer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCheers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbActivityGroup_tbGroups">
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="1" />
+    <End Role="ActivityGroup" Type="Sportzly.Model.ActivityGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityGroup">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityPersonal_Users">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="ActivityPersonal" Type="Sportzly.Model.ActivityPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityPersonal">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ActivityTeam_Teams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="ActivityTeam" Type="Sportzly.Model.ActivityTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_Locality">
+    <End Role="Locality" Type="Sportzly.Model.Locality" Multiplicity="1" />
+    <End Role="Address" Type="Sportzly.Model.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locality">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="LocalityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schools_Address">
+    <End Role="Address" Type="Sportzly.Model.Address" Multiplicity="1" />
+    <End Role="Schools" Type="Sportzly.Model.School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Schools">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Address">
+    <End Role="Address" Type="Sportzly.Model.Address" Multiplicity="0..1" />
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbAlbumContents_tbAlbums">
+    <End Role="Albums" Type="Sportzly.Model.Album" Multiplicity="0..1" />
+    <End Role="AlbumPhotos" Type="Sportzly.Model.AlbumPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Albums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlbumPhotos">
+        <PropertyRef Name="AlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbAlbumContents_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="AlbumPhotos" Type="Sportzly.Model.AlbumPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlbumPhotos">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventGroup_tbEvents">
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="1" />
+    <End Role="EventGroup" Type="Sportzly.Model.EventGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventGroup">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventGroup_tbGroups">
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="1" />
+    <End Role="EventGroup" Type="Sportzly.Model.EventGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventGroup">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventPersonal_tbEvents">
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="1" />
+    <End Role="EventPersonal" Type="Sportzly.Model.EventPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersonal">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventPersonal_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="EventPersonal" Type="Sportzly.Model.EventPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersonal">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEvents_tbEvents">
+    <End Role="EventTypes" Type="Sportzly.Model.EventType" Multiplicity="1" />
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEvents_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventStatus_tbEvents">
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="1" />
+    <End Role="EventStatus" Type="Sportzly.Model.EventStatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventStatus">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventTeam_tbEvents">
+    <End Role="Events" Type="Sportzly.Model.Event" Multiplicity="1" />
+    <End Role="EventTeam" Type="Sportzly.Model.EventTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventTeam">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEventTeam_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="EventTeam" Type="Sportzly.Model.EventTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventTeam">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFollowers_follower">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Followers" Type="Sportzly.Model.Follower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Followers">
+        <PropertyRef Name="FollowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFollowers_following">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Followers" Type="Sportzly.Model.Follower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Followers">
+        <PropertyRef Name="FollowingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Friends_Users">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Friends" Type="Sportzly.Model.Friend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="FriendId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFriends_User">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Friends" Type="Sportzly.Model.Friend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Friends">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Genders">
+    <End Role="Genders" Type="Sportzly.Model.Gender" Multiplicity="0..1" />
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_tbGroupAccessTypes">
+    <End Role="GroupAccessTypes" Type="Sportzly.Model.GroupAccessType" Multiplicity="0..1" />
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupAccessTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="AccessId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupAttributes_tbGroups">
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="1" />
+    <End Role="GroupAttributes" Type="Sportzly.Model.GroupAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupAttributes">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_tbGroupCategories">
+    <End Role="GroupCategories" Type="Sportzly.Model.GroupCategory" Multiplicity="0..1" />
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserGroups_tbGroups">
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="1" />
+    <End Role="GroupMembers" Type="Sportzly.Model.GroupMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupMembers">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserGroups_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="0..1" />
+    <End Role="GroupMembers" Type="Sportzly.Model.GroupMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupMembers">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroups_author">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupSports_tbGroups">
+    <End Role="Groups" Type="Sportzly.Model.Group" Multiplicity="1" />
+    <End Role="GroupSports" Type="Sportzly.Model.GroupSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupSports">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGroupSports_tbTeamSports">
+    <End Role="Sports" Type="Sportzly.Model.Sport" Multiplicity="1" />
+    <End Role="GroupSports" Type="Sportzly.Model.GroupSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GroupSports">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUsers_tbUsers">
+    <End Role="MaritalStatus" Type="Sportzly.Model.MaritalStatu" Multiplicity="0..1" />
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaritalStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="MaritalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Metrics_MetricKeys">
+    <End Role="MetricKeys" Type="Sportzly.Model.MetricKey" Multiplicity="1" />
+    <End Role="Metrics" Type="Sportzly.Model.Metric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetricKeys">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Metrics">
+        <PropertyRef Name="MetricKeyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Metrics_MetricValues">
+    <End Role="MetricValues" Type="Sportzly.Model.MetricValue" Multiplicity="1" />
+    <End Role="Metrics" Type="Sportzly.Model.Metric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetricValues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Metrics">
+        <PropertyRef Name="MetricValueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMetrics_Metrics">
+    <End Role="Metrics" Type="Sportzly.Model.Metric" Multiplicity="1" />
+    <End Role="UserMetrics" Type="Sportzly.Model.UserMetric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Metrics">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMetrics">
+        <PropertyRef Name="MetricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Photos">
+    <End Role="Photos" Type="Sportzly.Model.Photo" Multiplicity="0..1" />
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schools_SchoolTypes">
+    <End Role="SchoolTypes" Type="Sportzly.Model.SchoolType" Multiplicity="1" />
+    <End Role="Schools" Type="Sportzly.Model.School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Schools">
+        <PropertyRef Name="SchoolTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSchools_Schools">
+    <End Role="Schools" Type="Sportzly.Model.School" Multiplicity="1" />
+    <End Role="UserSchools" Type="Sportzly.Model.UserSchool" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schools">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSchools">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbTeamSports">
+    <End Role="Sports" Type="Sportzly.Model.Sport" Multiplicity="0..1" />
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserFavoriteSport_tbTeamSports">
+    <End Role="Sports" Type="Sportzly.Model.Sport" Multiplicity="1" />
+    <End Role="UserFavoriteSport" Type="Sportzly.Model.UserFavoriteSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sports">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserFavoriteSport">
+        <PropertyRef Name="SportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserSportTag_tbSportTags">
+    <End Role="SportTags" Type="Sportzly.Model.SportTag" Multiplicity="1" />
+    <End Role="UserSportTags" Type="Sportzly.Model.UserSportTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SportTags">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSportTags">
+        <PropertyRef Name="SportTagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbTeamCategories">
+    <End Role="TeamCategories" Type="Sportzly.Model.TeamCategory" Multiplicity="0..1" />
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamFollowers_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamFollowers" Type="Sportzly.Model.TeamFollower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamFollowers">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamFollowers_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="TeamFollowers" Type="Sportzly.Model.TeamFollower" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamFollowers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamsGames_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamGames" Type="Sportzly.Model.TeamGame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamGames">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamHistory_TeamLeagues">
+    <End Role="TeamLeagues" Type="Sportzly.Model.TeamLeague" Multiplicity="0..1" />
+    <End Role="TeamHistory" Type="Sportzly.Model.TeamHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamLeagues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamHistory">
+        <PropertyRef Name="LeagueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamHistory_Teams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamHistory" Type="Sportzly.Model.TeamHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamHistory">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamInventory_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamInventory" Type="Sportzly.Model.TeamInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamInventory">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamLeagueTeams_tbTeamLeagues">
+    <End Role="TeamLeagues" Type="Sportzly.Model.TeamLeague" Multiplicity="1" />
+    <End Role="TeamLeagueTeams" Type="Sportzly.Model.TeamLeagueTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamLeagues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamLeagueTeams">
+        <PropertyRef Name="LeagueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamLeagueTeams_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamLeagueTeams" Type="Sportzly.Model.TeamLeagueTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamLeagueTeams">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbTeamMemberRoles">
+    <End Role="TeamMemberRoles" Type="Sportzly.Model.TeamMemberRole" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Sportzly.Model.TeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMemberRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbTeams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Sportzly.Model.TeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamMembers_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="0..1" />
+    <End Role="TeamMembers" Type="Sportzly.Model.TeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamMembers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticBoardMember_tbTeamNoticBoardMember">
+    <End Role="TeamNoticeBoard" Type="Sportzly.Model.TeamNoticeBoard" Multiplicity="1" />
+    <End Role="TeamNoticBoardMember" Type="Sportzly.Model.TeamNoticBoardMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamNoticeBoard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticBoardMember">
+        <PropertyRef Name="NoticeBoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticBoardMember_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="TeamNoticBoardMember" Type="Sportzly.Model.TeamNoticBoardMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticBoardMember">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticeBoard_tbTeams1">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="0..1" />
+    <End Role="TeamNoticeBoard" Type="Sportzly.Model.TeamNoticeBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticeBoard">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeamNoticeBoard_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="0..1" />
+    <End Role="TeamNoticeBoard" Type="Sportzly.Model.TeamNoticeBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamNoticeBoard">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTeams_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamScheduleDetails_Teams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamScheduleDetails" Type="Sportzly.Model.TeamScheduleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamScheduleDetails">
+        <PropertyRef Name="OpponentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamSchedules_Teams">
+    <End Role="Teams" Type="Sportzly.Model.Team" Multiplicity="1" />
+    <End Role="TeamSchedules" Type="Sportzly.Model.TeamSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamSchedules">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamScheduleDetails_TeamSchedules">
+    <End Role="TeamSchedules" Type="Sportzly.Model.TeamSchedule" Multiplicity="1" />
+    <End Role="TeamScheduleDetails" Type="Sportzly.Model.TeamScheduleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamSchedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamScheduleDetails">
+        <PropertyRef Name="ScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserFavoriteSport_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="UserFavoriteSport" Type="Sportzly.Model.UserFavoriteSport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserFavoriteSport">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMetrics_Users">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="UserMetrics" Type="Sportzly.Model.UserMetric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMetrics">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbUserSportTag_tbUsers">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="UserSportTags" Type="Sportzly.Model.UserSportTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSportTags">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSchools_Users">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="UserSchools" Type="Sportzly.Model.UserSchool" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSchools">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSocialLinks_Users">
+    <End Role="Users" Type="Sportzly.Model.User" Multiplicity="1" />
+    <End Role="UserSocialLinks" Type="Sportzly.Model.UserSocialLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSocialLinks">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Award">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int64" Name="id" Nullable="false" />
+    <Property Type="String" Name="AwardDetails" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="userId" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Awards_Users" FromRole="Award" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Awards_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="1" />
+    <End Type="Sportzly.Model.Award" Role="Award" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Award">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Albums">
+    <End Type="Sportzly.Model.Album" Role="Album" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Activity" Role="Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Album">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Invitation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="inviteType" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="inviteId" Nullable="false" />
+    <Property Type="Guid" Name="inviteToken" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Activities_AlbumPhotos1">
+    <End Type="Sportzly.Model.AlbumPhoto" Role="AlbumPhoto" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Activity" Role="Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AlbumPhoto">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="AlbumPhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DocumentTitle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="OwnerID" Nullable="false" Precision="10" Scale="0" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsPublic" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_DocumentTitle_Users" FromRole="DocumentTitle" ToRole="User" />
+    <NavigationProperty Name="Files" Relationship="Sportzly.Model.FK_Files_DocumentTitle" FromRole="DocumentTitle" ToRole="File" />
+    <Property Type="Int64" Name="TeamId" />
+    <NavigationProperty Name="Activities" Relationship="Sportzly.Model.FK_Activities_DocumentTitle" FromRole="DocumentTitle" ToRole="Activity" />
+  </EntityType>
+  <EntityType Name="DocFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="DocTitleId" />
+    <Property Type="Decimal" Name="OwnerId" Precision="10" Scale="0" />
+    <Property Type="String" Name="UrlPath" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="PostDate" Precision="3" />
+    <NavigationProperty Name="DocumentTitle" Relationship="Sportzly.Model.FK_Files_DocumentTitle" FromRole="File" ToRole="DocumentTitle" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Files_Users" FromRole="File" ToRole="User" />
+    <Property Type="String" Name="FileName" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_DocumentTitle_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="1" />
+    <End Type="Sportzly.Model.DocumentTitle" Role="DocumentTitle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentTitle">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Files_DocumentTitle">
+    <End Type="Sportzly.Model.DocumentTitle" Role="DocumentTitle" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.DocFile" Role="File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentTitle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="DocTitleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Files_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.DocFile" Role="File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_DocumentTitle">
+    <End Type="Sportzly.Model.DocumentTitle" Role="DocumentTitle" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Activity" Role="Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentTitle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="DocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Video">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="OwnerId" Nullable="false" Precision="10" Scale="0" />
+    <Property Type="String" Name="YoutubeId" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UrlPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CheerCount" />
+    <Property Type="Int32" Name="JeerCount" />
+    <Property Type="Boolean" Name="IsPublic" Nullable="false" />
+    <Property Type="DateTime" Name="PostDate" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Activities" Relationship="Sportzly.Model.FK_Activities_Videos" FromRole="Video" ToRole="Activity" />
+  </EntityType>
+  <Association Name="FK_Activities_Videos">
+    <End Type="Sportzly.Model.Video" Role="Video" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Activity" Role="Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Video">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="VideoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Carrier">
+    <Key>
+      <PropertyRef Name="Carrier_id_pk" />
+    </Key>
+    <Property Type="Int32" Name="Carrier_id_pk" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Carrier_Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Carrier_Value" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Sportzly.Model.FK_Users_Carrier" FromRole="Carrier" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Users_Carrier">
+    <End Type="Sportzly.Model.Carrier" Role="Carrier" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carrier">
+        <PropertyRef Name="Carrier_id_pk" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Carrier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="1" />
+    <End Type="Sportzly.Model.User" Role="User1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="InviteEmailaddress">
+    <Key>
+      <PropertyRef Name="InviteId" />
+    </Key>
+    <Property Type="Int64" Name="InviteId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InviteType" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="InviteEmail" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="InviteRegistered" />
+    <Property Type="Decimal" Name="InviteBy" Precision="10" Scale="0" />
+    <Property Type="DateTime" Name="InviteDate" Precision="3" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_InviteEmailaddress_Users" FromRole="InviteEmailaddress" ToRole="User" />
+    <Property Type="Int64" Name="TeamId" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_InviteEmailaddress_Teams" FromRole="InviteEmailaddress" ToRole="Team" />
+    <Property Type="Boolean" Name="IsUnsubscribe" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_InviteEmailaddress_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.InviteEmailaddress" Role="InviteEmailaddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InviteEmailaddress">
+        <PropertyRef Name="InviteBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InviteEmailaddress_Teams">
+    <End Type="Sportzly.Model.Team" Role="Team" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.InviteEmailaddress" Role="InviteEmailaddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InviteEmailaddress">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Calendar">
+    <Key>
+      <PropertyRef Name="calendarId" />
+    </Key>
+    <Property Type="Int64" Name="calendarId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Subject" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Location" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="StartTime" Precision="3" />
+    <Property Type="DateTime" Name="EndTime" Precision="3" />
+    <Property Type="Byte" Name="IsAllDayEvent" Nullable="false" />
+    <Property Type="Byte" Name="Color" Nullable="false" />
+    <Property Type="Byte" Name="IsRecurring" Nullable="false" />
+    <Property Type="Byte" Name="IsEditable" Nullable="false" />
+    <Property Type="String" Name="CalendarType" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="TeamId" Nullable="false" />
+    <Property Type="String" Name="Season" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AddressLine" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="City" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Country" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="State" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="userId" Nullable="false" Precision="10" Scale="0" />
+    <Property Type="Int64" Name="parentId" />
+    <Property Type="Int64" Name="opponentTeamId" />
+    <Property Type="String" Name="HomeGame" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OppName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsTeam" />
+    <NavigationProperty Name="Calendar1" Relationship="Sportzly.Model.FK_Calendar_Calendar" FromRole="Calendar" ToRole="Calendar1" />
+    <NavigationProperty Name="Calendar2" Relationship="Sportzly.Model.FK_Calendar_Calendar" FromRole="Calendar1" ToRole="Calendar" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Calendar_Users" FromRole="Calendar" ToRole="User" />
+    <NavigationProperty Name="CalendarAttendees" Relationship="Sportzly.Model.FK_CalendarAttendees_Calendar" FromRole="Calendar" ToRole="CalendarAttendee" />
+    <NavigationProperty Name="Results" Relationship="Sportzly.Model.FK_Result_Calendar" FromRole="Calendar" ToRole="Result" />
+    <Property Type="String" Name="TimeZone" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsDelete" />
+  </EntityType>
+  <EntityType Name="CalendarAttendee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="calendarId" Nullable="false" />
+    <Property Type="String" Name="attendeesEmail" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="response" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="lastUpdated" Precision="3" />
+    <NavigationProperty Name="Calendar" Relationship="Sportzly.Model.FK_CalendarAttendees_Calendar" FromRole="CalendarAttendee" ToRole="Calendar" />
+  </EntityType>
+  <Association Name="FK_Calendar_Calendar">
+    <End Type="Sportzly.Model.Calendar" Role="Calendar" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Calendar" Role="Calendar1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="Calendar1">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calendar_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="1" />
+    <End Type="Sportzly.Model.Calendar" Role="Calendar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Calendar">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CalendarAttendees_Calendar">
+    <End Type="Sportzly.Model.Calendar" Role="Calendar" Multiplicity="1" />
+    <End Type="Sportzly.Model.CalendarAttendee" Role="CalendarAttendee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="CalendarAttendee">
+        <PropertyRef Name="calendarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="ResultId" />
+    </Key>
+    <Property Type="Int64" Name="ResultId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="GameId" Nullable="false" />
+    <Property Type="String" Name="Result1" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ResultUrl" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ResultFile" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Calendar" Relationship="Sportzly.Model.FK_Result_Calendar" FromRole="Result" ToRole="Calendar" />
+  </EntityType>
+  <Association Name="FK_Result_Calendar">
+    <End Type="Sportzly.Model.Calendar" Role="Calendar" Multiplicity="1" />
+    <End Type="Sportzly.Model.Result" Role="Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calendar">
+        <PropertyRef Name="calendarId" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="GameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TeamAdmin">
+    <Key>
+      <PropertyRef Name="TeamOwnerId" />
+    </Key>
+    <Property Type="Int64" Name="TeamOwnerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="TeamId" Nullable="false" />
+    <Property Type="Decimal" Name="UserId" Nullable="false" Precision="10" Scale="0" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_TeamAdmin_Teams" FromRole="TeamAdmin" ToRole="Team" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_TeamAdmin_Users" FromRole="TeamAdmin" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_TeamAdmin_Teams">
+    <End Type="Sportzly.Model.Team" Role="Team" Multiplicity="1" />
+    <End Type="Sportzly.Model.TeamAdmin" Role="TeamAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamAdmin">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamAdmin_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="1" />
+    <End Type="Sportzly.Model.TeamAdmin" Role="TeamAdmin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamAdmin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Feed">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeedSource" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FeedUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FeedSport" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="FeedContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeedId" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Link" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="PublishedDate" Type="DateTime" Precision="3" />
+    <Property Name="Image" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Video" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PollOption">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PollId" Type="Int64" />
+    <Property Name="OptionPoll" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Poll" Relationship="Sportzly.Model.FK_PollOptions_Polls" FromRole="PollOption" ToRole="Poll" />
+    <NavigationProperty Name="Votes" Relationship="Sportzly.Model.FK_Votes_PollOptions" FromRole="PollOption" ToRole="Vote" />
+  </EntityType>
+  <EntityType Name="Poll">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PollQuestion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PollExpiry" Type="DateTime" Precision="3" />
+    <Property Name="TeamId" Type="Int64" />
+    <Property Name="UserId" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="EndPoll" Type="Boolean" />
+    <Property Name="ResultSent" Type="Boolean" />
+    <NavigationProperty Name="PollOptions" Relationship="Sportzly.Model.FK_PollOptions_Polls" FromRole="Poll" ToRole="PollOption" />
+    <NavigationProperty Name="Team" Relationship="Sportzly.Model.FK_Polls_Teams" FromRole="Poll" ToRole="Team" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Polls_Users" FromRole="Poll" ToRole="User" />
+    <NavigationProperty Name="Votes" Relationship="Sportzly.Model.FK_Votes_Polls" FromRole="Poll" ToRole="Vote" />
+  </EntityType>
+  <EntityType Name="Vote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OptionId" Type="Int64" />
+    <Property Name="UserId" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="PolIId" Type="Int64" />
+    <NavigationProperty Name="PollOption" Relationship="Sportzly.Model.FK_Votes_PollOptions" FromRole="Vote" ToRole="PollOption" />
+    <NavigationProperty Name="Poll" Relationship="Sportzly.Model.FK_Votes_Polls" FromRole="Vote" ToRole="Poll" />
+    <NavigationProperty Name="User" Relationship="Sportzly.Model.FK_Votes_Users" FromRole="Vote" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_PollOptions_Polls">
+    <End Type="Sportzly.Model.Poll" Role="Poll" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.PollOption" Role="PollOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Poll">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PollOption">
+        <PropertyRef Name="PollId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_PollOptions">
+    <End Type="Sportzly.Model.PollOption" Role="PollOption" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Vote" Role="Vote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PollOption">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vote">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Polls_Teams">
+    <End Type="Sportzly.Model.Team" Role="Team" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Poll" Role="Poll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Poll">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Polls_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Poll" Role="Poll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Poll">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Polls">
+    <End Type="Sportzly.Model.Poll" Role="Poll" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Vote" Role="Vote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Poll">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vote">
+        <PropertyRef Name="PolIId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Users">
+    <End Type="Sportzly.Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="Sportzly.Model.Vote" Role="Vote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vote">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

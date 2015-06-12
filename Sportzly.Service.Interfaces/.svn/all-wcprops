@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces
+END
+39 Sportzly.Service.Interfaces.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces/39%20Sportzly.Service.Interfaces.csproj
+END
+StyleCop.Cache
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces/StyleCop.Cache
+END
+ICommonService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces/ICommonService.cs
+END
+IActivityService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces/IActivityService.cs
+END
+IUserService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Service.Interfaces/IUserService.cs
+END

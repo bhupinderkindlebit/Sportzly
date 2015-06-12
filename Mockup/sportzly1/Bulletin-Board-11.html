@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery_003.js" type="text/javascript"></script>
+<script src="js/jquery_002.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/nivo-slider/themes/default/default.css" />
+<link rel="stylesheet" type="text/css" href="js/nivo-slider/nivo-slider.css">
+<script src="js/nivo-slider/jquery.nivo.slider.pack.js"></script>
+
+
+
+<script type="text/javascript">
+
+	$(function(){
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbar1').tinyscrollbar();
+			
+		$(".close").click(function(){
+			  $(".like-box,#mask").hide();
+		
+	});
+
+});
+</script>
+<script>
+	$(window).load(function() {
+        $('#slider-home').nivoSlider();
+		
+		
+    });
+</script>
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+				enableSelectBoxes();
+			});
+			
+			function enableSelectBoxes(){
+				$('div.selectBox').each(function(){
+					$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+					$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+					
+					$(this).children('span.selected,span.selectArrow').click(function(){
+						if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+							$(this).parent().children('div.selectOptions').css('display','block');
+						}
+						else
+						{
+							$(this).parent().children('div.selectOptions').css('display','none');
+						}
+					});
+					
+					$(this).find('span.selectOption').click(function(){
+						$(this).parent().css('display','none');
+						$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+						$(this).parent().siblings('span.selected').html($(this).html());
+					});
+				});				
+			}//-->
+			
+			$(document).ready(function(){
+				$('.list-vdv2:even').addClass('xam')
+			});
+			$(document).ready(function(){
+				$('.cup-fifa:even').addClass('xam')
+			});
+
+</script>
+ <link type="text/css" href="css/base.css" rel="stylesheet" />
+ 		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pikachoose.full.js"></script>
+		<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose();
+				});
+				
+		</script>
+        
+        
+        
+<script type="text/javascript" src="js/jcarousel/jquery.jcarousel.min.js"></script>
+<!--
+  jCarousel skin stylesheet
+-->
+ <link rel="stylesheet" type="text/css" href="js/jcarousel/skins/tango/skin.css" />
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        start: 3
+    });
+	jQuery('#mycarousel-2').jcarousel({
+        start: 3
+    });
+	jQuery('#mycarousel-2-1').jcarousel({
+        start: 3
+    });
+	jQuery('#mycarousel-2-2').jcarousel({
+        start: 3
+    });
+	jQuery('#mycarousel-2-3').jcarousel({
+        start: 3
+    });
+});
+
+</script> 
+</head>
+<body>
+ 	<header>
+    	<section class="wrapper-top-body">
+        	<nav>
+                <ul>
+                    <li><a href="#">STREAM</a></li>
+                    <li><a href="#">SOCIAL</a></li>
+                    <li><a href="#">TEAMS</a></li>
+                    <li><a href="#">LEAGUES</a></li>
+                    <li><a href="#">MARKET</a></li>
+					<li><a href="#" class="last">a</a></li>
+                </ul>
+             </nav>
+            <a href="#"><img class="logo" alt="" src="images/logo1.png" /></a>
+            <div class="search">
+            	<form>
+                    <input type="text" class="seach-text"/>
+                    <input class="icon-search" type="image" alt="" src="images/icon-search.png" />
+                </form>
+            </div>
+       <!--End-search-->
+            
+            
+            
+           <div class='selectBox'>
+			<span class='selected'></span>
+			<span class='selectArrow'>&#9660</span>
+			<div class="selectOptions" >
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+                <span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+			</div>
+		</div>
+         </section><!--End-section-wrapper-top-body-->
+    </header><!--End-header-->
+             <section id="wrapper">
+                 <section id="content">
+                          <section class="bottom-content-biker">
+							
+							
+								<section class="like-box">
+                         	 <article class="top-like-box">
+                             		<img class="like-img" alt="" src="images/img-user2.png">
+                                    <h3>WEDNESDAY MEETING - 2:00PM OKLAHOMA UNIVERSITY SOCCER FIELD</h3>
+                                    <span class="name-ct name-ct2">
+ 									<span class="date">Posted by:</span>Johnny Radford</span>
+                                    <div class="link">
+                                                <a href="#">SOCCER</a>
+                                                <a href="#"><span class="h20 dh-2"> </span>2:00PM</a>
+                                                <a href="#"><span class="h20 maytinh"></span>JULY 30, 2012</a>
+                                                <a href="#"><span class="h20"></span>OKLAHOMA CITY, USA</a>
+                                                <a href="#"><span class="h20 star"></span>PROFESSIONAL</a>
+                                     </div>
+                                     <p>Hi Team! As discussed during our last practice, we’re gonna have a meeting on every Wednesdays. So see you later this afternoon at the University Soccer Field. 2pm sharp - consequences await those who will be late!  - Coach</p>
+                                     <div class="clear"></div>
+                             </article><!--End-top-like-box-->
+                             <div id="scrollbar1">
+                                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                <div class="viewport"><div class="overview">
+                             <article class="list-comment">
+                             	 <div class="in-comment-like-box">
+                                 	<img alt="" src="images/img-content-fans22.png">
+                                    <span class="name-ct">
+										Joe Wolfe<span class="date"> . 1 hour and 5 minutes ago</span></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor fringilla dui, ut aliquet justo hendrerit non. Aliquam risus orci, vehicula quis cursus vel, pellentesque a turpis. Sed non interdum magna.</p>
+                                    <div class="clear"></div>
+                                 </div><!--End-in-comment-like-box-->
+                                 <div class="in-comment-like-box">
+                                 	<img alt="" src="images/img-content-fans22.png">
+                                    <span class="name-ct">
+										Joe Wolfe<span class="date"> . 1 hour and 5 minutes ago</span></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor fringilla dui, ut aliquet justo hendrerit non. Aliquam risus orci, vehicula quis cursus vel, pellentesque a turpis. Sed non interdum magna.</p>
+                                    <div class="clear"></div>
+                                 </div><!--End-in-comment-like-box-->
+                                  <div class="in-comment-like-box">
+                                 	<img alt="" src="images/img-content-fans22.png">
+                                    <span class="name-ct">
+										Joe Wolfe<span class="date"> . 1 hour and 5 minutes ago</span></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor fringilla dui, ut aliquet justo hendrerit non. Aliquam risus orci, vehicula quis cursus vel, pellentesque a turpis. Sed non interdum magna.</p>
+                                    <div class="clear"></div>
+                                 </div><!--End-in-comment-like-box-->
+                                 <div class="say-something say-something-list-comment ">
+                                                        	 <form class="something">
+                                                             	<input class="comment-input" type="text" onfocus="if (this.value == 'saysomething:') {this.value = '';}" onblur="if (this.value == '') {this.value = 'saysomething:';}" value="saysomething:" tabindex="1">
+                                                             </form>
+                                   </div>                                   
+                                   <div class="clear"></div>
+                              </article><!--End-list-comment-->
+							  
+							  
+                              </div></div>
+							  
+							  </div>
+							  <div class="container-close">
+										<a href="#" class="close"><img src="images/close.png" alt=""/></a>
+								</div>
+                         </section><!--End-like-box-->       	 
+                    <div class="clear"></div>
+						<div id="mask"></div>  
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+                         	<section class="left-bottom-content-biker">
+                            	<h2 class="media"><span class="number-135">Aero Kickers<a href="#"></a></span></h2>
+                                  <div class="video-biker">
+                                	<div class="info-video info-video2">
+                                            <img alt="" src="images/player-team-img-3.png" />
+                                            <div class="infomation-sports">
+                                                <span class="suport">SPORTS</span>
+                                                <a class="soccer" href="#">SOCCER</a>
+                                            </div><!--End-infomation-sports-->
+                                            <div class="infomation-sports">
+                                                <span class="suport">GENDER</span>
+                                                <a class="soccer" href="#">SOCCER</a>
+                                            </div><!--End-infomation-sports-->
+                                            <div class="infomation-sports">
+                                                <span class="suport">LEVEL</span>
+                                                <a class="soccer" href="#">PROFESSIONAL</a>
+                                            </div><!--End-infomation-sports-->
+                                            <div class="infomation-sports">
+                                                <span class="suport">CITY</span>
+                                                <a class="soccer" href="#">OKLAHOMA</a>
+                                            </div><!--End-infomation-sports-->
+                                            <div class="infomation-sports">
+                                                <span class="suport">COUNTRY</span>
+                                                <a class="soccer" href="#">USA</a>
+                                            </div><!--End-infomation-sports-->
+                                            <div class="clear"></div>
+                                             <span class="view-player view-player3 view-player4">152<span class="player"><br>Played</span></span>
+                                             <span class="view-player view-player3 view-player4">103<span class="player"><br>Wins</span></span>
+                                             <span class="view-player view-player3 view-player4">9<span class="player"><br>Awards</span></span>
+                                             <span class="view-player view-player3 view-player4">386<span class="player"><br>Fans</span></span>
+                                     </div><!--End-info-video-->
+                                      <div class="clear"></div>
+                                  </div><!--End-video-biker-->  
+                                  <h2 class="media far">ABOUT</h2>
+                                  <div class="video-biker">
+                                	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor fringilla dui, ut aliquet justo hendrerit non. Aliquam risus orci, vehicula quis cursus vel, pellentesque a turpis. Sed non interdum magna. Aenean ut enim ac urna consectetur vulputate quis eget nulla. Aliquam sed nulla risus, quis rutrum orci mauris congue dui at.</p>
+ 
+                                  </div>
+                                     <h2 class="media far">Fans</h2>
+                                  <div class="video-biker">
+                                 	<div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-2.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-1.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-4.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-2.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-1.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-4.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-2.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-1.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-4.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-2.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-1.png">
+                                    </div><!--End-info-video2-->
+                                    <div class="info-video info-video3">
+                                    	<img alt="" src="images/img-content-fans22-4.png">
+                                    </div><!--End-info-video2-->
+                                    
+                                         <div class="clear"></div>
+                                    <a href="#"><img src="images/button-video-2.png" alt="" class="button-video"></a>
+                                   </div><!--End-video-biker-->
+                                   
+                                    <h2 class="media far">League Schedules</h2>
+                                  	<div class="video-biker">
+                                		 <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Tornado Cup</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Oklahoma League</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Champions Cup</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Oklahoma League S2</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Tornado Cup</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="">Oklahoma League S2</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup" href="#">Champions Cup</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         <div class="cup-fifa">
+                                         		<a class="list-cup"href="#" >Oklahoma Cup S2</a>
+                                                <span class="time-cup">08.31.2012</span>
+                                         </div><!--End-cup-fifa-->
+                                         
+                                           <div class="clear"></div>
+                                    <a href="#"><img src="images/join-more.png" alt="" class="button-video-3"></a>
+                                   </div><!--End-video-biker-->
+                                 </section><!--End-left-bottom-content-biker-->
+                                 
+                                 
+                                 
+                             <section class="right-bottom-content-biker">
+                            	<section class="top-right-bottom-content-biker">
+                                	 <article class="university-football">
+                                     		<h3>Bulletin Board</h3>
+                                     	<article class="in-university-football">
+                                        	<div class="number-university">
+                                            	<img alt="" src="images/img-content-fans22.png">
+                                                <h2>MEETING AT 2:00PM - OKLAHOMA UNIVERSITY SOCCER FIELD</h2> 
+                                                 <span class="post">Posted by:<span class="name-post">Johnny Radford</span></span>
+												 <span class="post-span">1 hour ago</span>
+                                            </div><!--end-number-university-->
+                                            
+                                            <div class="number-university">
+                                            	<img alt="" src="images/img-content-fans22.png">
+                                                <h2>MEETING AT 2:00PM - OKLAHOMA UNIVERSITY SOCCER FIELD</h2> 
+                                                 <span class="post">Posted by:<span class="name-post">Johnny Radford</span></span>
+												  <span class="post-span">1 hour ago</span>
+                                            </div><!--end-number-university-->
+                                            
+                                            <div class="number-university">
+                                            	<img alt="" src="images/img-content-fans22.png">
+                                                <h2>MEETING AT 2:00PM - OKLAHOMA UNIVERSITY SOCCER FIELD</h2> 
+                                                 <span class="post">Posted by:<span class="name-post">Johnny Radford</span></span>
+												  <span class="post-span">1 hour ago</span>
+                                            </div><!--end-number-university-->
+                                            
+                                            <div class="number-university">
+                                            	<img alt="" src="images/img-content-fans22.png">
+                                                <h2>MEETING AT 2:00PM - OKLAHOMA UNIVERSITY SOCCER FIELD</h2> 
+                                                 <span class="post">Posted by:<span class="name-post">Johnny Radford</span></span>
+												  <span class="post-span">1 hour ago</span>
+                                            </div><!--end-number-university-->
+                                            
+                                            <a href="#"><img class="add-new-post" alt="" src="images/add-new-post.png"></a>
+                                             <section class="join-a-team join-a-team-next-page2">
+                                     			<span class="page-team">1 - 4  of  572</span> <a href="#" class="prev"></a><a href="#" class="next"></a>
+                                			 </section>
+                                            <div class="clear"></div>
+                                            
+                                        </article><!--End-in-university-football-->
+                                		 <div class="clear"></div>
+                                     </article><!--End-university-football-->
+                                      
+                                     <article class="tab-link">
+                                     	<a href="#">PUBLIC WALL</a>
+                                        <a href="#">LOCKER ROOM</a>
+                                        <a href="#">TEAM PROFILE</a>
+                                        <a href="#">TEAM ROSTER</a>
+                                        <a href="#">STANDINGS</a>
+                                     </article><!--end-tab-link-->
+                                     <article class="tab-img-link">
+                                    	 <a href="#"><img class="link-tab" alt="" src="images/tab-img-link.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link.png"></a>
+                                         
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-2.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-2.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-2.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-2.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-2.png"></a>
+                                         <a href="#"><img class="link-tab" alt="" src="images/tab-img-link-3.png"></a>
+                                         <div class="clear"></div>
+                                     </article><!--end-tab-img-link-->
+                                     
+                                    <form class="search-member">
+                                    	<input class="search-info-member" type="text" />
+                                        <input class="submit-member" type="submit" />
+                                    </form>
+                                    <div class="link-member">
+                                    	<a href="#"><img class="click-link" src="images/link1-member.png" /></a>
+                                        <a href="#"><img class="click-link" src="images/link1-member.png" /></a>
+                                        <a href="#"><img class="click-link" src="images/link1-member.png" /></a>
+                                    </div><!--End-link-member-->
+                                    <div class="member-comment">
+                                    	 <div class="info-comment">
+                                        	<div class="left-comment">
+                                            	<img class="body-comment" alt="" src="images/img-user2.png" />
+                                                <span class="name-comment">Johnny Radford</span>
+                                                <p class="left-comment-text">Hey Guys! If you haven't seen Lionel Messi playing last year, I guess you’re completely on the wrong track! LOL!</p>
+                                                <span class="button">5 minutes ago</span>
+                                                <a href="#"><img class="button" alt="" src="images/comment.png" /></a>
+                                            </div><!--End-left-comment-->
+                                            <div class="right-comment">
+                                            	<span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                            </div><!--End-right-comment-->
+ 											<div class="clear"></div>
+                                          </div><!--End-info-comment-->
+                                          
+                                          <div class="info-comment">
+                                                    <div class="left-comment">
+                                                        <img class="body-comment" alt="" src="images/jop.png" />
+                                                        <span class="name-comment">Mark Hamelton</span>
+                                                        <p class="left-comment-text">Johnny - man your team is awesome! Does it cost you million $$$ to handle those guys??? :-)</p>
+                                                        <span class="button">5 minutes ago</span>
+                                                     </div><!--End-left-comment-->
+                                                    <div class="right-comment">
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                                    </div><!--End-right-comment-->
+                                                <div class="clear"></div>
+                                                    <div class="nd-comment">
+                                                        <div class="in-nd-comment">
+                                                        	<img class="img-in-nd-comment" alt="" src="images/img-content-fans22.png" />
+                                                            <span class="name-comment">Joseph Caparelli</span>
+                                                            <p class="left-comment-text">Hey I know one. You can visit “Missouri's Katy Trail” - has a very good scenery and isn’t dangerous at all. You’ll definitely enjoy it! Check out this link:<a href="#"> http://www.usatoday.com/travel/destinations</a></p>
+                                                             <a href="#"><span class="button button2">30 minutes ago</span></a>
+                                                             <a href="#"><img class="mt-len-xuong" alt="" src="images/mt-len-xuong.png" /></a>
+                                                             <a href="#"><img class="click-here" alt="" src="images/$1.png" /></a>
+                                                             <div class="clear"></div>
+                                                        </div><!--End-in-nd-comment-->
+                                                        
+                                                         <div class="in-nd-comment">
+                                                        	<img class="img-in-nd-comment" alt="" src="images/img-content-fans22.png" />
+                                                            <span class="name-comment">Joseph Caparelli</span>
+                                                            <p class="left-comment-text">Hey I know one. You can visit “Missouri's Katy Trail” - has a very good scenery and isn’t dangerous at all. You’ll definitely enjoy it! Check out this link:<a href="#"> http://www.usatoday.com/travel/destinations</a></p>
+                                                             <a href="#"><span class="button button2">30 minutes ago</span></a>
+                                                             <a href="#"><img class="mt-len-xuong" alt="" src="images/mt-len-xuong.png" /></a>
+                                                             
+                                                             <div class="clear"></div>
+                                                        </div><!--End-in-nd-comment-->
+                                                        
+                                                        <div class="say-something">
+                                                        	 <form>
+                                                             	 <input tabindex="1" value="saysomething:" onBlur="if (this.value == '') {this.value = 'saysomething:';}" onFocus="if (this.value == 'saysomething:') {this.value = '';}" type="text">
+                                                             </form>
+                                                        </div><!--End-say-something-->
+                                                        
+                                                        
+                                                    </div><!--End-nd-comment-->
+                                                <div class="clear"></div>
+                                          </div><!--End-info-comment-->
+                                          
+                                           <div class="info-comment">
+                                                    <div class="left-comment">
+                                                        <img class="body-comment" alt="" src="images/img-user3.png" />
+                                                        <span class="name-comment">Joe Wolfe</span>
+                                                        <p class="left-comment-text">HCheck this out. NBA at it’s best!<br />
+Who will win the title: the Heat or the Thunder?</p>
+                                                        <img alt="" src="images/hot-girl4.png" class="left-text-img"/>
+                                                       <a href="#"><span class="button button3">1 hour and 5 minutes ago</span></a>
+                                                       <a href="#"><img class="button" alt="" src="images/comment.png" /></a>
+                                                     </div><!--End-left-comment-->
+                                                    <div class="right-comment">
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                                    </div><!--End-right-comment-->
+                                                <div class="clear"></div>
+                                            </div><!--End-info-comment-->
+                                            
+                                             <div class="info-comment">
+                                        	<div class="left-comment">
+                                            	<img class="body-comment" alt="" src="images/img-user5.png" />
+                                                <span class="name-comment">Cynthia Baker</span>
+                                                <p class="left-comment-text">Ninj'd me again! Gonna go see if my kids have the hubby burried in the sand....bbl</p>
+                                               <a href="#"><span class="button">30 minutes ago</span></a>
+                                                <a href="#"><img class="button" alt="" src="images/comment.png" /></a>
+                                            </div><!--End-left-comment-->
+                                            <div class="right-comment">
+                                            	<span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                            </div><!--End-right-comment-->
+ 											<div class="clear"></div>
+                                          </div><!--End-info-comment-->
+                                          <div class="info-comment">
+                                                    <div class="left-comment">
+                                                        <img class="body-comment" alt="" src="images/img-user4.png" />
+                                                        <span class="name-comment">Amanda Hagenbuch</span>
+                                                        <p class="left-comment-text">Com’on guys don’t make me laugh! Is this some kind of a joke???</p>
+                                                        <img alt="" src="images/hot-girl5.png" class="left-text-img"/>
+                                                       <a href="#"><span class="button button3">30 minutes ago</span></a>
+                                                      </div><!--End-left-comment-->
+                                                    <div class="right-comment">
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                                    </div><!--End-right-comment-->
+                                                <div class="clear"></div>
+                                                    <div class="nd-comment">
+                                                    	 <div class="say-something show-comment">
+                                                        	  <span>Show 3 more comments..</span>
+                                                        </div><!--End-say-something show-comment-->
+                                                    
+                                                        <div class="in-nd-comment">
+                                                        	<img class="img-in-nd-comment" alt="" src="images/img-content-fans22.png" />
+                                                            <span class="name-comment">Joseph Caparelli</span>
+                                                            <p class="left-comment-text">Hey I know one. You can visit “Missouri's Katy Trail” - has a very good scenery and isn’t dangerous at all. You’ll definitely enjoy it! Check out this link:<a href="#"> http://www.usatoday.com/travel/destinations</a></p>
+                                                              <a href="#"><span class="button button3">30 minutes ago</span></a>
+                                                             <a href="#"><img class="mt-len-xuong" alt="" src="images/mt-len-xuong.png" /></a>
+                                                             <a href="#"><img class="click-here" alt="" src="images/click-her.png" /></a>
+                                                             <div class="clear"></div>
+                                                        </div><!--End-in-nd-comment-->
+                                                        
+                                                         <div class="in-nd-comment">
+                                                        	<img class="img-in-nd-comment" alt="" src="images/img-content-fans22.png" />
+                                                            <span class="name-comment">Joseph Caparelli</span>
+                                                            <p class="left-comment-text">Hey I know one. You can visit “Missouri's Katy Trail” - has a very good scenery and isn’t dangerous at all. You’ll definitely enjoy it! Check out this link:<a href="#"> http://www.usatoday.com/travel/destinations</a></p>
+                                                            <a href="#"><span class="button button3">30 minutes ago</span></a>
+                                                             <a href="#"><img class="mt-len-xuong" alt="" src="images/mt-len-xuong.png" /></a>
+                                                             
+                                                             <div class="clear"></div>
+                                                        </div><!--End-in-nd-comment-->
+                                                        
+                                                        <div class="say-something">
+                                                        	 <form>
+                                                             	<input tabindex="1" value="saysomething:" onBlur="if (this.value == '') {this.value = 'saysomething:';}" onFocus="if (this.value == 'saysomething:') {this.value = '';}" type="text">
+                                                             </form>
+                                                        </div><!--End-say-something-->
+                                                     </div><!--End-nd-comment-->
+                                                <div class="clear"></div>
+                                          </div><!--End-info-comment-->
+                                          
+                                           <div class="info-comment">
+                                                    <div class="left-comment">
+                                                        <img class="body-comment" alt="" src="images/img-content-fans3.png" />
+                                                        <span class="name-comment">Amanda Hagenbuch</span>
+                                                        <p class="left-comment-text">Com’on guys don’t make me laugh! Is this some kind of a joke???</p>
+                                                        <a href="#"><span class="button">30 minutes ago</span></a>
+                                                       <a href="#"><img class="button" alt="" src="images/comment.png" /></a>
+                                                     </div><!--End-left-comment-->
+                                                    <div class="right-comment">
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers.png" /></a></span>
+                                                        <span class="points">3<span class="in-points"><br />points</span><br /><a href="#" class="right-comment-link"><img alt="" src="images/cheers2.png" /></a></span>
+                                                    </div><!--End-right-comment-->
+                                                <div class="clear"></div>
+                                                    <div class="nd-comment">
+                                                         <div class="in-nd-comment">
+                                                        	<img class="img-in-nd-comment" alt="" src="images/img-content-fans22.png" />
+                                                            <span class="name-comment">Joseph Caparelli</span>
+                                                            <p class="left-comment-text">Hey I know one. You can visit “Missouri's Katy Trail” - has a very good scenery and isn’t dangerous at all. You’ll definitely enjoy it! Check out this link:<a href="#"> http://www.usatoday.com/travel/destinations</a></p><br />
+                                                            <a href="#"><img class="continue-reading" alt="" src="images/continue-reading.png" /></a><br />
+                                                             <a href="#"><span class="button button2">30 minutes ago</span></a>
+                                                             <a href="#"><img class="mt-len-xuong" alt="" src="images/mt-len-xuong.png" /></a>
+                                                             <a href="#"><img class="click-here" alt="" src="images/click-her.png" /></a>
+                                                             <div class="clear"></div>
+                                                        </div><!--End-in-nd-comment-->
+                                                         <div class="say-something">
+                                                        	 <form>
+                                                             	<input tabindex="1" value="saysomething:" onBlur="if (this.value == '') {this.value = 'saysomething:';}" onFocus="if (this.value == 'saysomething:') {this.value = '';}" type="text">
+                                                             </form>
+                                                        </div><!--End-say-something-->
+                                                     </div><!--End-nd-comment-->
+                                                <div class="clear"></div>
+                                          </div><!--End-info-comment-->
+                                          
+                                          
+                                     </div><!--End-member-comment-->
+                                </section><!--End-top-right-bottom-content-biker-->
+                             </section><!--End-right-bottom-content-biker-->
+                            <div class="clear"></div>
+                         </section><!--End-bottom-content-biker-->       	 
+                    <div class="clear"></div>
+                     <div class="footer-content">
+                    	<select>
+                        	<option><img alt="" src="images/$.png" />SHOW MORE POSTS</option>
+                        </select>
+                    </div>
+                </section><!--End-section-content-->
+             </section><!--End-wrapper-->
+      <footer>
+      		<div class="wrapper-bottom-body">
+            	<a href="#"><img class="logo-body-footer" alt="" src="images/logo-body-footer.png" /></a>
+                <div class="menu-body-footer">
+                    <a href="#">News | </a>
+                    <a href="#">Testimonials | </a>
+                    <a href="#">Security | </a>
+                    <a href="#">Legal |</a>
+                    <a href="#">Store |</a>
+                    <a href="#">Locator |</a>
+                    <a href="#">Jobs |</a>
+                    <a href="#"> Help Center </a>
+                    </div><!--End-menu-body-footer
+            </div><!--End-wrapper-bottom-body-->
+    </footer><!--End-footer-->
+</body>
+</html>

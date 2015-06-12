@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Sportzly</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
+</head>
+<body>
+    <div class="page">
+        <section id="login-drawer">
+        	<div class="drawer-holder wrapper">
+            	<div class="close-drawer close">Close</div>
+                	<div id="login-form">
+                        <form action="" method="" name="">
+                            <input class="login-email field" type="email" name="login-email" value="Email Address"
+                             autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                            <input class="login-password field" type="password" name="login-password" value="Password" />
+                            <input class="login-submit-btn" type="submit" value="LOGIN">
+                        </form>
+                    </div>
+            	<p class="login-forgot">
+        			<a href="#">FORGOT PASSWORD?</a>
+      			</p>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <header id="home-header">
+        	<div class="holder">
+                <h1 class="logo"><a href="#"></a></h1>
+				<div class="actions"><a class="login-button close">LOGIN</a></div>
+                <ul id="home-nav">
+					<li><a href="#">HOW IT WORKS</a></li>
+					<li><a href="#">ABOUT US</a></li>
+				</ul>
+			</div>
+        </header>
+        <section id="main-slider">
+        	<div id="backstretch">
+    			<img src="images/slider-01.jpg" alt="" class="active" />
+    			<img src="images/slider-02.jpg" alt="" />
+    			<img src="images/slider-03.jpg" alt="" />
+			</div>
+        	<div class="wrapper">
+        		<div class="slide-title">Sharing Sports Beats Has Never Been this Cool!
+            	We are a social network that provides you informative news and great deals based on your interest - sports.
+            	</div>
+                <div class="signup-area">
+                	<div class="signup-area-wrapper">
+                            <div id="signup-area-form">
+                                <form action="" method="" name="">
+                                    <input class="signup-email field" type="email" name="signup-email" value="Email Address"
+                                     autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                    <input class="signup-password field" type="password" name="signup-password" value="Password" />
+                                    <input class="signup-password-confirmation field" type="password" name="signup-confirm" value="Confirm Password" />
+                                    <input class="signup-submit-btn" type="submit" value="Sign Up for Sportzly">
+                                </form>
+                            </div>
+                            <div class="signup-area-connect">
+                            	<span class="connect-border"></span>
+                            	<strong>or Connect with:</strong>
+                            	<span class="connect-border"></span>
+                            </div>
+                            <div class="signup-social">
+                            	<div class="signup-social-facebook"></div>
+                                <div class="signup-social-google"></div>
+                                <div class="signup-social-twitter"></div>
+                                <div class="signup-social-yahoo last"></div>
+                            </div>
+                	</div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="features">
+                	<div class="feature-box">
+                    	<div class="feature-box-content">
+                        <h2 class="content-image-a">Explore recreational sports</h2>
+                        <p>Find players, partners, teams, games and leagues, or just see what's happening in your area.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                    	<div class="feature-box-content">
+                        <h2 class="content-image-b">Connect with players in your area</h2>
+                        <p>Find players, partners, teams, games and leagues, or just see what's happening in your area.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box last">
+                    	<div class="feature-box-content">
+                        <h2 class="content-image-c">Organize team games and leagues</h2>
+                        <p>Find players, partners, teams, games and leagues, or just see what's happening in your area.</p>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+        </section>
+        <section id="middle">
+	        	<div class="video-block">
+                	<div class="video-supp">
+                    	<h1>What is <strong class="colorize">Sportzly?</strong></h1>
+                        <p><strong>Sportzly is a different kind of social network</strong> all about organizing and managing your sports. It's a tool for organizing your sports teams online, for planning games and events, and for managing and promoting your league. It's for people who are passionate about playing sports and staying active. If that's you, you've come to the right place!</p>
+                        <a class="discover-btn lightbox">Discover a whole new world of sports!</a>
+                    </div>
+                    <div class="video-player">
+                    	<div class="video-player-component">
+                        		<a href="#" class="video-player-splash">
+                                	<span class="video-player-overlay"></span>
+                            		<span class="video-player-btn"></span>
+                            	</a>
+                    	</div>
+                        <span class="video-player-shadow"></span>
+                    </div>
+                    <div class="clearfix"></div>
+            	</div>
+                <div class="trending-now-section">
+                	<h3 class="heading">Trending Now</h3>
+                    <div class="article-tile">
+                    	<a href="#" class="article-tile-body">
+                        	<span class="article-tile-thumbnail">
+                            	<span class="article-tile-thumbnail-image">
+                                	<img src="images/article-image-01.jpg">
+                            	</span>
+                                <span class="article-tile-title">
+                                	<span class="article-tile-overlay"></span>
+                                    <strong class="article-tile-title-text">He's the best around</strong>
+                             	</span>
+                                <span class="article-tile-description">
+                                    <span class="article-tile-description-text">James had 26 points, 11 rebounds and 13 assists, and got the kind of help that was worth leaving home for, leading the Heat in a 121-106 rout of the Oklahoma City Thunder on Thursday night...</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="article-tile">
+                    	<a href="#" class="article-tile-body">
+                        	<span class="article-tile-thumbnail">
+                            	<span class="article-tile-thumbnail-image">
+                                	<img src="images/article-image-02.jpg">
+                            	</span>
+                                <span class="article-tile-title">
+                                	<span class="article-tile-overlay"></span>
+                                    <strong class="article-tile-title-text">Finally an NBA champion</strong>
+                             	</span>
+                                <span class="article-tile-description">
+                                    <span class="article-tile-description-text">James had 26 points, 11 rebounds and 13 assists, and got the kind of help that was worth leaving home for, leading the Heat in a 121-106 rout of the Oklahoma City Thunder on Thursday night...</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="article-tile last">
+                    	<a href="#" class="article-tile-body">
+                        	<span class="article-tile-thumbnail">
+                            	<span class="article-tile-thumbnail-image">
+                                	<img src="images/article-image-03.jpg">
+                            	</span>
+                                <span class="article-tile-title">
+                                	<span class="article-tile-overlay"></span>
+                                    <strong class="article-tile-title-text">Hammel strikes out 10 in Orioles' win against Nationals</strong>
+                             	</span>
+                                <span class="article-tile-description">
+                                    <span class="article-tile-description-text">James had 26 points, 11 rebounds and 13 assists, and got the kind of help that was worth leaving home for, leading the Heat in a 121-106 rout of the Oklahoma...</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="featured-members-section">
+                	<h3 class="heading">Featured Members</h3>
+                    <div class="featured-members-container">
+                    	<div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-01.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Amanda H.</a>
+                        </div>
+                        <div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-02.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Joseph C.</a>
+                        </div>
+                        <div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-03.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Mark H.</a>
+                        </div>
+                        <div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-04.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Hubert J.</a>
+                        </div>
+                        <div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-05.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Lynn M.</a>
+                        </div>
+                        <div class="user-tile">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-06.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Johnny R.</a>
+                        </div>
+                        <div class="user-tile last">
+                        	<div class="user-tile-bg">
+                        		<a href="#" class="user-tile-avatar">
+                            		<img src="images/user-07.jpg">
+                            	</a>
+                        	</div>
+                            <a href="#" class="user-tile-username">Jane B.</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer id="footer">
+        	<div class="wrapper">
+        	<a href="#" class="footer-logo"></a>
+            <div class="footer-nav">
+            	<a href="#">News</a>|
+                <a href="#">Testimonials</a> | 
+                <a href="#">Security</a> | 
+                <a href="#">Legal</a> | 
+                <a href="#">Store</a> | 
+                <a href="#">Locator</a> | 
+                <a href="#">Jobs</a> | 
+                <a href="#">Help Center</a> 
+            </div>
+        </footer>
+        <div class="lightbox-wrapper">
+        	<div class="lightbox-overlay"></div>
+          	<div class="lightbox-container">
+                <div class="lightbox-contents">
+                    <div class="lightbox-contents-left">
+                        <div class="lightbox-title">
+                        <strong>Create Your Sportzly Account</strong>
+                        <p>Join the Online Sports Community</p>
+                        </div>
+                        <div id="lightbox-form">
+                            <form action="" method="" name="">
+                                <input class="lightbox-field" type="text" name="lightbox-name" value="Full Name"
+                                    autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                <input class="lightbox-field" type="email" name="lightbox-email" value="Email Address"
+                                    autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                <input class="lightbox-field" type="password" name="lightbox-password" value="Password" />
+                                <input class="lightbox-field" type="password" name="lightbox-confirm" value="Confirm Password" />
+                                <input class="lightbox-submit-btn" type="submit" value="Create My Account">
+                            </form>
+                        </div>
+                        <span>By clicking Create my account you agree to the <a href="#">Terms of Service</a></span>
+                    </div>
+                    <div class="lightbox-contents-right">
+                        <span>Also Introducing:</br><strong>Sportzly Mobile App</strong></span>
+                        <p>Mingle with friends and get the latest sports updates</br>
+    directly on your iPhone or Android!</p>
+                        <a href="#">Download Now!</a>
+                        <div class="lightbox-contents-right-image"></div>
+                    </div>
+                </div>
+                <div class="lightbox-close"></div>
+        	</div>
+        </div>
+        
+	</div>
+</body>
+</html>

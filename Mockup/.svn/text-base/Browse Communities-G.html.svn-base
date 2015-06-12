@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery_003.js" type="text/javascript"></script>
+<script src="js/jquery_002.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+				enableSelectBoxes();
+			});
+			
+			function enableSelectBoxes(){
+				$('div.selectBox').each(function(){
+					$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+					$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+					
+					$(this).children('span.selected,span.selectArrow').click(function(){
+						if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+							$(this).parent().children('div.selectOptions').css('display','block');
+						}
+						else
+						{
+							$(this).parent().children('div.selectOptions').css('display','none');
+						}
+					});
+					
+					$(this).find('span.selectOption').click(function(){
+						$(this).parent().css('display','none');
+						$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+						$(this).parent().siblings('span.selected').html($(this).html());
+					});
+				});				
+			}//-->
+
+</script>
+ <link type="text/css" href="css/base.css" rel="stylesheet" />
+ 		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pikachoose.full.js"></script>
+		<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose();
+				});
+		</script>
+        
+</head>
+<body>
+ 	<header>
+    	<section class="wrapper-top-body">
+        	<nav>
+                <ul>
+                    <li><a href="#">STREAM</a></li>
+                    <li><a href="#">SOCIAL</a></li>
+                    <li><a href="#">TEAMS</a></li>
+                    <li><a href="#">LEAGUES</a></li>
+                    <li><a href="#">MARKET</a></li>
+					<li class="last">a<a href="#"></a></li>
+                </ul>
+             </nav>
+            <a href="#"><img class="logo" alt="" src="images/logo1.png" /></a>
+            <div class="search">
+            	<form>
+                    <input type="text" class="seach-text"/>
+                    <input class="icon-search" type="image" alt="" src="images/icon-search.png" />
+                </form>
+            </div>
+       <!--End-search-->
+            
+            
+            
+           <div class='selectBox'>
+			<span class='selected'></span>
+			<span class='selectArrow'>&#9660</span>
+			<div class="selectOptions" >
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+                <span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+			</div>
+		</div>
+            
+            
+            
+            
+        </section><!--End-section-wrapper-top-body-->
+    </header><!--End-header-->
+             <section id="wrapper">
+             
+                <section id="header">
+                	<div class="user">
+                    	<img class="user-img" alt="" src="images/img-user.png" />
+                        <h3 class="username">Johnny Radford</h3>
+                        <div class="status">
+                        	<img class="button-status" alt="" src="images/pro-2.png" />
+                            <span class="fans">
+                            	<span>458</span>Fans
+                            </span>
+                            <span class="fans">
+                            	<span>458</span>Fanning
+                            </span>
+                        </div><!--End-pro-->
+                    </div><!--End-user-->
+                    <div class="user-menu">
+                    	<nav>
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">My Teams</a></li>
+                                <li><a href="#">Albums</a></li>
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">Stats</a></li>
+                            </ul>
+                         </nav>   
+                     </div><!--End-user-menu-->
+                     <div class="jewelbuttons">
+                     	<ul>
+                        	<li><a href="#"><img alt="" src="images/groop.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/massage.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/bong.png" /></a></li>
+                            <li class="calculatol"><a href="#"><img alt="" src="images/maytinh.png" /></a></li>
+                        </ul>
+                     </div><!--End-massage-->
+                 </section><!--End-header-->
+                
+                <section id="side-bar">
+                	<section class="top-side-bar">
+                    	<h2 class="title-community">Browse Communities</h2>
+                        <ul>
+                        	<li><a href="#">Popular Communities</a></li>
+                            <li><a href="#">All Communities</a></li>
+                            <li><a href="#">New Communities</a></li>
+                        </ul>
+                        <div class="start">
+                        	<a href="#">Start a New Community</a>
+                        </div><!--End-start-->
+                        <h2 class="title-community">Search Communities</h2>
+                        <form>
+                        	<input class="search" type="text" value="Enter name or interests" name="" />
+                            <input class="button" type="submit" value="search" name="" />
+                        </form>
+                        <div class="clear"></div>
+                    </section><!--End--top-side-bar-->
+                    
+                    <section class="bottom-side-bar">
+                    	<h2 class="title-community-bottom">Partner Communities</h2>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                        <div class="clear"></div>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                        <div class="clear"></div>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                        <div class="clear"></div>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                        <div class="clear"></div>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                        <div class="clear"></div>
+                        <action class="sports">
+                        	<p class="title-sports">NBC Sports</p>
+                            <img class="img-sports" alt="" src="images/sports.png" />
+                            <span class="clb">FOUNDER:</span>
+                            <span class="name-clb">NBC Sports</span>
+                            <span>9,589 Members</span>
+                            <a href="#"><img class="view-sports" alt="" src="images/view.png" /></a>
+                        </action><!--End-sports-->
+                    	<div class="clear"></div>
+                    </section><!--End-bottom-side-bar-->
+                    
+                </section><!--End--side-bar-->
+                
+                
+                
+                
+                
+                <section id="content" class="communities">
+                	<section class="left-communities">
+                	 	 <h2 class="popular">Popular Communities</h2>
+                         
+                         <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Cool Bikers</span>
+                                        <span class="member">237,958 Members</span><br />
+                                        <p>Have a love for biking? Share your passion and latest adventure with
+        us! We can't wait to see it. Our community has an active &amp; different....</p>
+                                        <div class="link">
+                                        <a href="#">BIKING</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#">ACTIVITES</a>
+                                        <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER</span>
+                            <span class="name">Mark<br />
+											Hamelton</span>
+                            <p>Founded:<span>Aug 15, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">I ♥ Basketball</span>
+                                        <span class="member">222,418 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BASKETBALL</a>
+                                        <a href="#">GAMES</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#">TROPHIES</a>
+                                        <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Richard<br />
+												Blackmon</span>
+                            <p>Founded:<span> July 18, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">The Sports Girls</span>
+                                        <span class="member">203,162 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">SPORTS</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">CHEERING</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Mary Kelly</span>
+                            <p>Founded:<span> July 24, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                           <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">NBA Fans Club</span>
+                                        <span class="member">198,545 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BASKETBALL</a>
+                                        <a href="#">GAMES</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">John Cooley</span>
+                            <p>Founded:<span> Oct 18, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Everything Billiards</span>
+                                        <span class="member">187,322 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BILLIARDS</a>
+                                        <a href="#">TRICKS</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#">HUMOR</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Christopher<br />
+												Macias</span>
+                            <p>Founded:<span> July 2, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                           <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Boxing Talks</span>
+                                        <span class="member">182,136 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BOXING</a>
+                                        <a href="#">FIGHTS</a>
+                                        <a href="#">TRAININGS</a>
+                                        <a href="#">EVENTS</a>
+                                          <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Joshua Roland</span>
+                            <p>Founded:<span> Aug 3, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Your Tennis Stories</span>
+                                        <span class="member">165,371 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">TENNIS</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#">ACTIVITES</a>
+                                        <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Cynthia Baker</span>
+                            <p>Founded:<span> Oct 11, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">The Golf Post</span>
+                                        <span class="member">157,846 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">GOLF</a>
+                                        <a href="#">TRICKS</a>
+                                        <a href="#">TRAININGS</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Jacob Smith</span>
+                            <p>Founded:<span>Oct 3, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Do the Marathon!</span>
+                                        <span class="member">136,249 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">MARATHON</a>
+                                        <a href="#">RUNNING</a>
+                                        <a href="#">TRAININGS</a>
+                                        <a href="#">EVENTS</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Alice Brown</span>
+                            <p>Founded:<span> July 14, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Baseball Tonight</span>
+                                        <span class="member">134,857 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BASEBALL</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Brian Spivey</span>
+                            <p>Founded:<span> Aug 24, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Soccer Mania</span>
+                                        <span class="member">129,109 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">SOCCER</a>
+                                        <a href="#">TRAININGS</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Johnny<br />
+											Radford</span>
+                            <p>Founded:<span> Nov 9, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Badminton Groove</span>
+                                        <span class="member">124,948 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BADMINTON</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Pamela<br />
+												Webb</span>
+                            <p>Founded:<span>Aug 13, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Table Tennis Chat</span>
+                                        <span class="member">118,635 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">TABLE TENNIS</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">ACTIVITES</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                                  <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Philip Stout</span>
+                            <p>Founded:<span> Aug 12, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                          
+                          <article class="list-communities">
+                                <div class="in-list-communities">
+                                        <img class="xd" alt="" src="images/xadap.png" />
+                                        <span class="cool">Bowling for Fun!</span>
+                                        <span class="member">106,785 Members</span><br />
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id arcu at magna facilisis mattis. Morbi eros tortor, volutpat a pharetra porttitor...</p>
+                                        <div class="link">
+                                        <a href="#">BIKING</a>
+                                        <a href="#">FUN</a>
+                                        <a href="#">HUMOR</a>
+                                        <a href="#">EVENTS</a>
+                                        <a href="#">ACTIVITES</a>
+                                         <a href="#"><img class="mt" alt="" src="images/muiten-p2.png" /> </a>
+                                        </div><!--End-link-->
+                                  </div><!--End-in-list-communities-->
+                        <div class="view">
+                        	<img class="img-dd" alt="" src="images/img-comunity.png" />
+                            <span class="FOUNDER">FOUNDER:</span>
+                            <span class="name">Lynn Machen</span>
+                            <p>Founded:<span> Nov 7, 2012</span></p>
+                            <a href="#"><img class="buttom" alt="" src="images/viewcomunity.png" /></a>
+                        </div><!--End-view-->
+                          </article><!--End-list-communities-->
+                      </section><!--End-left-communities-->
+                    <div class="clear"></div>
+                     <div class="footer-content">
+                    	<select>
+                        	<option><img alt="" src="images/$.png" />SHOW MORE ARTICLES</option>
+                        </select>
+                    </div>
+                 </section><!--End-section-content-->
+                <div class="clear"></div>
+             </section><!--End-wrapper-->
+      <footer>
+      		<div class="wrapper-bottom-body">
+            	<a href="#"><img class="logo-body-footer" alt="" src="images/logo-body-footer.png" /></a>
+                <div class="menu-body-footer">
+                    <a href="#">News | </a>
+                    <a href="#">Testimonials | </a>
+                    <a href="#">Security | </a>
+                    <a href="#">Legal |</a>
+                    <a href="#">Store |</a>
+                    <a href="#">Locator |</a>
+                    <a href="#">Jobs |</a>
+                    <a href="#"> Help Center </a>
+                    </div><!--End-menu-body-footer-->
+            </div><!--End-wrapper-bottom-body-->
+    </footer><!--End-footer-->
+</body>
+</html>

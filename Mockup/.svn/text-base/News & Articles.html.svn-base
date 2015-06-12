@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery_003.js" type="text/javascript"></script>
+<script src="js/jquery_002.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+				enableSelectBoxes();
+			});
+			
+			function enableSelectBoxes(){
+				$('div.selectBox').each(function(){
+					$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+					$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+					
+					$(this).children('span.selected,span.selectArrow').click(function(){
+						if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+							$(this).parent().children('div.selectOptions').css('display','block');
+						}
+						else
+						{
+							$(this).parent().children('div.selectOptions').css('display','none');
+						}
+					});
+					
+					$(this).find('span.selectOption').click(function(){
+						$(this).parent().css('display','none');
+						$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+						$(this).parent().siblings('span.selected').html($(this).html());
+					});
+				});				
+			}//-->
+
+</script>
+ <link type="text/css" href="css/base.css" rel="stylesheet" />
+ 		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pikachoose.full.js"></script>
+		<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose();
+				});
+		</script>
+        
+</head>
+<body>
+ 	<header>
+    	<section class="wrapper-top-body">
+        	<nav>
+                <ul>
+                    <li><a href="#">STREAM</a></li>
+                    <li><a href="#">SOCIAL</a></li>
+                    <li><a href="#">TEAMS</a></li>
+                    <li><a href="#">LEAGUES</a></li>
+                    <li><a href="#">MARKET</a></li>
+					<li class="last">a<a href="#"></a></li>
+                </ul>
+             </nav>
+            <a href="#"><img class="logo" alt="" src="images/logo1.png" /></a>
+            <div class="search">
+            	<form>
+                    <input type="text" class="seach-text"/>
+                    <input class="icon-search" type="image" alt="" src="images/icon-search.png" />
+                </form>
+            </div>
+       <!--End-search-->
+            
+            
+            
+           <div class='selectBox'>
+			<span class='selected'></span>
+			<span class='selectArrow'>&#9660</span>
+			<div class="selectOptions" >
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+				<span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+                <span class="selectOption" value="Option 1"><img alt="" src="images/icon-search-nam.png" />Johnny R.</span>
+			</div>
+		</div>
+        </section><!--End-section-wrapper-top-body-->
+    </header><!--End-header-->
+             <section id="wrapper">
+                 <section id="header">
+                	<div class="user">
+                    	<img class="user-img" alt="" src="images/img-user.png" />
+                        <h3 class="username">Johnny Radford</h3>
+                        <div class="status">
+                        	<img class="button-status" alt="" src="images/pro-2.png" />
+                            <span class="fans">
+                            	<span>458</span>Fans
+                            </span>
+                            <span class="fans">
+                            	<span>458</span>Fanning
+                            </span>
+                        </div><!--End-pro-->
+                    </div><!--End-user-->
+                    <div class="user-menu">
+                    	<nav>
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">My Teams</a></li>
+                                <li><a href="#">Albums</a></li>
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">Stats</a></li>
+                            </ul>
+                         </nav>   
+                     </div><!--End-user-menu-->
+                     <div class="jewelbuttons">
+                     	<ul>
+                        	<li><a href="#"><img alt="" src="images/groop.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/massage.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/bong.png" /></a></li>
+                            <li class="calculatol"><a href="#"><img alt="" src="images/maytinh.png" /></a></li>
+                        </ul>
+                     </div><!--End-massage-->
+                 </section><!--End-header-->
+                
+                <section id="content">
+                	<section class="left">
+                    	<nav class="main-menu main-menu2">
+                    	 <ul>
+                        	<li>
+                            	<span>
+                             		<a href="#">Overview</a>
+                             	</span>
+                             </li>
+                             <li>
+                            	<span>
+                             		<a href="#">Articles</a>
+                             	</span>
+                             </li>
+                             <li>
+                            	<span>
+                             		<a href="#">Photos</a>
+                             	</span>
+                             </li>
+                             <li>
+                            	<span>
+                             		<a href="#">Quotes</a>
+                             	</span>
+                             </li>
+                             <li>
+                            	<span>
+                             		<a href="#">Videos</a>
+                             	</span>
+                             </li>
+                            
+                        </ul>
+                        </nav>
+                        <div class="clear"></div>
+                         
+                         <article>
+                                <h1 class="latest-new">Latest News and Articles</h1>
+                                <img class="tores" alt="" src="images/torest.png" />
+                                <h3 class="info-italy">Italy to rest Andrea Pirlo for England</h3>
+                                <span class="results">Who’s going to beat these guys? Well, maybe Barcelona. But who else? That was the inescapable conclusion from watching Real Madrid toy with A.C. Milan, 5-1, in a friendly Wednesday night in that world soccer hub of Yankee Stadium. The noisy,...</span><br />
+                                <span class="the-time">HE NEW YORK TIMES <span class="house">4 house</span></span>
+                                <a class="readmore" href="#"></a>
+                        </article><!--End-article-->
+                        
+                         <article>
+                                 <h3 class="info-italy">Graham hat-trick downs Pool</h3>
+                                <span class="results">All of the day's transfer news brought to you by Sky Sports News' team of experts. Bob Willis says Kevin Pietersen may play IPL season instead of featuring for England in Tests. Don't miss a thing as we run you through what to watch and when during the...</span><br />
+                                <span class="the-time sky">SKY SPORTS <span class="house">1 house</span></span>
+                                <a class="readmore" href="#"></a>
+                        </article><!--End-article-->
+                        
+                         <article>
+                                <span class="the-time dc">REUTERS PICTURES <span class="house">8 hours agoe</span></span><br />
+                                <img class="rooney" alt="" src="images/rooney.png" />
+                                 <span class="results">All of the day's transfer news brought to you by Sky Sports News' team of experts. Bob Willis says Kevin Pietersen may play IPL season instead of featuring for England in Tests. Don't miss a thing as we run you through what to watch and when during the...</span><br />
+                                 <a class="viewphoto" href="#"></a>
+                          </article><!--End-article-->
+                          
+                          <article class="contracting">
+                           		<img class="dau-kep" alt="" src="images/dau-kep.png" />
+                                 <span class="info-contracting">The negotiations have been going on for a number of months and we are pleased to conclude the contract. We are unable to comment on the detail of the deal but can say we are happy with our rights and delighted the contract has been signed.</span>
+                                 <div class="author">
+                                 		<span class="name"><b>–</b> Barclays Premier League <br />
+                                        <b>SOURCE: THE TELEGRAPH</b><br />
+                                        <span class="in-time">2 weeks ago</span></span>
+                                 </div><!--End-author-->
+                          </article><!--End-article contracting-->
+                          
+                          <article>
+                                 <h3 class="info-italy">Athletics: Algerian Makhloufi claims upset 1,500 gold</h3>
+                                <span class="results">Algeria's Taoufik Makhloufi reacts after he won the men's 1500m final during the London 2012 Olympic Games at the Olympic Stadium August 7, 2012. LONDON (Reuters) - Algeria's Taoufik Makhloufi won the men's 1,500 meters Olympic gold medal on Tuesday, a...</span><br />
+                                <span class="the-time dc">REUTERS <span class="house">1 hour ago</span></span>
+                                <a class="readmore readmore2" href="#"></a>
+                        </article><!--End-article-->
+                        
+                         <article>
+                                 <img class="tores" alt="" src="images/Algeria.png" />
+                                <h3 class="info-italy">Algeria's Makhloufi wins 1500metres gold</h3>
+                                <span class="results">Algeria's Taoufik Makhloufi claimed 1500m gold in convincing fashion as he pulled clear down the home straight to win in 3:34.08. The victory ends a whirlwind couple of days on a high for Makhloufi, who yesterday was excluded from the Games for not...</span><br />
+                                <span class="the-time e">ESPN STAR SPORTS <span class="house">4 house</span></span>
+                                <a class="readmore readmore3" href="#"></a>
+                        </article><!--End-article-->
+                        
+                          <article>
+                                 <h3 class="info-italy">Cycling: Hoy joy, Vicky bow as Britain end on a high</h3>
+                                <span class="results">1 of 4. Britain's Chris Hoy celebrates after the track cycling men's keirin finals at the Velodrome during the London 2012 Olympic Games August 7, 2012. Hoy won the gold medal. LONDON (Reuters) - Chris Hoy shed tears of joy and Victoria Pendleton's...</span><br />
+                                <span class="the-time dc">REUTERS <span class="house">1 hour ago</span></span>
+                                <a class="readmore readmore2" href="#"></a>
+                          </article><!--End-article-->
+                          
+                         <article>
+                                <span class="the-time google">REUTERS PICTURES <span class="house">8 hours agoe</span></span><br><br />
+                                <img class="hlv" src="images/HLV.png" alt="">
+                                 <span class="results">All of the day's transfer news brought to you by Sky Sports News' team of experts. Bob Willis says Kevin Pietersen may play IPL season instead of featuring for England in Tests. Don't miss a thing as we run you through what to watch and when during the...</span><br>
+                                 <a href="#" class="viewphoto viewphoto2"></a>
+                          </article><!--End-article-->
+                          
+                         <article class="contracting">
+                           		<img src="images/dau-kep.png" alt="" class="dau-kep">
+                                 <span class="info-contracting">You just have to look at the way City sealed the title, at the last gasp, and how the team that won the Champions League (Chelsea) finished sixth</span>
+                                 <div class="author">
+                                 		<span class="name"><b>SOURCE: REUTERS AFRICA</b>
+                                        <span class="in-time">2 weeks ago</span></span>
+                                 </div><!--End-author-->
+                          </article><!--End-article-->
+                          
+                           <article>
+                                 <img class="tores" alt="" src="images/Algeria2.png" />
+                                <h3 class="info-italy">Algeria's Makhloufi wins 1500metres gold</h3>
+                                <span class="results">Algeria's Taoufik Makhloufi claimed 1500m gold in convincing fashion as he pulled clear down the home straight to win in 3:34.08. The victory ends a whirlwind couple of days on a high for Makhloufi, who yesterday was excluded from the Games for not...</span><br />
+                                <span class="the-time e">ESPN STAR SPORTS <span class="house">4 house</span></span>
+                                <a class="readmore readmore3" href="#"></a>
+                          </article><!--End-article-->
+                        
+                          <article>
+                                 <h3 class="info-italy">Chicago Bulls sign rookie point guard Marquis Teague</h3>
+                                <span class="results">No matches were found for "" Please try another keyword. Marquis Teague, selected by the Bulls with the 29th overall selection in June’s NBA Draft, has signed his rookie contract and will begin workouts with the team on Wednesday, The Chicago Tribune...</span><br />
+                                <span class="the-time ovuong">REUTERS <span class="house">1 hour ago</span></span>
+                                <a class="readmore readmore2" href="#"></a>
+                          </article><!--End-article-->
+                          
+                           <article>
+                                 <h3 class="info-italy">Russian High Jumper Loses Uniform Mid-Competition, Is
+Forced To Jump In A T-Shirt, Wins Gold Medal [Video]</h3>
+                                <span class="results">His erratic reputation came to Olympic light when Ukhov faced his 2.33m attempt and realized his competition jersey—cast off immediately after his previous attempt, as it seems the Russian doesn't much care for upper-body wear—was nowhere to be found. ...</span><br />
+                                <span class="the-time ovuong2">REUTERS <span class="house">1 hour ago</span></span>
+                                <a class="readmore readmore2" href="#"></a>
+                          </article><!--End-article-->
+                          
+                           <article>
+                                 <h3 class="info-italy">German Harting wins discus gold</h3>
+                                <span class="results">Germany's Robert Harting added the Olympic discus gold to his world title after a thrilling final. Harting was lying second behind Iran's Ehsan Hadadi going into the penultimate round, but threw 68.27m to beat Hadadi's 68.18 opening-round effort. ...</span><br />
+                                <span class="the-time ovuong2 ovuong3">REUTERS <span class="house">1 hour ago</span></span>
+                                <a class="readmore readmore2" href="#"></a>
+                          </article><!--End-article-->
+                          
+                         <article>
+                                <span class="the-time google">REUTERS PICTURES <span class="house">8 hours agoe</span></span><br><br />
+                                <img class="hlv" src="images/football-player.png" alt="">
+                                 <span class="results">Chelsea's Spanish midfielder Oriol Romeu attends training for their UEFA Champions League semi-final first leg football match against Barcelona at Stamford Bridge, London, England, on April 17, 2012.</span><br>
+                                 <a href="#" class="viewphoto viewphoto2"></a>
+                          </article><!--End-article-->
+                          
+                         <article class="contracting">
+                           		<img src="images/dau-kep.png" alt="" class="dau-kep">
+                                 <span class="info-contracting">The training was excellent ... They gave us a lot of material. I look forward to the experience. I think it will be a challenge, but it will be rewarding as well, and hopefully we can help (District) Judge (Hugh) Flanagan.</span>
+                                 <div class="author">
+                                 		<span class="name"><b>-</b> Richard Moore<br>
+                                        <b>SOURCE: SAND MOUNTAIN</b><br>
+                                        <span class="in-time">1 month ago</span></span>
+                                 </div><!--End-author-->
+                          </article>
+                          
+                         <article>
+                                 <img class="tores" alt="" src="images/Algeria3.png" />
+                                <h3 class="info-italy">Goal: Real Madrid Proves Its Class at
+Yankee Stadium Exhibition</h3>
+                                <span class="results">Who’s going to beat these guys? Well, maybe Barcelona. But who else? That was the inescapable conclusion from watching Real Madrid toy with A.C. Milan, 5-1, in a friendly Wednesday night in that world soccer hub of Yankee Stadium. The noisy,...</span><br />
+                                <span class="the-time">HE NEW YORK TIMES <span class="house">4 house</span></span>
+                                <a class="readmore" href="#"></a>
+                        </article><!--End-article-->
+                         
+                          <article>
+                                 <img src="images/Algeria5.png" alt="" class="tores">
+                                <h3 class="info-italy">Germany, Australia claim canoe gold </h3>
+                                <span class="results">It was another good day for Germany at Eton Dorney as they took gold in the men's canoe double while Australia took gold in the men's K4. Peter Kretschmer and Kurt Kuschela comfortably won the 1000 metre race, nearly two seconds ahead...</span><br>
+                                <span class="the-time e">ESPN STAR SPORTS <span class="house">4 house</span></span>
+                                <a href="#" class="readmore readmore3"></a>
+                          </article>
+                          
+                         <article>
+                                 <img src="images/Algeria6.png" alt="" class="tores">
+                                <h3 class="info-italy">From gold medal to walking with geese</h3>
+                                <span class="results">With each viewing, it seems more school sports day than Olympic final. The white cotton vest and shorts would not look out of place in a PE lesson; the string that serves as the finishing tape is straight from the games cupboard; and the fresh-faced ease...</span><br>
+                                <span class="the-time e">BBC SPORT <span class="house">5 house</span></span>
+                                <a href="#" class="readmore readmore3"></a>
+                          </article>
+                          
+                         <article>
+                                 <h3 class="info-italy">German Harting wins discus gold</h3>
+                                <span class="results">Germany's Robert Harting added the Olympic discus gold to his world title after a thrilling final. Harting was lying second behind Iran's Ehsan Hadadi going into the penultimate round, but threw 68.27m to beat Hadadi's 68.18 opening-round effort. ...</span><br>
+                                <span class="the-time ovuong2 ovuong4">REUTERS <span class="house">1 hour ago</span></span>
+                                <a href="#" class="readmore readmore2"></a>
+                          </article>
+                        
+                         <article>
+                                 <h3 class="info-italy">Kightly - Stoke are on the up </h3>
+                                <span class="results">Get involved in our build up to the new season and win the ultimate Sky Sports experience. Latest from the written press with gossip and speculation from the UK's national newspapers. All of the day's transfer news brought to you by Sky Sports News' team...</span><br>
+                                <span class="the-time sky2">SKY SPORTS <span class="house">1 hour ago</span></span>
+                                <a href="#" class="readmore readmore2"></a>
+                          </article>
+                          
+                         <article>
+                                <span class="the-time dc">REUTERS PICTURES <span class="house">8 hours agoe</span></span><br>
+                                <img src="images/cdv.png" alt="" class="rooney">
+                                 <span class="results">Manchester United's Wayne Rooney answers questions at a news conference in Goteborg August 7, 2012. Manchester United will play Barcelona in a friendly soccer match on Wednesday.</span><br>
+                                 <a class="viewphoto viewphoto2" href="#"></a>
+                          </article>
+                       </section><!--End-section.left-->
+                      
+                    <section class="right">
+                               <article class="topics topics2">
+                             		 <h3 class="title title2">Related Topics</h3>
+                                        <div class="pikachoose">
+                                                <ul id="pikame" >
+                                                    <li><a href="#"><img src="images/1.jpg"/></a><span>Manchester United's Wayne Rooney answers questions at a news conference in Goteborg August 7, 2012. Manchester United will play Barcelona in a friendly soccer match on...</span></li>
+                                                    <li><a href="#"><img src="images/2.jpg"/></a><span>Manchester United's Wayne Rooney answers questions at a news conference in Goteborg August 7, 2012. Manchester United will play Barcelona in a friendly soccer match on...</span></li>
+                                                    <li><a href="#"><img src="images/3.jpg"/></a><span>Manchester United's Wayne Rooney answers questions at a news conference in Goteborg August 7, 2012. Manchester United will play Barcelona in a friendly soccer match on...</span></li>
+                                                </ul>
+                                        </div>
+                              </article><!--End-topicst-->
+                              
+                               <div class="topics">
+                                    <h3 class="title">Related Topics</h3>
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                    
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                    
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                    
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                    
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                    
+                                    <div class="list-items"> 
+                                        <img class="item" alt="" src="images/list-items.png" />
+                                        <span class="info-item">Poland <br />
+                                                                National<br />
+                                                                Football Team</span>
+                                    </div><!--End-list-items-->
+                                     <div class="clear"></div>
+                              </div><!--End-topics-->
+                           
+                               <div class="topics">
+                          		<h3 class="title">Related Videos</h3>
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                <div class="list-items video"> 
+                                	<img class="item item-video" alt="" src="images/list-items-video.png" />
+                                    <span class="info-item">Kallis, Smith
+                                                            passed fit for tour
+                                                            game 
+                                    	<br />
+                                        <span class="time">1 day ago</span>
+                                    </span>
+                                 </div><!--End-list-items video-->
+                                 <div class="clear"></div>
+                            </div><!--End-topics-->
+                            
+                             <div class="topics">
+                          		<h3 class="title">Related Videos</h3>
+                                
+                                <div id="coda-slider">   
+                                <div style="overflow: hidden;" class="scroll">
+                                <div class="scrollContainer">
+                                    <div  class="panel" id="sites"> 
+                                    <p class="text-slider">It means a lot to me... At the next level, I want to improve myself
+and be a big time college basketball player and maybe go to the NBA.</p><br />
+                                        <div class="author">
+                                            <span class="name"> 
+                                            <b>SOURCE: SLAM</b><br>
+                                            <span class="in-time">2 weeks ago</span></span>
+                                         </div>
+									</div>
+
+
+
+                                    <div  class="panel" id="files"> 
+                                    <p class="text-slider">It means a lot to me... At the next level, I want to improve myself
+and be a big time college basketball player and maybe go to the NBA.</p><br />
+										<div class="author">
+                                            <span class="name"> 
+                                            <b>SOURCE: SLAM</b><br>
+                                            <span class="in-time">2 weeks ago</span></span>
+                                         </div></div>
+                                     </div>
+                                    </div>
+								</div>
+                            </div><!--End-topics-->
+                          
+                     </section><!--End-section.left-->
+                    <div class="clear"></div>
+                    
+                    <div class="footer-content">
+                    	<select>
+                        	<option><img alt="" src="images/$.png" />SHOW MORE ARTICLES</option>
+                        </select>
+                    </div>
+                </section><!--End-section-content-->
+             </section><!--End-wrapper-->
+      <footer>
+      		<div class="wrapper-bottom-body">
+            	<a href="#"><img class="logo-body-footer" alt="" src="images/logo-body-footer.png" /></a>
+                <div class="menu-body-footer">
+                    <a href="#">News | </a>
+                    <a href="#">Testimonials | </a>
+                    <a href="#">Security | </a>
+                    <a href="#">Legal |</a>
+                    <a href="#">Store |</a>
+                    <a href="#">Locator |</a>
+                    <a href="#">Jobs |</a>
+                    <a href="#"> Help Center </a>
+                    </div><!--End-menu-body-footer
+            </div><!--End-wrapper-bottom-body-->
+    </footer><!--End-footer-->
+</body>
+</html>

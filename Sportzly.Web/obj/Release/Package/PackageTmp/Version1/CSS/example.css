@@ -1,0 +1,103 @@
+
+.rightsticky  {
+	overflow: hidden;
+}
+.rightsticky.right .sidebar {
+	float: right;
+	margin: 10px;
+	margin-left: 0;
+}
+.rightsticky.right .main {
+	margin: 10px;
+	margin-right: 220px;
+}
+.rightsticky.double .main {
+	margin-left: 434px;
+}
+.rightsticky .sidebar {
+	margin-right: 0;
+	
+	float: left;
+	
+
+}
+.rightsticky .sidebar.alt {
+	height: 133px;
+}
+.rightsticky .sidebar.tall {
+	height: 400px;
+}
+.rightsticky .sidebar.medium {
+	height: 300px;
+}
+.rightsticky .sidebar.flat {
+	border: 0;
+	height: auto;
+}
+.rightsticky .inner {
+	border: 1px solid red;
+	height: 66px;
+	margin: 10px 0;
+}
+.rightsticky .inner.static {
+	margin-top: 0;
+	border: 1px solid blue;
+}
+.rightsticky .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 120px;
+	border: 1px solid blue;
+	font-size: 16px;
+	margin: 10px;
+	overflow: hidden;
+}
+.rightsticky .item.sticky {
+	border: 1px solid red;
+	height: 100px;
+}
+.rightsticky .inline_columns {
+	font-size: 0;
+}
+.rightsticky .main {
+	margin: 10px;
+	margin-left: 222px;
+	border: 1px solid blue;
+	height: 400px;
+	overflow: hidden;
+}
+.rightsticky .main.short {
+	height: 133px;
+}
+.rightsticky .main.tall {
+	height: 600px;
+}
+.footer {
+	margin: 10px;
+	text-align: center;
+	font-size: 13px;
+	border-top: 1px dashed #dadada;
+	color: #666;
+	padding-top: 10px;
+	min-height: 133px;
+}
+.sub {
+	color: #999;
+}
+ @media all and (max-width: 500px) {
+.rightsticky .sidebar {
+	width: 100px;
+}
+.rightsticky .item {
+	width: 60px;
+}
+.rightsticky .main {
+	margin-left: 122px;
+}
+.rightsticky.double .main {
+	margin-left: 234px;
+}
+.rightsticky.right .main {
+	margin-right: 120px;
+}
+}

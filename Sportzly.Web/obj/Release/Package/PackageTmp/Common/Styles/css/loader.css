@@ -1,0 +1,28 @@
+.loading_bar
+{ 
+    background: url("images/ajax-loader-1.gif") no-repeat scroll center center transparent;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.loading_bar_1
+{ 
+    background: url("images/ajax-loader-1.gif") no-repeat scroll center center transparent;
+    height: 180px !important;
+    width: 100% !important;
+}
+
+.loading_bar_inline
+{
+    display: inline;
+    margin-left: 10px;
+}
+
+.loading_bar_body
+{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(images/ajax-loader-2.gif) no-repeat 50% 50%;
+}

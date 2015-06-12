@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+<script src="jquery-1.9.1.min.js"></script>
+ <body>
+  <div id=div1>
+  main div
+  <div> Test 1 </div>
+  <div> Test 2 </div>
+    <div> Test 3 </div>
+	  <div> Test 4 </div>
+  <div> Test 1 </div>
+  <div> Test 2 </div>
+    <div> Test 3 </div>
+	  <div> Test 4 </div>
+	    <div> Test 1 </div>
+  <div> Test 2 </div>
+    <div> Test 3 </div>
+	  <div> Test 4 </div>
+  <div> Test 1 </div>
+  <div> Test 2 </div>
+    <div> Test 3 </div>
+	  <div> Test 4 </div>
+  <div> Test 1 </div>
+  <div> Test 2 </div>
+    <div> Test 3 </div>
+	  <div> Test 4 </div>
+
+  </div>
+  <script>
+  $(document).ready(function(){ 
+  
+	$("#div1").showMin();
+  
+  });
+
+
+  (function( $ ) {
+  var size = 5;
+  $.fn.showMin = function() {
+	var self = this;
+	var eles = $(">DIV", self);
+	if(eles.length > size){
+		var more = eles.length - size;
+		var moreMessage = "Show " + more + " more message(s)";
+		var hideMessage = "Less Messages";
+		var marker = $("<a href=javasript:;>" + moreMessage+"</a>");
+		
+		self.s = function(){ eles.not(function(i){ return i < size}).hide() };
+		
+
+		$(marker).bind('click', function(e){ 
+
+			if(marker.text() == hideMessage) {
+				self.s();
+				marker.text(moreMessage);
+			}
+			else {
+				eles.show();
+				marker.text(hideMessage);
+			}
+		});
+		
+		self.prepend(marker);
+		$(marker).after("<br>");
+		self.s();
+	}
+  };
+})( jQuery );
+  </script>
+ </body>
+</html>

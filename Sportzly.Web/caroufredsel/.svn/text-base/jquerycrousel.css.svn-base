@@ -1,0 +1,129 @@
+﻿
+		/** base carousel **/
+		.carousel ul {
+		    position:absolute;
+		    overflow:hidden;
+		    margin:0;
+		    padding:0;
+		    list-style:none;
+		}
+
+		.no-js .carousel ul {position:static;}
+
+		.carousel .mask {
+		    position:relative;
+		    overflow:hidden;
+		    border:6px solid #444;
+		}
+
+		.carousel ul li {
+			float:left;
+			width:150px;
+		    height:150px;
+		    color:#fff;
+			font-size:8em;
+			text-align:center;
+			margin:0;
+		}
+
+		.carousel .pagination-links {
+		    list-style:none;
+		    margin:0;
+		    padding:0;
+		}
+		 
+		.carousel .pagination-links li {
+		    display:inline;
+		}
+
+		.carousel .pagination-links li a {
+			    background: url(miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+                width: 15px;
+                height: 15px;
+                margin: 0 5px 0 0;
+                display: inline-block;
+		}
+
+		.carousel .pagination-links li a:hover {text-decoration:none;}
+
+		.carousel .pagination-links li.current a {
+			 background-position: -25px -300px;
+    cursor: default;
+		}
+		 
+		.carousel .disabled {
+		    color:gray;
+		    cursor:default;
+		}
+		
+		/** my carousel 1 **/
+		#my-carousel-1 .mask {
+			width:150px;
+		}
+
+		/** my carousel 2 **/
+		#my-carousel-2 .mask {
+			width:630px;
+		}
+
+		#my-carousel-2 ul li {
+			margin:0 10px 0 0;
+		}
+
+		/** my carousel 3 **/
+		#my-carousel-3 .mask {
+			width:600px;
+		}
+
+
+          a.prev, a.next {
+            background: url(miscellaneous_sprite.png) no-repeat transparent;
+            width: 45px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            top: 85px;
+        }
+
+        a.prev {
+            left: -22px;
+            background-position: 0 0;
+        }
+
+            a.prev:hover {
+                background-position: 0 -50px;
+            }
+
+            a.prev.disabled {
+                background-position: 0 -100px !important;
+            }
+
+        a.next {
+            right: -22px;
+            background-position: -50px 0;
+        }
+
+            a.next:hover {
+                background-position: -50px -50px;
+            }
+
+            a.next.disabled {
+                background-position: -50px -100px !important;
+            }
+
+            a.prev.disabled, a.next.disabled {
+                cursor: default;
+            }
+
+            a.prev span, a.next span {
+                display: none;
+            }
+
+		.color-1 {background:#007cd2;}
+		.color-2 {background:#1788D7;}
+		.color-3 {background:#3798db;}
+		.color-4 {background:#62acdf;}
+		.color-5 {background:#86bbe0;}
+		.color-6 {background:#a7c7de;}
+		.color-7 {background:#d5dbdf;}
+	

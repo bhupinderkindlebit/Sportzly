@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/ProfileMaster.Master" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="Sportzly.Web.MasterPages.MyMaster" %>
+
+<%@ Register Src="~/Controls/MyUserDetailViewControl.ascx" TagName="MyUserDetailViewControl"
+    TagPrefix="uc4" %>
+<%@ Register Src="~/Controls/TeamDetailControl.ascx" TagPrefix="uc1" TagName="TeamDetailControl" %>
+<%@ Register Src="~/Controls/MyPendingFriendsControl.ascx" TagPrefix="uc1" TagName="MyPendingFriendsControl" %>
+<%@ Register Src="~/Controls/MyPendingTeamRequestControl.ascx" TagPrefix="uc1" TagName="MyPendingTeamRequestControl" %>
+<%@ Register Src="~/Controls/UpdateUserDetailsControl.ascx" TagPrefix="uc1" TagName="UpdateUserDetailsControl" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <section id="content">
+        <div class="container">
+            <div class="inner-content-new rightsticky" data-sticky_parent>
+                <section id="sidebar" class="col-xs-3 col-sm-3 col-md-3">
+                    <div class="left-sec">
+                        <section class="left-infomation-profile">
+                            <uc4:MyUserDetailViewControl ID="MyUserDetailViewControl1" runat="server" />
+                            <div class="tabbox-new">
+                                <div id="horizontalTab">
+                                    <ul class="resp-tabs-list sidebartab">
+                                        <li><a href="#"><span class="MEMBERS"></span><span class="post-box" id="MyUpdatesPendingResultCount" style="display: none;"></span></a></li>
+                                        <li><a href="#"><span class="gamesicon"></span><span class="post-box" id="MyUpdatesTeamPendingResultCount" style="display: none;"></span></a></li>
+                                    </ul>
+                                    <div class="resp-tabs-container boxtleftside">
+                                        <div data-bind="stopBindings: true" style="margin: auto;" class="tab1">
+                                            <uc1:MyPendingFriendsControl runat="server" ID="MyPendingFriendsControl" />
+                                        </div>
+                                        <div data-bind="stopBindings: true" style="margin: auto;" class="tab1">
+                                            <uc1:MyPendingTeamRequestControl runat="server" ID="MyPendingTeamRequestControl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="profile-pic">
+                            <div class="dropdown">
+                                <a class="btn nopaddingbtn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown"><span class="drop-box"><span class="caret"></span></span>
+                                    <!-- ko if: this.teamId !== 0 -->
+                                    <span data-bind="foreach: ActiveTeamsLogos">
+                                        <!-- ko if: this.teamId === Id() -->
+                                        <span data-bind="text: TeamName()"></span>
+                                        <!-- /ko -->
+                                    </span>
+                                    <!-- /ko -->
+                                    <!-- ko if: this.teamId === 0 -->
+                                    <span>Select Team</span>
+                                    <!-- /ko -->
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" data-bind="foreach: ActiveTeamsLogos">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" data-bind="attr: { href: 'team.aspx?' + Id(), title: TeamName() }, text: TeamName()"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <uc1:TeamDetailControl runat="server" ID="teamDetailControl" />
+                    </div>
+                </section>
+                <section id="containerbar" class="col-xs-7 col-sm-7 col-md-7" data-sticky_column>
+                    <asp:ContentPlaceHolder ID="MyContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+                <section class="col-xs-3 col-sm-3 col-md-3">
+                    <div class="sidebar" data-sticky_column>
+                        <div class="insideinner">
+                            <ul>
+                                <li>
+                                    <h2>New 100% Waterpoof ipad</h2>
+                                    <p class="insideinnerlinks"><a href="#">underwateraudio.com</a></p>
+                                    <div class="rightsidebarimg">
+                                        <img alt="post" src="images/right-baradd-img1.jpg">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </li>
+                                <li>
+                                    <h2>Sale 40% off</h2>
+                                    <p class="insideinnerlinks"><a href="#">ibuidapp.com</a></p>
+                                    <div class="rightsidebarimg">
+                                        <img alt="post" src="images/right-baradd-img2.jpg">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </li>
+                                <li>
+                                    <h2>The South's Main Course</h2>
+                                    <p class="insideinnerlinks"><a href="#">sandersonfarmschampoinship.com</a></p>
+                                    <div class="rightsidebarimg">
+                                        <img alt="post" src="images/right-baradd-img3.jpg">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <uc1:UpdateUserDetailsControl runat="server" ID="UpdateUserDetailsControl" />
+                    </div>
+                </section>
+            </div>
+            <div class="clearfix"></div>
+    </section>
+</asp:Content>

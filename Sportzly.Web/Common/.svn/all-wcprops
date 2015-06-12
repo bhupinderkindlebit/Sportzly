@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common
+END
+ApiMethods.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/ApiMethods.cs
+END
+FI_Processor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/FI_Processor.cs
+END
+processor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/processor.cs
+END
+Validator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/Validator.cs
+END
+BaseMaster.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/BaseMaster.cs
+END
+BasePage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/BasePage.cs
+END
+BaseUserControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Common/BaseUserControl.cs
+END

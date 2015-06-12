@@ -1,0 +1,1517 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls
+END
+MyProfileHeaderControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyProfileHeaderControl.ascx.designer.cs
+END
+LightBoxControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LightBoxControl.ascx.cs
+END
+FriendListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListMiniControl.ascx.cs
+END
+CommentsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommentsControl.ascx
+END
+PhotoListMiniWallControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniWallControl.ascx.cs
+END
+CommunityControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityControl.ascx.designer.cs
+END
+BulletinBoardUpdateControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardUpdateControl.ascx
+END
+ErrorControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ErrorControl.ascx
+END
+WelcomeControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeControl.ascx
+END
+PollDetailControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollDetailControl.ascx.designer.cs
+END
+EventListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListMiniControl.ascx.cs
+END
+MyCommentsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCommentsControl.ascx.cs
+END
+PendingFriendsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingFriendsControl.ascx
+END
+UploadPhotoControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UploadPhotoControl.ascx.designer.cs
+END
+PendingInvitesListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListMiniControl.ascx.designer.cs
+END
+MemberListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MemberListControl.ascx
+END
+NewTeamControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewTeamControl.ascx.cs
+END
+MyUserDetailViewControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyUserDetailViewControl.ascx.cs
+END
+PendingInvitesTeamListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListMiniControl.ascx
+END
+PendingTeamRequestControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingTeamRequestControl.ascx.designer.cs
+END
+ProfileUpdateControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileUpdateControl.ascx.cs
+END
+PhotosListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotosListControl.ascx
+END
+SportzlyPhotoListMiniWallControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyPhotoListMiniWallControl.ascx
+END
+MyPendingTeamRequestControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12866/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingTeamRequestControl.ascx
+END
+MyShareStatusControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyShareStatusControl.ascx
+END
+TeamDetailControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamDetailControl.ascx.cs
+END
+MyEventsForthComingControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyEventsForthComingControl.ascx.cs
+END
+MyActivitiesControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyActivitiesControl.ascx.cs
+END
+EventsFilterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsFilterControl.ascx.cs
+END
+TeamMenuControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMenuControl.ascx.designer.cs
+END
+PendingInvitesTeamListFullControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListFullControl.ascx.designer.cs
+END
+MyShareStatusControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyShareStatusControl.ascx.cs
+END
+AlbumsListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumsListControl.ascx.designer.cs
+END
+PollListMini.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollListMini.ascx.cs
+END
+StreamProfileUpdate.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/StreamProfileUpdate.ascx.cs
+END
+UserBasicControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserBasicControl.ascx.designer.cs
+END
+CommunityControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityControl.ascx
+END
+UserMessageControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserMessageControl.ascx.designer.cs
+END
+CommunityControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityControl.ascx.cs
+END
+DocumentListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListMiniControl.ascx.designer.cs
+END
+HeaderControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HeaderControl.ascx.cs
+END
+UploadPhotoControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UploadPhotoControl.ascx
+END
+TeamHomeControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamHomeControl.ascx
+END
+FormControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FormControl.ascx
+END
+PendingFriendsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingFriendsControl.ascx.cs
+END
+PendingTeamRequestControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingTeamRequestControl.ascx
+END
+PhotoListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniControl.ascx.designer.cs
+END
+ScorecardControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ScorecardControl.ascx
+END
+FriendListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListControl.ascx.cs
+END
+EventDetailControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventDetailControl.ascx.designer.cs
+END
+PendingInvitesListFullControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListFullControl.ascx.designer.cs
+END
+PendingTeamRequestControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingTeamRequestControl.ascx.cs
+END
+PendingInvitesListFullControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListFullControl.ascx.cs
+END
+TeamDetailControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamDetailControl.ascx
+END
+MyCheersJeers.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCheersJeers.ascx.designer.cs
+END
+ShareStatusControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ShareStatusControl.ascx.cs
+END
+LoginControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LoginControl.ascx.designer.cs
+END
+PendingInvitesTeamListFullControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListFullControl.ascx
+END
+DocumentListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListControl.ascx.designer.cs
+END
+TeamMembersAdminControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMembersAdminControl.ascx.designer.cs
+END
+EventListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListControl.ascx.designer.cs
+END
+PendingInvitesTeamListFullControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListFullControl.ascx.cs
+END
+UserBasicControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserBasicControl.ascx
+END
+EventListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListControl.ascx.cs
+END
+PollListMini.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollListMini.ascx.designer.cs
+END
+StreamProfileUpdate.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/StreamProfileUpdate.ascx.designer.cs
+END
+CommunityListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityListControl.ascx.designer.cs
+END
+UpdateUserDetailsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UpdateUserDetailsControl.ascx
+END
+PlayersFilterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayersFilterControl.ascx.designer.cs
+END
+PlayersFilterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayersFilterControl.ascx.cs
+END
+BulletinBoardControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12866/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardControl.ascx.cs
+END
+AlbumPhotosListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumPhotosListControl.ascx.designer.cs
+END
+CreatePoll.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreatePoll.ascx.designer.cs
+END
+PlayerListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerListControl.ascx.cs
+END
+PhotoListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniControl.ascx
+END
+PhotoUploadControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoUploadControl.ascx.cs
+END
+SportzlyTeamDetailControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyTeamDetailControl.ascx.designer.cs
+END
+TeamHomeControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamHomeControl.ascx.cs
+END
+EventDetailControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventDetailControl.ascx
+END
+CheersJeers.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CheersJeers.ascx.cs
+END
+FeedControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FeedControl.ascx.designer.cs
+END
+NewAlbumPhotosListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewAlbumPhotosListControl.ascx.designer.cs
+END
+MyPendingFriendsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingFriendsControl.ascx.designer.cs
+END
+LoginControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LoginControl.ascx
+END
+EventDetailControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventDetailControl.ascx.cs
+END
+SignupControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SignupControl.ascx.designer.cs
+END
+MyPendingFriendsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingFriendsControl.ascx.cs
+END
+ShareStatusControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ShareStatusControl.ascx.designer.cs
+END
+SignupControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SignupControl.ascx.cs
+END
+DocumentListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListControl.ascx
+END
+TeamMembersAdminControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMembersAdminControl.ascx
+END
+Facebook.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/Facebook.ascx.designer.cs
+END
+ProfileHeaderControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileHeaderControl.ascx.cs
+END
+SportzlyBulletinBoardControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyBulletinBoardControl.ascx
+END
+MyPendingTeamRequestControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingTeamRequestControl.ascx.cs
+END
+PollListMini.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollListMini.ascx
+END
+StreamProfileUpdate.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/StreamProfileUpdate.ascx
+END
+HelperControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HelperControl.ascx
+END
+SportzlyHeaderControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyHeaderControl.ascx
+END
+TeamMenuControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMenuControl.ascx.cs
+END
+TeamsFilterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamsFilterControl.ascx
+END
+CommunityListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityListControl.ascx
+END
+LightBoxControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LightBoxControl.ascx.designer.cs
+END
+FriendListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListMiniControl.ascx.designer.cs
+END
+TeamListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamListControl.ascx.designer.cs
+END
+WelcomeSportzlyControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeSportzlyControl.ascx.designer.cs
+END
+UserMessageControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserMessageControl.ascx.cs
+END
+CommentsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommentsControl.ascx.designer.cs
+END
+CommentsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommentsControl.ascx.cs
+END
+BulletinBoardControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12866/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardControl.ascx.designer.cs
+END
+UpdateUserDetailsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UpdateUserDetailsControl.ascx.cs
+END
+MyCommentsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCommentsControl.ascx
+END
+BulletinBoardUpdateControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardUpdateControl.ascx.designer.cs
+END
+ErrorControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ErrorControl.ascx.designer.cs
+END
+WelcomeControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeControl.ascx.designer.cs
+END
+SportzlyTeamDetailControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyTeamDetailControl.ascx
+END
+CheersJeers.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CheersJeers.ascx
+END
+PhotoUploadControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoUploadControl.ascx.designer.cs
+END
+PendingFriendsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingFriendsControl.ascx.designer.cs
+END
+NewTeamControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewTeamControl.ascx.designer.cs
+END
+ProfileUpdateControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileUpdateControl.ascx
+END
+CreateEventControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreateEventControl.ascx
+END
+PlayerHomeControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerHomeControl.ascx
+END
+MemberListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MemberListControl.ascx.designer.cs
+END
+ShareStatusControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ShareStatusControl.ascx
+END
+Facebook.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/Facebook.ascx
+END
+ProfileHeaderControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileHeaderControl.ascx
+END
+SportzlyPhotoListMiniWallControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyPhotoListMiniWallControl.ascx.designer.cs
+END
+LightBoxControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LightBoxControl.ascx
+END
+FriendListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListMiniControl.ascx
+END
+TeamListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamListControl.ascx
+END
+WelcomeSportzlyControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeSportzlyControl.ascx
+END
+HelperControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HelperControl.ascx.cs
+END
+SportzlyHeaderControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyHeaderControl.ascx.cs
+END
+TeamsFilterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamsFilterControl.ascx.cs
+END
+SportzlyFooterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyFooterControl.ascx
+END
+BulletinBoardControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardControl.ascx
+END
+HeaderControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HeaderControl.ascx.designer.cs
+END
+CommunityFilterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityFilterControl.ascx.designer.cs
+END
+PollDetailControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollDetailControl.ascx.cs
+END
+PhotoUploadControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoUploadControl.ascx
+END
+NewTeamControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewTeamControl.ascx
+END
+FooterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FooterControl.ascx.cs
+END
+TeamHomeControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamHomeControl.ascx.designer.cs
+END
+FriendListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListControl.ascx
+END
+FormControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FormControl.ascx.designer.cs
+END
+PhotoListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniControl.ascx.cs
+END
+NewAlbumPhotosListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewAlbumPhotosListControl.ascx.cs
+END
+FeedControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FeedControl.ascx.cs
+END
+EventsForthComingControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsForthComingControl.ascx.designer.cs
+END
+ScorecardControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ScorecardControl.ascx.designer.cs
+END
+ScorecardControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ScorecardControl.ascx.cs
+END
+PhotosListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotosListControl.ascx.cs
+END
+TeamDetailControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamDetailControl.ascx.designer.cs
+END
+DocumentListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListControl.ascx.cs
+END
+TeamMembersAdminControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMembersAdminControl.ascx.cs
+END
+MyProfileHeaderControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyProfileHeaderControl.ascx
+END
+PhotoListMiniWallControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniWallControl.ascx.designer.cs
+END
+HeaderControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HeaderControl.ascx
+END
+PollDetailControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PollDetailControl.ascx
+END
+CommunityFilterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityFilterControl.ascx
+END
+UpdateUserDetailsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UpdateUserDetailsControl.ascx.designer.cs
+END
+PlayerListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerListControl.ascx.designer.cs
+END
+EventListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListMiniControl.ascx.designer.cs
+END
+PendingInvitesListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListMiniControl.ascx
+END
+WelcomeControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeControl.ascx.cs
+END
+FooterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FooterControl.ascx.designer.cs
+END
+InviteControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/InviteControl.ascx.cs
+END
+EventsForthComingControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsForthComingControl.ascx
+END
+MyUserDetailViewControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyUserDetailViewControl.ascx.designer.cs
+END
+MyInviteControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyInviteControl.ascx.designer.cs
+END
+MemberListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MemberListControl.ascx.cs
+END
+EventsForthComingControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsForthComingControl.ascx.cs
+END
+TeamMenuControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamMenuControl.ascx
+END
+MyEventsForthComingControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyEventsForthComingControl.ascx.designer.cs
+END
+MyActivitiesControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyActivitiesControl.ascx.designer.cs
+END
+EventsFilterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsFilterControl.ascx.designer.cs
+END
+AlbumsListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumsListControl.ascx
+END
+SportzlyBulletinBoardControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyBulletinBoardControl.ascx.designer.cs
+END
+SportzlyBulletinBoardControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyBulletinBoardControl.ascx.cs
+END
+HelperControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/HelperControl.ascx.designer.cs
+END
+PhotoListMiniWallControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotoListMiniWallControl.ascx
+END
+SportzlyHeaderControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyHeaderControl.ascx.designer.cs
+END
+TeamsFilterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamsFilterControl.ascx.designer.cs
+END
+MyProfileHeaderControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyProfileHeaderControl.ascx.cs
+END
+UserMessageControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserMessageControl.ascx
+END
+UserBasicControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserBasicControl.ascx.cs
+END
+TeamListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/TeamListControl.ascx.cs
+END
+WelcomeSportzlyControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/WelcomeSportzlyControl.ascx.cs
+END
+DocumentListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListMiniControl.ascx
+END
+UserDetailsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailsControl.ascx.designer.cs
+END
+PlayerListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerListControl.ascx
+END
+EventListMiniControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListMiniControl.ascx
+END
+AlbumPhotosListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumPhotosListControl.ascx.cs
+END
+CreatePoll.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreatePoll.ascx.cs
+END
+MyCommentsControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCommentsControl.ascx.designer.cs
+END
+FooterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FooterControl.ascx
+END
+UserDetailViewControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailViewControl.ascx.designer.cs
+END
+InviteControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/InviteControl.ascx.designer.cs
+END
+MyUserDetailViewControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyUserDetailViewControl.ascx
+END
+PendingInvitesListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListMiniControl.ascx.cs
+END
+MyInviteControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyInviteControl.ascx
+END
+CheersJeers.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CheersJeers.ascx.designer.cs
+END
+PendingInvitesListFullControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesListFullControl.ascx
+END
+ProfileUpdateControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileUpdateControl.ascx.designer.cs
+END
+MyCheersJeers.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCheersJeers.ascx
+END
+FormControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FormControl.ascx.cs
+END
+ActivitiesControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ActivitiesControl.ascx.designer.cs
+END
+MyInviteControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyInviteControl.ascx.cs
+END
+CreateEventControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreateEventControl.ascx.designer.cs
+END
+PlayerHomeControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerHomeControl.ascx.designer.cs
+END
+CreateEventControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreateEventControl.ascx.cs
+END
+PlayerHomeControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayerHomeControl.ascx.cs
+END
+MyEventsForthComingControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyEventsForthComingControl.ascx
+END
+MyActivitiesControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyActivitiesControl.ascx
+END
+EventsFilterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventsFilterControl.ascx
+END
+PendingInvitesTeamListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListMiniControl.ascx.cs
+END
+LoginControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/LoginControl.ascx.cs
+END
+ProfileHeaderControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ProfileHeaderControl.ascx.designer.cs
+END
+EventListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/EventListControl.ascx
+END
+AlbumsListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumsListControl.ascx.cs
+END
+CommunityListControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityListControl.ascx.cs
+END
+UserDetailsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailsControl.ascx
+END
+PlayersFilterControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PlayersFilterControl.ascx
+END
+SportzlyFooterControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyFooterControl.ascx.designer.cs
+END
+UserDetailsControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailsControl.ascx.cs
+END
+AlbumPhotosListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/AlbumPhotosListControl.ascx
+END
+CreatePoll.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CreatePoll.ascx
+END
+SportzlyFooterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyFooterControl.ascx.cs
+END
+DocumentListMiniControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/DocumentListMiniControl.ascx.cs
+END
+UserDetailViewControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailViewControl.ascx
+END
+BulletinBoardUpdateControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/BulletinBoardUpdateControl.ascx.cs
+END
+ErrorControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ErrorControl.ascx.cs
+END
+InviteControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12867/Sportzly/SportzlyLatest/Sportzly.Web/Controls/InviteControl.ascx
+END
+CommunityFilterControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/CommunityFilterControl.ascx.cs
+END
+UserDetailViewControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UserDetailViewControl.ascx.cs
+END
+UploadPhotoControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/UploadPhotoControl.ascx.cs
+END
+NewAlbumPhotosListControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/NewAlbumPhotosListControl.ascx
+END
+FeedControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FeedControl.ascx
+END
+ActivitiesControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ActivitiesControl.ascx
+END
+SportzlyTeamDetailControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyTeamDetailControl.ascx.cs
+END
+MyPendingFriendsControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Dotnet/!svn/ver/12866/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingFriendsControl.ascx
+END
+SignupControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SignupControl.ascx
+END
+FriendListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/FriendListControl.ascx.designer.cs
+END
+ActivitiesControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/ActivitiesControl.ascx.cs
+END
+PendingInvitesTeamListMiniControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PendingInvitesTeamListMiniControl.ascx.designer.cs
+END
+MyCheersJeers.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyCheersJeers.ascx.cs
+END
+PhotosListControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/PhotosListControl.ascx.designer.cs
+END
+Facebook.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/Facebook.ascx.cs
+END
+MyPendingTeamRequestControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyPendingTeamRequestControl.ascx.designer.cs
+END
+SportzlyPhotoListMiniWallControl.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/SportzlyPhotoListMiniWallControl.ascx.cs
+END
+MyShareStatusControl.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Dotnet/!svn/ver/12858/Sportzly/SportzlyLatest/Sportzly.Web/Controls/MyShareStatusControl.ascx.designer.cs
+END

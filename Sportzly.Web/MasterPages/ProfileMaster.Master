@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProfileMaster.master.cs"
+    Inherits="Sportzly.Web.MasterPages.ProfileMaster" %>
+
+<%@ Register Src="../Controls/ErrorControl.ascx" TagName="ErrorControl" TagPrefix="uc1" %>
+<%@ Register Src="../Controls/FooterControl.ascx" TagName="FooterControl" TagPrefix="uc2" %>
+<%@ Register Src="../Controls/HeaderControl.ascx" TagName="HeaderControl" TagPrefix="uc3" %>
+<%@ Register Src="~/Controls/HelperControl.ascx" TagPrefix="uc1" TagName="HelperControl" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <%--<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">--%>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;" />
+
+    <title></title>
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-45569497-1', 'sportzly.com');
+        ga('send', 'pageview');
+
+    </script>
+    <style>
+        @media only screen and (min-width: 320px) and (max-width:480px)
+        {
+            .buttonblack{margin-top:10px;}
+            #inline1
+            {
+                max-width: 100% !important;
+            }
+
+            #inline2
+            {
+                max-width: 100% !important;
+            }
+
+            #inline3
+            {
+                max-width: 100% !important;
+            }
+
+            #inline4
+            {
+                max-width: 100% !important;
+            }
+
+            #inline5
+            {
+                max-width: 100% !important;
+            }
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 2000px)
+        {
+            #inline1
+            {
+                max-width: 730px;
+            }
+
+            #inline2
+            {
+                max-width: 320px;
+            }
+
+            #inline3
+            {
+                max-width: 730px;
+            }
+
+            #inline4
+            {
+                max-width: 730px;
+            }
+
+            #inline5
+            {
+                max-width: 730px;
+            }
+        }
+    </style>
+</head>
+<body class="after-login">
+    <form id="wrapper" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" EnablePartialRendering="true">
+        </asp:ScriptManager>
+        <uc1:HelperControl runat="server" ID="HelperControl" />
+        <uc1:ErrorControl ID="ErrorControl1" runat="server" />
+        <uc3:HeaderControl ID="HeaderControl1" runat="server" />
+        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>        
+        <uc2:FooterControl ID="FooterControl1" runat="server" />
+    </form>
+    <div id="overlayBox" class="overlayBox" style="display: none;">
+        <div class="closePosition">
+            <a class="overlayClose"></a>
+        </div>
+        <div id="overlayContent" class="overlayContent">
+            <div class="media-overlay">
+                <div class="glaze_maincontainer">
+                    <div class="glaze_container">
+                        <div id="left_arrow">
+                            <img src="../images/left.png" style="visibility: visible" class="leftArrow" />
+                        </div>
+                        <div class="center_glazecol">
+                            <div class="media-center-asset">
+                                <img src="" id="imgPhoto" class="centerPhoto" style="border: 1px solid #CCCCCC" />
+                            </div>
+                            <div id="red_div">
+                                <div id="green_div">
+                                    <div class="in-nd-comment inner" id="divcomment">
+                                    </div>
+                                    <div class="say-something" style="border: 1px solid #e1e1e1; border-radius: 7px 7px 7px 7px; margin: 7px; width: 389px; float: left">
+                                        <input type="text" value="Say something..." onblur="bindBlur(event)" onfocus="bindFocus(event)"
+                                            class="commentsBoxes" style="height: 20px; margin-left: 49px; margin-top: 7px; width: 321px" />
+                                    </div>
+                                </div>
+                                <div id="yellow_div">
+                                    <ul>
+                                        <a href="javascript:;" class="delphoto">
+                                            <li>Delete photo</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rite_arrow">
+                            <img src="../images/rite.png" class="rightArrow" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../Scripts/browser.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var b = BrowserDetect.browser;
+        var v = BrowserDetect.version;
+        if (b == "Explorer") {
+            if (v == "7" || v == "8") {
+                alert("Your browser is old and not supported by us. Please upgrade your browser or use chrome, firefox or safari");
+            }
+        }
+    });
+</script>

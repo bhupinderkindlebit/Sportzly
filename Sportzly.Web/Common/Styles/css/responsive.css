@@ -1,0 +1,143 @@
+
+/* ==============================================================================
+/* ====== SMALL (MIN 320px - 767px MAX) MOBILE SPECIFIC ELEMENTS & STYLES
+/* ============================================================================ */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+.logo{ text-align:center; padding:20px 0 10px ;}
+.header-right, .header-right .actions {
+  float: none;
+  text-align: center;
+}
+.show-for-small{ display:block}
+.show-for-small.login-button{ display:inline-block;}
+.hide-for-small{ display:none}
+#main-nav{ display:none}
+#footer-nav{ display:block; text-align:center;}
+#footer-nav ul li{ display:inline-block; margin:0px 6px;}
+#footer-nav ul li a{ color:#fff;}
+.header-right .actions { margin-right:0}
+#main-nav {float: none; margin: 0 auto;}
+#login-drawer{ height:auto !important;}
+
+.container{ width:100%}
+
+.search-box{ width:100%}
+
+.form-container .signup-with h2{ padding-left:0px;}
+.row.icon-size, .footer-logo, .copyright, .video-wrap{ text-align:center}
+.row.icon-size > div{ margin-bottom:10px; display:inline-block; min-height:50px; }
+.featured-teams-section h3.heading.line{ margin:0 10px 20px;}
+.carousel-control.right{ right:10px;}
+.featured-teams-section .carousel-control.left{ right:54px;}
+.featured-teams-section ul.thumbnails li .detail{ bottom:0px; width:100%; position:inherit; height:73px; margin-top:-5px;}
+.featured-teams-section ul.thumbnails li:hover .detail{ bottom:0px; width:100%; position:inherit; height:73px;}
+.featured-teams-section ul.thumbnails li:hover .detail .icon{ display:inline-block}
+.featured-teams-section ul.thumbnails li .detail .icon{ display:inline-block}
+.featured-teams-section ul.thumbnails li:hover h2 { padding:5px 10px;}
+.copyright { color: #fff; font-size: 13px; line-height: 22px; padding-top: 10px; text-align: center;}
+.thumbnails li {margin: 15px; overflow: hidden; padding: 0;}
+.form-container{ margin-bottom:20px;}
+.icons h2{ font-size:26px;}
+.user-tile-bg:hover {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #d6d6d6;
+  margin: 0 auto;
+  padding: 5px;
+  transition: all 0.1s ease-out 0s;
+  width: 116px;
+}
+	.field { margin-bottom:10px;}
+	.login-submit-btn { margin:0 auto; float:none;}
+	.login-forgot { margin-bottom:0}
+	.login-forgot,.login-btn { text-align:center;}
+	.drawer-holder { padding:40px 0 20px 0;}
+	.close-drawer {top:-40px;}
+.nav-button{ display:inline-block; height:50px; width:100%}	
+.navbar-toggle{ display:block; background:#ececec; color:#545454; text-align:left; width:100%; margin:10px auto 18px; border-bottom:2px solid #007e00; font-size:18px; text-transform:uppercase; font-weight:600; -webkit-border-radius: 2px 2px 0 0; border-radius: 2px 2px 0 0; display:inline-block }
+.navbar-toggle i{ float:right}
+.after-login ul.nav{ background:#f5f5f5; width:100%;}
+.after-login ul.nav li { display:inline-block; width:100%; border-bottom:1px solid #ebe8e8; border-right:0px; background:none}
+.after-login ul.nav li a{ font-size:15px;}
+.after-login .search-bar{ width:100%; margin-bottom:10px;}
+.after-login .search-bar .search{ min-width:100%}
+.user-btn{ margin-bottom:10px;}
+.top-infomation-profile .user-menu{ margin-left:0px;}
+
+.after-login #content{ background:none; padding-left:0px; padding-top:15px; padding-bottom:0px; margin-bottom:20px;}
+.top-infomation-profile .user-menu{ -webkit-border-radius:0px; border-radius:0px; border-left:0px; border-right:0px; text-align:center; width:100%}
+.top-infomation-profile .user-menu nav ul li a{ padding-left:9px; padding-right:9px; border-right:none;}
+.top-infomation-profile .user-menu nav ul li{ display:inline-block; float:none;}
+.top-infomation-profile .jewelbuttons{ text-align:center; padding-left:0px; width:100%}
+.top-infomation-profile .jewelbuttons ul{ float:none; border:none}
+.top-infomation-profile .jewelbuttons ul li{ padding:18px 17px 0; display:inline-block; float:none; border-left:none}
+#sidebar{ padding-right:0px;}
+#sidebar .gallery{ text-align:center}
+#sidebar .gallery li{ width:21%}
+.btn-block.main .btn-default{ font-size:12px; margin:4px 2px; float:none; display:inline-block}
+.btn-block.main{ text-align:center;}
+
+article.in-university-football .board-member{ text-align:center;}
+article.in-university-football .board-member h4{ font-size:14px;}
+.page-nav{ text-align:center}
+.page-nav .join-a-team{ margin-top:10px;}
+.invite-section{ margin-bottom:0px; display:inline-block; width:100%;}
+.invite-section > div{ padding-right:0px; margin-bottom:10px; padding-left:0px;}
+.photos-section .photo-gallery,
+.schedule, .share-links,
+.post-wrapper .post { text-align:center;}
+.share-links div.search-member input.search-info-member{ width:92%}
+.post-wrapper .post .post-data{ background:none}
+.post-wrapper .post .post-data img{ width:100%}
+.post-wrapper .post .comment-links a{ margin-bottom:10px;}
+.post-wrapper .replay-icon{ display:block}
+.post-wrapper .post:last-child{ background:none; margin-bottom:0px; padding-bottom:0px;}
+.post-wrapper .comment-box .cheers,
+.post-wrapper .comment-box .jeers{ padding-right:15px; text-align:right;}
+.logo-sec{ display:inline-block}
+}
+
+
+
+/* ==============================================================================
+/* ====== MEDIUM (MIN 768px - 979px MAX) TABLET SPECIFIC ELEMENTS & STYLES
+/* ============================================================================ */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	
+	.thumbnails li {margin:15px 0; overflow: hidden;}	
+	.login-forgot {	text-align:center; }
+	.photos-section .photo-gallery, .schedule, .share-links, .post-wrapper .post{ text-align:left}
+	.post-wrapper .comment-box{ margin-top:25px;}
+	.header-right .actions{ text-align:right}
+}
+
+
+
+
+/* ==============================================================================
+/* ====== Large (MIN 992px - 1200px MAX) Large devices Desktops 
+/* ============================================================================ */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	.featured-teams-section ul.thumbnails li .detail {
+		bottom:-77px;
+	}
+	.after-login .search-bar .search{ min-width:163px;}
+	.after-login ul.nav li a{ padding:18px 14px 12px}
+	.top-infomation-profile .user-details{ width:76%}
+	.top-infomation-profile .user-menu nav ul li a{ padding-left:14px; padding-right:13px;}
+	.top-infomation-profile .user-img{ width:19%; height:40px;}
+	.top-infomation-profile .jewelbuttons ul li{ padding:18px 19px 0;}
+	.top-infomation-profile .user-details a h3{ font-size:15px;}
+	.btn-block.main .btn-default{ padding:3px 16px;}
+	.invite-section .invite-member,
+	.invite-section .invite-team-member{ min-height:213px;}
+	.invite-section .invite-member .btn-facebook-share{ width:174px; background-size:100%}
+}
+
+@media screen and (min-width: 992px){ 
+.after-login ul.nav{ display:block}
+}
+
+
